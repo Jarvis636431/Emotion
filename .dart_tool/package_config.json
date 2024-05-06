@@ -56,6 +56,12 @@
       "languageVersion": "3.1"
     },
     {
+      "name": "flutter_screenutil",
+      "rootUri": "file:///C:/Users/86151/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_screenutil-5.9.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///C:/Users/86151/fvm/versions/2.8.0/packages/flutter_test",
       "packageUri": "lib/",
@@ -170,7 +176,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-04-28T09:27:44.790239Z",
+  "generated": "2024-05-06T13:59:25.610317Z",
   "generator": "pub",
   "generatorVersion": "3.3.2"
 }
