@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]初步构建了年龄选择页和MBTI选择页的框架">
-      <change afterPath="$PROJECT_DIR$/lib/HomePage.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/MoodPage/DailyMoodPage.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/MoodPage/NowMoodPage.dart" afterDir="false" />
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]新增主页和心情选择页面">
+      <change afterPath="$PROJECT_DIR$/lib/MoodPage/MoodInfactorPage.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715006778598</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[fea]新增主页和心情选择页面">
+      <option name="closed" value="true" />
+      <created>1715009460950</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715009460950</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +118,7 @@
     <MESSAGE value="[check]" />
     <MESSAGE value="[fea]新建进入页文件夹。新增屏幕适配插件，放在flutter_lints 下面" />
     <MESSAGE value="[fea]初步构建了年龄选择页和MBTI选择页的框架" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fea]初步构建了年龄选择页和MBTI选择页的框架" />
+    <MESSAGE value="[fea]新增主页和心情选择页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fea]新增主页和心情选择页面" />
   </component>
 </project>
