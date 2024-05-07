@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:emotion/UserPages/UserPage.dart';
+import 'package:emotion/UserPages/SettingsPage.dart';
 import 'package:flutter/widgets.dart';
 
 class UserPage extends StatefulWidget {
@@ -24,7 +24,12 @@ class _UserPageState extends State<UserPage> {
           actions: [
             IconButton(
               icon: const Icon(Icons.settings),
-              onPressed: () {},
+              onPressed: () {
+                //Navigator.push(
+                  //context,
+                  //MaterialPageRoute(builder: (context) => SettingsPage()),
+                //);
+              },
             ),
           ],
           backgroundColor: Theme.of(context).colorScheme.secondary,
