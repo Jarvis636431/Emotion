@@ -1,29 +1,118 @@
-import 'package:flutter/material.dart';
+import 'dart:collection';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  void _onItemTapped() {
+    setState(() {
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back),
-            onPressed: () {
-              Navigator.pop(context);
-            },
+      appBar: AppBar(
+        title: Text('四月22日 星期一 天气🌤'),
+      ),
+      body: Column(
+        children:[
+          Row(
+            children: [
+              Column(
+                children: [
+                  Row(
+                    children: [
+                      const Text('今天心情XX'),
+                      const Text('今天心情如何？，记录一下吧！'),
+                      TextButton(
+                        onPressed: () {},
+                        child: const Text("TextButton按钮"),
+                      )
+                    ],
+                  ),
+                ],
+              ),
+              Image(image: AssetImage('assets/images/')),
+            ],
           ),
-          backgroundColor: Theme.of(context).colorScheme.secondary,
-          title: const Text('Hi,你的性别是？'),
-        ),
-        body: Container(
-            child: Row(mainAxisAlignment: MainAxisAlignment.center,
+          Container(
+            child: Column(
+              children: [
+                Row(
                   children: [
-                  ElevatedButton(
-                    onPressed: () {
-                    Navigator.pushNamed(context, '/age');
-              },
-                    child: Text(''))
-        ])));
+                    Text('心情历史'),
+                    Text('更多'),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          ListView(
+            children: [
+              Text('情绪资料'),
+              Row(
+                children: [
+                  Image(image: AssetImage('assets/images/')),
+                  Column(
+                    children: [
+                      Text('mbti情绪大揭秘'),
+                      Text('mbti情绪大揭秘'),
+                      TextButton(onPressed:(){}, child: const Text('查看'))
+                    ],
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Image(image: AssetImage('assets/images/')),
+                  Column(
+                    children: [
+                      Text('mbti情绪大揭秘'),
+                      Text('mbti情绪大揭秘'),
+                      TextButton(onPressed:(){}, child: const Text('查看'))
+                    ],
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.functions),
+            label: 'Search',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.today_outlined),
+            label: 'Profile',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+          ),
+        ],
+        selectedItemColor: Colors.blue,
+      ),
+    );
   }
 }
+
