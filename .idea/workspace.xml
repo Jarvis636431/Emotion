@@ -9,8 +9,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]新增主页">
-      <change beforePath="$PROJECT_DIR$/lib/HomePage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/HomePage.dart" afterDir="false" />
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fix]修改main.dart">
+      <change afterPath="$PROJECT_DIR$/lib/widgets/bottomNavigationBar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/rouletteSelector.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Emotion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Emotion.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/MoodPages/DailyMoodPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/MoodPages/DailyMoodPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715783234318</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[fix]修改main.dart">
+      <option name="closed" value="true" />
+      <created>1715786701413</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715786701413</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +181,7 @@
     <MESSAGE value="[fea]新增个人页面，新建了一些文件夹" />
     <MESSAGE value="[fea]新增设置页面，等待路由的修复" />
     <MESSAGE value="[fea]新增主页" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fea]新增主页" />
+    <MESSAGE value="[fix]修改main.dart" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix]修改main.dart" />
   </component>
 </project>
