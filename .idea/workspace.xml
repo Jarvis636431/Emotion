@@ -9,13 +9,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fix]修改main.dart">
-      <change afterPath="$PROJECT_DIR$/lib/widgets/bottomNavigationBar.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/rouletteSelector.dart" afterDir="false" />
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]完成了轮盘选择页面">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Emotion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Emotion.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/MoodPages/DailyMoodPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/MoodPages/DailyMoodPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PendingPages/PendingPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PendingPages/PendingPage.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +154,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715786701413</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="[fea]完成了轮盘选择页面">
+      <option name="closed" value="true" />
+      <created>1715958020782</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715958020782</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[fea]完成了轮盘选择页面">
+      <option name="closed" value="true" />
+      <created>1715958060010</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715958060010</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,6 +194,7 @@
     <MESSAGE value="[fea]新增设置页面，等待路由的修复" />
     <MESSAGE value="[fea]新增主页" />
     <MESSAGE value="[fix]修改main.dart" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix]修改main.dart" />
+    <MESSAGE value="[fea]完成了轮盘选择页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fea]完成了轮盘选择页面" />
   </component>
 </project>
