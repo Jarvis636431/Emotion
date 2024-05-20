@@ -115,6 +115,7 @@ class _FunctionsPagesState extends State<FunctionsPages> {
             icon: Icon(Icons.refresh),
             onPressed: () {
               _resetTimer();
+              ///TODO: Reset the audio player
             },
           ),
         ],
@@ -122,6 +123,7 @@ class _FunctionsPagesState extends State<FunctionsPages> {
       body: Column(children: [
         Text('冥想页面'),
         Stack(
+          ///TODO: 显示专辑封面
           children: [
             Container(
               width: 200.w,
@@ -155,6 +157,7 @@ class _FunctionsPagesState extends State<FunctionsPages> {
         Text(
           '正在播放音乐${_currentSongIndex + 1}'
         ),
+        ///TODO显示进度条
         ButtonBar(
           children: [
             ElevatedButton(
