@@ -9,12 +9,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]实现了音乐播放器功能，等待音源">
-      <change beforePath="$PROJECT_DIR$/.dart_tool/dartpad/web_plugin_registrant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/dartpad/web_plugin_registrant.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Emotion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Emotion.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/FunctionPages/ThinkPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/FunctionPages/ThinkPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/MoodPages/MoodCheckPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/MoodPages/MoodCheckPage.dart" afterDir="false" />
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]实现打卡页面">
+      <change beforePath="$PROJECT_DIR$/lib/FunctionPages/FunctionsPages.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/FunctionPages/FunctionsPages.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716208595681</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="[fea]实现打卡页面">
+      <option name="closed" value="true" />
+      <created>1716212062817</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1716212062817</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,6 +265,7 @@
     <MESSAGE value="[fea]新增了mbti类型下拉弹窗" />
     <MESSAGE value="[fea]是上一条commit的记录，完成了计时器的功能，音乐播放器尚未完成" />
     <MESSAGE value="[fea]实现了音乐播放器功能，等待音源" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fea]实现了音乐播放器功能，等待音源" />
+    <MESSAGE value="[fea]实现打卡页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fea]实现打卡页面" />
   </component>
 </project>
