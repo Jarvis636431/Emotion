@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class FunctionsPages extends StatefulWidget {
   @override
@@ -9,7 +10,6 @@ class FunctionsPages extends StatefulWidget {
 }
 
 class _FunctionsPagesState extends State<FunctionsPages> {
-
   Timer? _timer;
   int _start = 0;
   bool _isRunning = false;
@@ -25,6 +25,7 @@ class _FunctionsPagesState extends State<FunctionsPages> {
       });
     });
   }
+
   void _pauseTimer() {
     if (!_isRunning) return;
     setState(() {
@@ -41,16 +42,61 @@ class _FunctionsPagesState extends State<FunctionsPages> {
     _timer?.cancel();
   }
 
-  @override
-  void dispose() {
-    _timer?.cancel();
-    super.dispose();
-  }
-
   String _formatTime(int seconds) {
     final int minutes = seconds ~/ 60;
     final int remainingSeconds = seconds % 60;
     return '$minutes:${remainingSeconds.toString().padLeft(2, '0')}';
+  }
+
+  AudioPlayer _audioPlayer = AudioPlayer();
+  List<String> _songs = [
+    'assets/songs/meditation.mp3',
+    'assets/songs/meditation2.mp3',
+    'assets/songs/meditation3.mp3',
+  ];
+  int _currentSongIndex = 0;
+  bool _isPlaying = false;
+
+  void _playPause() {
+    if (_isPlaying) {
+      _audioPlayer.pause();
+    } else {
+      _audioPlayer.play(_songs[_currentSongIndex] as Source);
+    }
+    setState(() {
+      _isPlaying = !_isPlaying;
+    });
+  }
+
+  void _next() {
+    if (_currentSongIndex < _songs.length - 1) {
+      _currentSongIndex++;
+    } else {
+      _currentSongIndex = 0;
+    }
+    _audioPlayer.play(_songs[_currentSongIndex] as Source);
+    setState(() {
+      _isPlaying = true;
+    });
+  }
+
+  void _previous() {
+    if (_currentSongIndex > 0) {
+      _currentSongIndex--;
+    } else {
+      _currentSongIndex = _songs.length - 1;
+    }
+    _audioPlayer.play(_songs[_currentSongIndex] as Source);
+    setState(() {
+      _isPlaying = true;
+    });
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    _audioPlayer.dispose();
+    super.dispose();
   }
 
   @override
@@ -106,25 +152,28 @@ class _FunctionsPagesState extends State<FunctionsPages> {
             ),
           ],
         ),
+        Text(
+          '正在播放音乐${_currentSongIndex + 1}'
+        ),
         ButtonBar(
           children: [
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/meditation');
+                _previous();
               },
-              child: Icon(Icons.play_arrow),
+              child: Icon(Icons.arrow_left),
+            ),
+            IconButton(
+              onPressed: () {
+                _playPause();
+              },
+              icon: Icon(_isPlaying ? Icons.pause : Icons.play_arrow),
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/meditation');
+                _next();
               },
-              child: Icon(Icons.play_arrow),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/meditation');
-              },
-              child: Icon(Icons.play_arrow),
+              child: Icon(Icons.arrow_right),
             ),
           ],
         ),
@@ -132,7 +181,9 @@ class _FunctionsPagesState extends State<FunctionsPages> {
           onPressed: () {
             _isRunning ? _pauseTimer() : _startTimer();
           },
-          child: Text('开始冥想'),
+          child: Text(
+            _isRunning ? '暂停冥想' : '开始冥想',
+          ),
         ),
       ]),
     );
