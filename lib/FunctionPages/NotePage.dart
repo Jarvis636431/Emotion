@@ -27,7 +27,14 @@ class _NotePageState extends State<NotePage> {
       ),
       body: Column(
         children: [
-          Container(),
+          ///TODO: 实现一个图文混排的输入框
+          TextField(
+            decoration: InputDecoration(
+              hintText: 'Title',
+              border: InputBorder.none,
+              contentPadding: EdgeInsets.all(10),
+            ),
+          ),
           ListView(
             scrollDirection: Axis.horizontal,
             children: [

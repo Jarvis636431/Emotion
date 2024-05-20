@@ -9,9 +9,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]实现图片选择页面">
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]初步实现笔记界面">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/FunctionPages/FillColorPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/FunctionPages/FillColorPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/FunctionPages/NotePage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/FunctionPages/NotePage.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +251,31 @@
       <option name="project" value="LOCAL" />
       <updated>1716213664743</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="[fea]实现填色界面进度条">
+      <option name="closed" value="true" />
+      <created>1716214643367</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1716214643367</updated>
+    </task>
+    <task id="LOCAL-00023" summary="[fea]实现填色界面进度条">
+      <option name="closed" value="true" />
+      <created>1716214684176</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1716214684176</updated>
+    </task>
+    <task id="LOCAL-00024" summary="[fea]初步实现笔记界面">
+      <option name="closed" value="true" />
+      <created>1716215261119</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1716215261119</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -285,6 +309,8 @@
     <MESSAGE value="[fea]实现打卡页面" />
     <MESSAGE value="[fea]实现功能选择页面" />
     <MESSAGE value="[fea]实现图片选择页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fea]实现图片选择页面" />
+    <MESSAGE value="[fea]实现填色界面进度条" />
+    <MESSAGE value="[fea]初步实现笔记界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fea]初步实现笔记界面" />
   </component>
 </project>
