@@ -9,10 +9,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]修改了命名逻辑，用父级defaulttabcontroller统一控制tab">
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]新增了mbti类型下拉弹窗">
+      <change afterPath="$PROJECT_DIR$/lib/FunctionPages/FunctionsPages.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/EntryPages/AvatarMBTISelection.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/EntryPages/AvatarMBTISelection.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/EntryPages/GenderSelection.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/EntryPages/GenderSelection.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/FunctionPages/ThinkPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/FunctionPages/ThinkPage.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716188245792</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="[fea]新增了mbti类型下拉弹窗">
+      <option name="closed" value="true" />
+      <created>1716204647986</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1716204647986</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,6 +232,7 @@
     <MESSAGE value="[fea]初步实现待办界面的tabbar和tabbarview" />
     <MESSAGE value="[fea]完善了新建提醒页面" />
     <MESSAGE value="[fea]修改了命名逻辑，用父级defaulttabcontroller统一控制tab" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fea]修改了命名逻辑，用父级defaulttabcontroller统一控制tab" />
+    <MESSAGE value="[fea]新增了mbti类型下拉弹窗" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fea]新增了mbti类型下拉弹窗" />
   </component>
 </project>
