@@ -9,7 +9,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]完成了轮盘选择页面">
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]初步实现待办界面的tabbar和tabbarview">
+      <change afterPath="$PROJECT_DIR$/lib/PendingPages/NewReminder.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/PendingPages/PendingPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PendingPages/PendingPage.dart" afterDir="false" />
     </list>
@@ -170,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715958060010</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="[fea]初步实现待办界面的tabbar和tabbarview">
+      <option name="closed" value="true" />
+      <created>1716043376419</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1716043376419</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,6 +204,7 @@
     <MESSAGE value="[fea]新增主页" />
     <MESSAGE value="[fix]修改main.dart" />
     <MESSAGE value="[fea]完成了轮盘选择页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fea]完成了轮盘选择页面" />
+    <MESSAGE value="[fea]初步实现待办界面的tabbar和tabbarview" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fea]初步实现待办界面的tabbar和tabbarview" />
   </component>
 </project>
