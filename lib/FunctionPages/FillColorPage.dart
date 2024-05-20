@@ -7,7 +7,6 @@ class FillColorPage extends StatefulWidget {
 }
 
 class _FillColorPageState extends State<FillColorPage> {
-
   ScrollController _scrollController = ScrollController();
   double _scrollProgress = 0.0;
 
@@ -16,8 +15,8 @@ class _FillColorPageState extends State<FillColorPage> {
     super.initState();
     _scrollController.addListener(() {
       setState(() {
-        _scrollProgress = _scrollController.position.pixels/
-        _scrollController.position.maxScrollExtent;
+        _scrollProgress = _scrollController.position.pixels /
+            _scrollController.position.maxScrollExtent;
       });
     });
   }
@@ -31,16 +30,15 @@ class _FillColorPageState extends State<FillColorPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () {
-            Navigator.pop(context);
-          },
+        appBar: AppBar(
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
         ),
-      ),
-      body: Column(
-        children: [
+        body: Column(children: [
           Image.asset(''),
           ListView(
             scrollDirection: Axis.horizontal,
@@ -62,13 +60,13 @@ class _FillColorPageState extends State<FillColorPage> {
           RotatedBox(
             quarterTurns: 90,
             child: Slider(
-            value: _scrollProgress,
-            onChanged: (value) {
-              _scrollController.jumpTo(value*_scrollController.position.maxScrollExtent);
-            },
+              value: _scrollProgress,
+              onChanged: (value) {
+                _scrollController
+                    .jumpTo(value * _scrollController.position.maxScrollExtent);
+              },
+            ),
           ),
-        ],
-      ),
-    );
+        ]));
   }
 }
