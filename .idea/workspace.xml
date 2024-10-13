@@ -9,98 +9,17 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[new]新增一些图片资源">
-      <change afterPath="$PROJECT_DIR$/assets/fonts/ZhanKuKuaiLeTi.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/background/background_angry.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/background/background_annoy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/background/background_happy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/background/background_peace.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/background/background_sad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/background/otherbackgrounds/functionsBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/background/otherbackgrounds/infactorBackgrounds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/bottomNavigationBarIcon/census.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/bottomNavigationBarIcon/function.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/bottomNavigationBarIcon/pending.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/bottomNavigationBarIcon/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/card.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/female.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/function/emptythink.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/function/fillcolor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/function/takenotes.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/informationpic1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/informationpic2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/informationpic3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/male.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_character/enf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_character/ent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_character/esj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_character/esp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_character/inf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_character/int.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_character/isj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_character/isp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/enf/enf一般.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/enf/enf开心.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/enf/enf悲伤.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/enf/enf烦躁.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/enf/enf生气.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent一般.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent开心.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent悲伤.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent烦躁.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent生气.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/esj/esj一般.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/esj/esj开心.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/esj/esj悲伤.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/esj/esj烦躁.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/esj/esj生气.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/esp/esp一般.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/esp/esp开心.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/esp/esp悲伤.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/esp/esp烦躁.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/esp/esp生气.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/inf/inf一般.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/inf/inf开心.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/inf/inf悲伤.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/inf/inf烦躁.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/inf/inf生气.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/int/int一般.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/int/int开心.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/int/int悲伤.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/int/int烦躁.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/int/int生气.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/isj/isj一般.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/isj/isj开心.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/isj/isj悲伤.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/isj/isj烦躁.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/isj/isj生气.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/isp/isp一般.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/isp/isp开心.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/isp/isp悲伤.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/isp/isp烦躁.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/isp/isp生气.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/moodInfactor/academic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/moodInfactor/damily.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/moodInfactor/food.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/moodInfactor/health.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/moodInfactor/others.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/moodInfactor/social.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/moodInfactor/travel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/moodInfactor/weather.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/moodInfactor/work.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/notebackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/picture_empty_color.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/picture_full_color.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/pinpicture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/settings_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/testpic1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/testpic2.png" afterDir="false" />
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[new]新增了图片和字体资源">
+      <change afterPath="$PROJECT_DIR$/lib/EntryPages/IntroducingPage.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils/ColorUtils.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils/TextUtils.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Emotion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Emotion.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/MoodPages/MoodCountPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/MoodPages/MoodCountPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/EntryPages/GenderSelection.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/EntryPages/GenderSelection.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/EntryPages/SplashPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/EntryPages/SplashPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/HomePage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/HomePage.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,23 +57,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "com.google.services.firebase.aqiPopupShown": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/86151/StudioProjects/Emotion/assets/fonts",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/86151/StudioProjects/Emotion/assets/fonts&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\86151\StudioProjects\Emotion\assets\fonts" />
@@ -394,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716218596928</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="[new]新增了图片和字体资源">
+      <option name="closed" value="true" />
+      <created>1716810338632</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1716810338633</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -432,6 +359,7 @@
     <MESSAGE value="[fea]实现填色界面进度条" />
     <MESSAGE value="[fea]初步实现笔记界面" />
     <MESSAGE value="[fea]初步实现收藏的话页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fea]初步实现收藏的话页面" />
+    <MESSAGE value="[new]新增了图片和字体资源" />
+    <option name="LAST_COMMIT_MESSAGE" value="[new]新增了图片和字体资源" />
   </component>
 </project>

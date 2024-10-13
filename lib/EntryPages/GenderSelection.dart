@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:emotion/EntryPages/NameAgeSelectionPage.dart';
 
 class GenderSelectionPage extends StatefulWidget {
-  const GenderSelectionPage({Key? key}) : super(key: key);
+  const GenderSelectionPage({super.key});
 
   @override
   _GenderSelectionPage createState() => _GenderSelectionPage();
@@ -11,7 +11,7 @@ class GenderSelectionPage extends StatefulWidget {
 
 class _GenderSelectionPage extends State<GenderSelectionPage> {
 
-  int sexselection = 0;
+  int _sexselection = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -26,11 +26,11 @@ class _GenderSelectionPage extends State<GenderSelectionPage> {
           children:[
             ElevatedButton(
               onPressed: () {
-                sexselection++;
+                _sexselection++;
                 setState(() {
                 });
               },
-              child: Image.asset('assets/images/female avatar.png'),
+              child: Image.asset('assets/images/female.png'),
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -44,11 +44,11 @@ class _GenderSelectionPage extends State<GenderSelectionPage> {
             ),
             ElevatedButton(
               onPressed: () {
-                sexselection++;
+                _sexselection++;
                 setState(() {
                 });
               },
-              child: Image.asset('assets/images/male avatar.png'),
+              child: Image.asset('assets/images/male.png'),
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,

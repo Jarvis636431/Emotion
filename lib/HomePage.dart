@@ -9,17 +9,16 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
-  void _onItemTapped() {
-    setState(() {
-    });
-  }
+class _HomePageState extends State<HomePage>
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('四月22日 星期一 天气🌤'),
+        title: Align(
+          alignment: Alignment.center,
+          child: Text('四月22日 星期一 天气🌤'),
+        )
       ),
       body: Column(
         children:[
@@ -27,19 +26,16 @@ class _HomePageState extends State<HomePage> {
             children: [
               Column(
                 children: [
-                  Row(
-                    children: [
                       const Text('今天心情XX'),
                       const Text('今天心情如何？，记录一下吧！'),
                       TextButton(
                         onPressed: () {},
                         child: const Text("TextButton按钮"),
                       )
-                    ],
-                  ),
                 ],
               ),
-              Image(image: AssetImage('assets/images/')),
+              Image(image: AssetImage('assets/images/female.png'),
+              width: 100,),
             ],
           ),
           Container(
@@ -59,7 +55,7 @@ class _HomePageState extends State<HomePage> {
               Text('情绪资料'),
               Row(
                 children: [
-                  Image(image: AssetImage('assets/images/')),
+                  Image(image: AssetImage('assets/images/female.png')),
                   Column(
                     children: [
                       Text('mbti情绪大揭秘'),
@@ -71,7 +67,7 @@ class _HomePageState extends State<HomePage> {
               ),
               Row(
                 children: [
-                  Image(image: AssetImage('assets/images/')),
+                  Image(image: AssetImage('assets/images/male.png')),
                   Column(
                     children: [
                       Text('mbti情绪大揭秘'),
