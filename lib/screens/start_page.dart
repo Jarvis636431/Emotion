@@ -1,6 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'package:emotion/widgets/informationCard.dart';
 
 import 'package:emotion/screens/mood_pages/today_mood_page.dart';
 
@@ -110,13 +111,27 @@ class StartPage extends StatelessWidget {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text('情绪资料'), Icon(Icons.refresh)],
+                  children: [Text('情绪资料',style: TextStyle(fontSize: 20.sp),), Icon(Icons.refresh)],
                 ),
                 Container(
                   width: 400.h,
                   child: ListView(
                     shrinkWrap: true,
                     children: [
+                      const InformationCard(
+                          title: 'mbti情绪大揭秘',
+                          subtitle: 'mbti情绪大揭秘',
+                          image: 'assets/images/informationpic1.png'),
+                      SizedBox(height: 20.h),
+                      const InformationCard(
+                          title: '解压小百科',
+                          subtitle: '怎样的方式可以\n减缓压力呢？',
+                          image: 'assets/images/informationpic2.png'),
+                      SizedBox(height: 20.h),
+                      const InformationCard(
+                          title: 'mbti情绪大揭秘',
+                          subtitle: 'mbti情绪大揭秘',
+                          image: 'assets/images/informationpic3.png')
                     ],
                   ),
                 )
