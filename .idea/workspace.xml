@@ -9,40 +9,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[new]重启">
-      <change afterPath="$PROJECT_DIR$/lib/home_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/start_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/splash_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fix]以底部导航栏为基础的整体架构基本完成">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Emotion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Emotion.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/EntryPages/AvatarMBTISelection.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/entry_pages/AvatarMBTISelection.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/EntryPages/GenderSelection.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/entry_pages/GenderSelection.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/EntryPages/IntroducingPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/entry_pages/IntroducingPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/EntryPages/NameAgeSelectionPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/entry_pages/NameAgeSelectionPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/EntryPages/SplashPage.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/FunctionPages/FillColorPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/funtions_pages/FillColorPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/FunctionPages/FunctionsPages.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/funtions_pages/functions_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/FunctionPages/NotePage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/funtions_pages/NotePage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/FunctionPages/PictureChooosePage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/funtions_pages/PictureChooosePage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/FunctionPages/ThinkPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/funtions_pages/ThinkPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/HomePage.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/MoodPages/DailyMoodPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mood_pages/today_mood_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/MoodPages/MoodCheckPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mood_pages/MoodCheckPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/MoodPages/MoodCountPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mood_pages/MoodCountPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/MoodPages/MoodInfactorPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mood_pages/MoodInfactorPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/MoodPages/NowMoodPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mood_pages/NowMoodPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/PendingPages/NewReminder.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/pending_pages/NewReminder.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/PendingPages/ReminderPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/pending_pages/ReminderPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/PendingPages/RootPendingPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/pending_pages/root_pending_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/UserPages/DailySentencePage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/user_pages/DailySentencePage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/UserPages/SettingsPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/user_pages/SettingsPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/UserPages/UserPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/user_pages/user_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/bottomNavigationBar.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/start_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/start_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -353,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728817221438</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="[fix]以底部导航栏为基础的整体架构基本完成">
+      <option name="closed" value="true" />
+      <created>1728915949223</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1728915949223</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -393,6 +371,7 @@
     <MESSAGE value="[fea]初步实现收藏的话页面" />
     <MESSAGE value="[new]新增了图片和字体资源" />
     <MESSAGE value="[new]重启" />
-    <option name="LAST_COMMIT_MESSAGE" value="[new]重启" />
+    <MESSAGE value="[fix]以底部导航栏为基础的整体架构基本完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix]以底部导航栏为基础的整体架构基本完成" />
   </component>
 </project>

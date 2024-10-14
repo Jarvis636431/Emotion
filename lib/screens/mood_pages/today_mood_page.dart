@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class DailyMoodPage extends StatelessWidget {
-  const DailyMoodPage({Key? key}) : super(key: key);
+class TodayMoodPage extends StatelessWidget {
+  const TodayMoodPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

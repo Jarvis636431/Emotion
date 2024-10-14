@@ -62,9 +62,20 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
+  # 事实上这里写了上级文件夹不代可以包含夏季文件夹里的内容，每新建一个文件夹就要在这里添加一个，这里添加的只能管理文件夹里的资源文件而不能管理下级文件夹
   assets:
     - assets/
     - assets/images/
+    - assets/images/mbti_character/
+    - assets/images/mbti_emoji/
+    - assets/images/mbti_emoji/enf/
+    - assets/images/mbti_emoji/ent/
+    - assets/images/mbti_emoji/esp/
+    - assets/images/mbti_emoji/esj/
+    - assets/images/mbti_emoji/inf/
+    - assets/images/mbti_emoji/int/
+    - assets/images/mbti_emoji/isp/
+    - assets/images/mbti_emoji/isj/
     - assets/audio/
     - assets/fonts/
 

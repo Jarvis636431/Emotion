@@ -26,7 +26,7 @@ class HomePageState extends State<HomePage> {
 
   final pages = [
     const StartPage(),
-    const DailyMoodPage(),
+    const TodayMoodPage(),
     PendingPage(),
     FunctionsPage(),
     const UserPage(),
