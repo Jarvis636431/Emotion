@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:emotion/UserPages/UserPage.dart';
+import 'package:emotion/screens/user_pages/user_page.dart';
 import 'package:flutter/widgets.dart';
 
 class SettingsPage extends StatefulWidget {

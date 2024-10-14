@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'package:emotion/EntryPages/GenderSelection.dart';
+import 'package:emotion/screens/entry_pages/GenderSelection.dart';
 class IntroducingPage extends StatelessWidget{
   const IntroducingPage({super.key});
 

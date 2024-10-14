@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:emotion/EntryPages/AvatarMBTISelection.dart';
+import 'package:emotion/screens/entry_pages/AvatarMBTISelection.dart';
 
 class NameAgeSelectionPage extends StatelessWidget {
   const NameAgeSelectionPage({Key? key}) : super(key: key);
