@@ -10,9 +10,17 @@ void main() {
 
   runApp(const MyApp());
 
+  //这样就可以实现沉浸式了
+  if (Platform.isAndroid) {
+    SystemUiOverlayStyle systemUiOverlayStyle = const SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+        systemNavigationBarColor: Colors.transparent);
+    SystemChrome.setSystemUIOverlayStyle(systemUiOverlayStyle);
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+  }
 }
 
-///实现底部沉浸式
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

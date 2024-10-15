@@ -37,6 +37,7 @@ class HomePageState extends State<HomePage> {
     return Scaffold(
       //设置这一项才可以让底部导航栏完全透明
         extendBody: true,
+//这一项实际设置的是主页内容是否延申到底部导航栏下面，也就是说将导航栏浮起
         body: PageView(
           onPageChanged: (index) {
             setState(() {
