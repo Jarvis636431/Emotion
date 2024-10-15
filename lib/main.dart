@@ -1,10 +1,18 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
 import 'package:emotion/home_page.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
+
   runApp(const MyApp());
+
 }
+
+///实现底部沉浸式
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -14,16 +22,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       //screen util要进行初始化，获取设计图尺寸
-      designSize: const Size(393, 852),
+      designSize: Size(393, 852),
       child: MaterialApp(
         title: 'Flutter Demo',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
-        home:const HomePage(),
+        home: HomePage(),
       ),
     );
   }
 }
-

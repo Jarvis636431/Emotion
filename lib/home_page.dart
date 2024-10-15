@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:emotion/screens/start_page.dart';
-import 'package:emotion/screens/mood_pages/today_mood_page.dart';
+import 'package:emotion/screens/count_and_advise_page.dart';
 import 'package:emotion/screens/pending_pages/root_pending_page.dart';
 import 'package:emotion/screens/funtions_pages/functions_page.dart';
 import 'package:emotion/screens/user_pages/user_page.dart';
@@ -26,7 +26,7 @@ class HomePageState extends State<HomePage> {
 
   final pages = [
     const StartPage(),
-    const TodayMoodPage(),
+    const CountAndAdvisePage(),
     PendingPage(),
     FunctionsPage(),
     const UserPage(),
@@ -35,6 +35,8 @@ class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //设置这一项才可以让底部导航栏完全透明
+        extendBody: true,
         body: PageView(
           onPageChanged: (index) {
             setState(() {
@@ -76,7 +78,6 @@ class HomePageState extends State<HomePage> {
           currentIndex: currentIndex,
           selectedItemColor: Colors.blue,
           unselectedItemColor: Colors.grey,
-          unselectedIconTheme: const IconThemeData(size: 20),
           onTap: (index) {
             setState(() {
               currentIndex = index;

@@ -9,14 +9,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]设置页面完成">
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]功能页面布局完成，添加背景图">
+      <change afterPath="$PROJECT_DIR$/lib/screens/count_and_advise_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Emotion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Emotion.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/values/styles.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/funtions_pages/functions_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/funtions_pages/functions_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/user_pages/user_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/user_pages/user_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +29,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CMakeLists.txt" />
         <option value="Dart File" />
       </list>
     </option>
@@ -351,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728995740030</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="[fea]功能页面布局完成，添加背景图">
+      <option name="closed" value="true" />
+      <created>1729003192861</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1729003192861</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -367,7 +376,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[fea]初步构建了年龄选择页和MBTI选择页的框架" />
     <MESSAGE value="[fea]新增主页和心情选择页面" />
     <MESSAGE value="[fea]新增心情影响因素界面" />
     <MESSAGE value="[fea]新增个人页面，新建了一些文件夹" />
@@ -392,6 +400,7 @@
     <MESSAGE value="[fix]以底部导航栏为基础的整体架构基本完成" />
     <MESSAGE value="[fea]个人信息见面完成" />
     <MESSAGE value="[fea]设置页面完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fea]设置页面完成" />
+    <MESSAGE value="[fea]功能页面布局完成，添加背景图" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fea]功能页面布局完成，添加背景图" />
   </component>
 </project>
