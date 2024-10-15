@@ -66,6 +66,8 @@ flutter:
   assets:
     - assets/
     - assets/images/
+    - assets/images/background/
+    - assets/images/background/otherbackgrounds/
     - assets/images/mbti_character/
     - assets/images/mbti_emoji/
     - assets/images/mbti_emoji/enf/
@@ -76,6 +78,7 @@ flutter:
     - assets/images/mbti_emoji/int/
     - assets/images/mbti_emoji/isp/
     - assets/images/mbti_emoji/isj/
+    - assets/images/function/
     - assets/audio/
     - assets/fonts/
 

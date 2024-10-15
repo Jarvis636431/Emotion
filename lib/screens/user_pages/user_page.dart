@@ -29,83 +29,88 @@ class _UserPageState extends State<UserPage> {
             ),
           ],
         ),
-        body: Column(
-          children: [
-            Row(
-              children: [
-                Image.asset(
-                  'assets/images/female.png',
-                  width: 120.h,
-                ),
-                Column(children: [
-                  Text(
-                    '菠萝小姐',
-                    style: TextStyle(fontSize: 23.sp),
-                  ),
-                  Text(
-                    '本小姐还没有想到个性签名',
-                    style: TextStyle(fontSize: 10.sp),
-                  ),
-                ]),
-              ],
-            ),
-            SizedBox(
-              height: 20.h,
-            ),
-            Align(
-              alignment: Alignment.centerLeft,
-                child: Text('每日一言收藏')),
-            Container(
-              width: 600.h,
-              height: 100.w,
-              decoration: BoxDecoration(
-                color: Colors.yellow[200],
-                border: Border.all(color: Colors.transparent),
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child:Text('每日一言收藏'),
-            ),
-            Align(
-                alignment: Alignment.centerLeft,
-                child: Text('测试')),
-            Container(
-              height: 200.h,
-              child: ListView(
-                shrinkWrap: true,
-                scrollDirection: Axis.horizontal,
+        body: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20.h, vertical: 10.w),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
                 children: [
-                  Container(
-                    width: 300.h,
-                    decoration: BoxDecoration(
-                      color: Colors.yellowAccent,
-                      border: Border.all(color: Colors.transparent),
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    child: Column(
-                      children: [
-                        Image.asset('assets/images/testpic1.png'),
-                        Text('测一测你的MBTI人格吧'),
-                      ],
-                    ),
+                  Image.asset(
+                    'assets/images/female.png',
+                    width: 120.h,
                   ),
-                  Container(
-                    width: 300.h,
-                    decoration: BoxDecoration(
-                      color: Colors.yellowAccent,
-                      border: Border.all(color: Colors.transparent),
-                      borderRadius: BorderRadius.circular(20),
+                  Column(children: [
+                    Text(
+                      '菠萝小姐',
+                      style: TextStyle(fontSize: 23.sp),
                     ),
-                    child: Column(
-                      children: [
-                        Image.asset('assets/images/testpic2.png'),
-                        Text('测试'),
-                      ],
+                    Text(
+                      '本小姐还没有想到个性签名',
+                      style: TextStyle(fontSize: 10.sp),
                     ),
-                  ),                ],
+                  ]),
+                ],
               ),
-            ),
+              SizedBox(
+                height: 20.h,
+              ),
+              Text('每日一言收藏'),
+              Container(
+                width: 600.h,
+                height: 100.w,
+                decoration: BoxDecoration(
+                  color: Colors.yellow[200],
+                  border: Border.all(color: Colors.transparent),
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child:Text('每日一言收藏'),
+              ),
+              Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text('测试')),
+              Container(
+                height: 200.h,
+                child: ListView(
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    Container(
+                      width: 300.h,
+                      decoration: BoxDecoration(
+                        color: Colors.yellowAccent,
+                        border: Border.all(color: Colors.transparent),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Image.asset('assets/images/testpic1.png'),
+                          Text('测一测你的MBTI人格吧'),
+                        ],
+                      ),
+                    ),
+                    SizedBox(width: 20.h),
+                    Container(
+                      width: 300.h,
+                      decoration: BoxDecoration(
+                        color: Colors.yellowAccent,
+                        border: Border.all(color: Colors.transparent),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Image.asset('assets/images/testpic2.png'),
+                          Text('测试'),
+                        ],
+                      ),
+                    ),                ],
+                ),
+              ),
 
-          ],
+            ],
+          ),
         ));
   }
 }
