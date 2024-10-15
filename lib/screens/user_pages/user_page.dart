@@ -20,7 +20,11 @@ class _UserPageState extends State<UserPage> {
             IconButton(
               icon: const Icon(Icons.settings),
               onPressed: () {
-                MaterialPageRoute(builder: (context) => const SettingsPage());
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SettingsPage()),
+                  //MeterialPageRoute只是路由手段，push才是方法
+                );
               },
             ),
           ],

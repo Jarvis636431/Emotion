@@ -9,11 +9,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fix]以底部导航栏为基础的整体架构基本完成">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]个人信息见面完成">
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/start_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/start_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/user_pages/SettingsPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/user_pages/settings_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/user_pages/settings_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/user_pages/settings_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/user_pages/user_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/user_pages/user_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -333,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728915949223</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="[fea]个人信息见面完成">
+      <option name="closed" value="true" />
+      <created>1728994249134</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1728994249134</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -349,7 +356,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[check]" />
     <MESSAGE value="[fea]新建进入页文件夹。新增屏幕适配插件，放在flutter_lints 下面" />
     <MESSAGE value="[fea]初步构建了年龄选择页和MBTI选择页的框架" />
     <MESSAGE value="[fea]新增主页和心情选择页面" />
@@ -374,6 +380,7 @@
     <MESSAGE value="[new]新增了图片和字体资源" />
     <MESSAGE value="[new]重启" />
     <MESSAGE value="[fix]以底部导航栏为基础的整体架构基本完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix]以底部导航栏为基础的整体架构基本完成" />
+    <MESSAGE value="[fea]个人信息见面完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fea]个人信息见面完成" />
   </component>
 </project>
