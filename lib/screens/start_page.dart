@@ -32,6 +32,7 @@ class StartPage extends StatelessWidget {
                   style: TextStyle(fontSize: 10.sp),
                 ),
                 TextButton(
+                  ///跳转到今日心情页面,路由需要修改
                     onPressed: () {
                       MaterialPageRoute(
                           builder: (context) => const TodayMoodPage());

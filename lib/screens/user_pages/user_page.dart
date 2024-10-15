@@ -1,7 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:emotion/screens/user_pages/SettingsPage.dart';
-import 'package:flutter/widgets.dart';
+
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'package:emotion/screens/user_pages/settings_page.dart';
 
 class UserPage extends StatefulWidget {
   const UserPage({super.key});
@@ -15,63 +16,92 @@ class _UserPageState extends State<UserPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back),
-            onPressed: () {
-              Navigator.pop(context);
-            },
-          ),
           actions: [
             IconButton(
               icon: const Icon(Icons.settings),
               onPressed: () {
-                //Navigator.push(
-                  //context,
-                  //MaterialPageRoute(builder: (context) => SettingsPage()),
-                //);
+                MaterialPageRoute(builder: (context) => const SettingsPage());
               },
             ),
           ],
-          backgroundColor: Theme.of(context).colorScheme.secondary,
         ),
-        body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              GestureDetector(
-                  onTap: () {},
-                  child: Container(child: Image.asset('assets/images/'))),
-              Column(
-                children: [
-                  Text('菠萝小姐'),
-                  Text('本小姐还没有想到个性签名'),
-                ],
-              )
-            ],
-          ),
-          Text('每日一言收藏'),
-          Container(),
-          Text('测试'),
-          ListView(scrollDirection: Axis.horizontal, children: [
-            GestureDetector(
-                child: Container(
-                  child: Row(
-                    children: [
-                    Image.asset(''),
-                    Text('测一测你的mbti人格吧'),
-                ],
-              ),
-            )),
-            GestureDetector(
-                child: Container(
-                  child: Row(
-                    children: [
-                      Image.asset(''),
-                      Text('测一测你的mbti人格吧'),
-                    ],
+        body: Column(
+          children: [
+            Row(
+              children: [
+                Image.asset(
+                  'assets/images/female.png',
+                  width: 120.h,
+                ),
+                Column(children: [
+                  Text(
+                    '菠萝小姐',
+                    style: TextStyle(fontSize: 23.sp),
                   ),
-                ))
-          ])
-        ]));
+                  Text(
+                    '本小姐还没有想到个性签名',
+                    style: TextStyle(fontSize: 10.sp),
+                  ),
+                ]),
+              ],
+            ),
+            SizedBox(
+              height: 20.h,
+            ),
+            Align(
+              alignment: Alignment.centerLeft,
+                child: Text('每日一言收藏')),
+            Container(
+              width: 600.h,
+              height: 100.w,
+              decoration: BoxDecoration(
+                color: Colors.yellow[200],
+                border: Border.all(color: Colors.transparent),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child:Text('每日一言收藏'),
+            ),
+            Align(
+                alignment: Alignment.centerLeft,
+                child: Text('测试')),
+            Container(
+              height: 200.h,
+              child: ListView(
+                shrinkWrap: true,
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(
+                    width: 300.h,
+                    decoration: BoxDecoration(
+                      color: Colors.yellowAccent,
+                      border: Border.all(color: Colors.transparent),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Column(
+                      children: [
+                        Image.asset('assets/images/testpic1.png'),
+                        Text('测一测你的MBTI人格吧'),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    width: 300.h,
+                    decoration: BoxDecoration(
+                      color: Colors.yellowAccent,
+                      border: Border.all(color: Colors.transparent),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Column(
+                      children: [
+                        Image.asset('assets/images/testpic2.png'),
+                        Text('测试'),
+                      ],
+                    ),
+                  ),                ],
+              ),
+            ),
+
+          ],
+        ));
   }
 }
