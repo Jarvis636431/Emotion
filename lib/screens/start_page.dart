@@ -37,8 +37,8 @@ class StartPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
-                      '今日心情如何？',
-                      style: TextStyle(fontSize: 23.sp),
+                      '今天心情如何？',
+                      style: TextStyle(fontSize: 36.sp,fontFamily: 'LanSong',color: ColorUtils.text_brown),
                     ),
                     Text(
                       '今日心情怎么样，来记录一下吧！',
@@ -68,7 +68,6 @@ class StartPage extends StatelessWidget {
                   children: [
                     Container(
                         decoration: BoxDecoration(
-                          border: Border.all(color: Colors.grey),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Column(
@@ -76,7 +75,7 @@ class StartPage extends StatelessWidget {
                             const Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text('心情历史'),
+                                Text('心情历史',style: TextStyle(fontFamily: 'LanSong',fontSize: 20,color: ColorUtils.text_brown),),
                                 InkWell(
                                   child: Text('更多'),
                                 )

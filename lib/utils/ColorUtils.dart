@@ -16,4 +16,6 @@ abstract final class ColorUtils {
   static const Color func_card_bg = Color(0xffFFF8E5);//功能页卡片背景颜色
 
   static const Color daily_sentence_bg = Color(0xffFFE18F);//每日一句卡片背景颜色
+
+  static const Color text_brown = Color(0xff683619);//棕色字体的颜色
 }
