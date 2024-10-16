@@ -9,9 +9,25 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]实现了沉浸式底部导航栏布局，并且修复了底部像素溢出的问题//为什么使用listview后仍会溢出呢？">
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]上一条实为设置了十六进制的颜色">
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/user_pages/user_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/user_pages/user_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/background/otherbackgrounds/infactorBackgrounds.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/background/otherbackgrounds/infactorBackground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/moodInfactor/academic.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mood_infactor/academic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/moodInfactor/damily.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mood_infactor/damily.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/moodInfactor/food.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mood_infactor/food.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/moodInfactor/health.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mood_infactor/health.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/moodInfactor/others.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mood_infactor/others.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/moodInfactor/social.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mood_infactor/social.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/moodInfactor/travel.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mood_infactor/travel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/moodInfactor/weather.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mood_infactor/weather.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/moodInfactor/work.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mood_infactor/work.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/mood_pages/MoodCountPage.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/mood_pages/MoodInfactorPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mood_pages/mood_infactor_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/mood_pages/NowMoodPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mood_pages/now_mood_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/mood_pages/today_mood_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mood_pages/today_mood_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/start_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/start_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,7 +387,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729007864596</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="[fea]实现了沉浸式底部导航栏布局，并且修复了底部像素溢出的问题//为什么使用listview后仍会溢出呢？">
+      <option name="closed" value="true" />
+      <created>1729008599608</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1729008599608</updated>
+    </task>
+    <task id="LOCAL-00036" summary="[fea]上一条实为设置了十六进制的颜色">
+      <option name="closed" value="true" />
+      <created>1729008639983</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1729008639983</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -387,7 +419,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[fea]新增个人页面，新建了一些文件夹" />
     <MESSAGE value="[fea]新增设置页面，等待路由的修复" />
     <MESSAGE value="[fea]新增主页" />
     <MESSAGE value="[fix]修改main.dart" />
@@ -412,6 +443,7 @@
     <MESSAGE value="[fea]功能页面布局完成，添加背景图" />
     <MESSAGE value="[fea]修改了一下页面，考虑沉浸式体验" />
     <MESSAGE value="[fea]实现了沉浸式底部导航栏布局，并且修复了底部像素溢出的问题//为什么使用listview后仍会溢出呢？" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fea]实现了沉浸式底部导航栏布局，并且修复了底部像素溢出的问题//为什么使用listview后仍会溢出呢？" />
+    <MESSAGE value="[fea]上一条实为设置了十六进制的颜色" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fea]上一条实为设置了十六进制的颜色" />
   </component>
 </project>

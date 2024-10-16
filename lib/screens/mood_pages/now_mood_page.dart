@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'now_mood_page.dart';
+import 'mood_infactor_page.dart';
 
-class TodayMoodPage extends StatelessWidget {
-  const TodayMoodPage({Key? key}) : super(key: key);
+class NowMoodPage extends StatelessWidget {
+  const NowMoodPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +33,7 @@ class TodayMoodPage extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const NowMoodPage()));
+                        builder: (context) => const MoodInfactorPage()));
               },
               child: const Text('是这样的'),
             )
