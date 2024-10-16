@@ -8,7 +8,7 @@ class PendingPage extends StatefulWidget {
 
 class _PendingPageState extends State<PendingPage> {
   @override
-  Widget build(BuildContext context) {
+  Widget build(context) {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
@@ -20,8 +20,7 @@ class _PendingPageState extends State<PendingPage> {
               },
             ),
             title: Text('事件记录'),
-            bottom: TabBar(
-              isScrollable: true,
+            bottom: const TabBar(
               tabs: [
                 Tab(
                   child: Row(
@@ -49,8 +48,7 @@ class _PendingPageState extends State<PendingPage> {
                 ),
               ],
             )),
-        body: Center(
-          child: TabBarView(children: [
+        body: TabBarView(children: [
             Container(
               color: Colors.red,
               child: Center(
@@ -67,11 +65,9 @@ class _PendingPageState extends State<PendingPage> {
               color: Colors.blue,
               child: Center(
                 child: Text('已完成'),
-
               ),
             ),
           ]),
-        ),
       ),
     );
   }
