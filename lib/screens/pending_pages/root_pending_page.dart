@@ -26,12 +26,14 @@ class _PendingPageState extends State<PendingPage> {
             backgroundColor: Colors.transparent,
               title: Text('事件记录'),
               centerTitle: true,
-              bottom: const TabBar(
+              bottom: TabBar(
                 dividerHeight: 0,
                 //indicator只是指示器，默认是下划线，但其实修改样式修改的是那个框框
                 indicator: BoxDecoration(
+                  color: Colors.yellow,
+                  borderRadius: BorderRadius.circular(10.r),
                   ///设置指示器的颜色
-                  color: Color(0x00ffe27f),
+                  // color: Color(0x00FFE27F),
                   // boxShadow: [
                   //   BoxShadow(
                   //     color: Colors.black,
