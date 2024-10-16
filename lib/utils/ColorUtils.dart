@@ -1,17 +1,19 @@
 import 'package:flutter/painting.dart';
 
-
 abstract final class ColorUtils {
-  static const Color white = Color(0xFFFFFFFF);
-  static const Color black = Color(0xFF000000);
-  static const Color red = Color(0xFFFF0000);
-  static const Color green = Color(0xFF00FF00);
-  static const Color blue = Color(0xFF0000FF);
-  static const Color yellow = Color(0xFFFFFF00);
-  static const Color cyan = Color(0xFF00FFFF);
-  static const Color magenta = Color(0xFFFF00FF);
-  static const Color orange = Color(0xFFFFA500);
-  static const Color pink = Color(0xFFFFC0CB);
-  static const Color purple = Color(0xFF800080);
-  static const Color brown = Color(0xFFA52A2A);
+  ColorUtils._();
+  //十六进制写法！
+  static const Color bg_white = Color(0xffFFFFFF);//渐变背景一端的白色
+
+  static const Color bg_yellow = Color(0xffFFF5B6);//渐变背景一端的黄色
+
+  static const Color text_yellow = Color(0xffF2B10A);//黄色文字的颜色
+
+  static const Color card_bg = Color(0xffFFDF8A);//测试卡片的背景颜色
+
+  static const Color info_card_bg = Color(0xffFCE6AA);//个人信息框的颜色
+
+  static const Color func_card_bg = Color(0xffFFF8E5);//功能页卡片背景颜色
+
+  static const Color daily_sentence_bg = Color(0xffFFE18F);//每日一句卡片背景颜色
 }

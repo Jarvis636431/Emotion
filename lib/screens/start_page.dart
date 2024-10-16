@@ -3,6 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:emotion/widgets/informationCard.dart';
 
+import 'package:emotion/utils/ColorUtils.dart';
+
 import 'package:emotion/screens/mood_pages/today_mood_page.dart';
 
 class StartPage extends StatelessWidget {
@@ -15,7 +17,7 @@ class StartPage extends StatelessWidget {
     return Container(
       decoration: const BoxDecoration(
        gradient: LinearGradient(
-         colors: [Colors.white, Color(0xffFFF5B6)],
+         colors: [ColorUtils.bg_white, ColorUtils.bg_yellow],
          begin: Alignment.topCenter,
          end: Alignment.bottomCenter,
        ),
@@ -40,7 +42,7 @@ class StartPage extends StatelessWidget {
                     ),
                     Text(
                       '今日心情怎么样，来记录一下吧！',
-                      style: TextStyle(fontSize: 10.sp),
+                      style: TextStyle(fontSize: 10.sp, color: ColorUtils.text_yellow),
                     ),
                     TextButton(
                         onPressed: () {

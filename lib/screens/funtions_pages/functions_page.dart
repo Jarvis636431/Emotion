@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'package:emotion/utils/ColorUtils.dart';
+
 class FunctionsPage extends StatefulWidget {
   @override
   _FunctionsPageState createState() => _FunctionsPageState();
@@ -35,7 +37,7 @@ class _FunctionsPageState extends State<FunctionsPage> {
               width: 400.h,
               height: 150.w,
               decoration: BoxDecoration(
-                color: Colors.yellow,
+                color: ColorUtils.func_card_bg,
                 borderRadius: BorderRadius.circular(10),
                 boxShadow: const [
                   ///设置阴影
@@ -52,7 +54,6 @@ class _FunctionsPageState extends State<FunctionsPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text('插画填色游戏'),
-
                       ///设置divider
                       Divider(
                         color: Colors.green,
@@ -101,7 +102,7 @@ class _FunctionsPageState extends State<FunctionsPage> {
               width: 400.h,
               height: 150.w,
               decoration: BoxDecoration(
-                color: Colors.yellow,
+                color: ColorUtils.func_card_bg,
                 borderRadius: BorderRadius.circular(10),
                 boxShadow: const [
                   ///设置阴影
@@ -167,7 +168,7 @@ class _FunctionsPageState extends State<FunctionsPage> {
               width: 400.h,
               height: 150.w,
               decoration: BoxDecoration(
-                color: Colors.yellow,
+                color: ColorUtils.func_card_bg,
                 borderRadius: BorderRadius.circular(10),
                 boxShadow: const [
                   ///设置阴影
@@ -184,7 +185,6 @@ class _FunctionsPageState extends State<FunctionsPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text('插画填色游戏'),
-
                       ///设置divider
                       Divider(
                         color: Colors.green,

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'package:emotion/utils/ColorUtils.dart';
+
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
 
@@ -31,8 +33,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   width: 351.h,
                   height: 59.w,
                   decoration: BoxDecoration(
-                    color: Colors.yellow[200],
-                    border: Border.all(color: Colors.transparent),
+                    color: ColorUtils.info_card_bg,
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Text('头像'),
@@ -42,8 +43,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   width: 600.h,
                   height: 100.w,
                   decoration: BoxDecoration(
-                    color: Colors.yellow[200],
-                    border: Border.all(color: Colors.transparent),
+                    color: ColorUtils.info_card_bg,
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Text('昵称'),
@@ -53,8 +53,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   width: 600.h,
                   height: 100.w,
                   decoration: BoxDecoration(
-                    color: Colors.yellow[200],
-                    border: Border.all(color: Colors.transparent),
+                    color: ColorUtils.info_card_bg,
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Text('个性签名'),
@@ -65,8 +64,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   width: 600.h,
                   height: 100.w,
                   decoration: BoxDecoration(
-                    color: Colors.yellow[200],
-                    border: Border.all(color: Colors.transparent),
+                    color: ColorUtils.info_card_bg,
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Text('性别'),
@@ -76,8 +74,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   width: 600.h,
                   height: 100.w,
                   decoration: BoxDecoration(
-                    color: Colors.yellow[200],
-                    border: Border.all(color: Colors.transparent),
+                    color: ColorUtils.info_card_bg,
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Text('mbti'),

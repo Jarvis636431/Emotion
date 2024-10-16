@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'package:emotion/utils/ColorUtils.dart';
+
 import 'package:emotion/screens/user_pages/settings_page.dart';
 
 class UserPage extends StatefulWidget {
@@ -14,17 +16,13 @@ class UserPage extends StatefulWidget {
 class _UserPageState extends State<UserPage> {
 
   //转换十六进制演的方法
-  Color yellow = const Color(0xffFFF5B6);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
         gradient: LinearGradient(
-          colors: [Colors.white, Color(0xffFFF5B6)],
-          //直接用yellow会报错？为什么
-
-          //这样也可以直接使用十六进制的颜色
+          colors: [ColorUtils.bg_white, ColorUtils.bg_yellow],
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
         ),
@@ -65,7 +63,7 @@ class _UserPageState extends State<UserPage> {
                       ),
                       Text(
                         '本小姐还没有想到个性签名',
-                        style: TextStyle(fontSize: 10.sp),
+                        style: TextStyle(fontSize: 10.sp,color: ColorUtils.text_yellow)
                       ),
                     ]),
                   ],
@@ -78,7 +76,7 @@ class _UserPageState extends State<UserPage> {
                   width: 600.h,
                   height: 100.w,
                   decoration: BoxDecoration(
-                    color: Colors.yellow[200],
+                    color: ColorUtils.daily_sentence_bg,
                     border: Border.all(color: Colors.transparent),
                     borderRadius: BorderRadius.circular(20),
                   ),
@@ -96,8 +94,7 @@ class _UserPageState extends State<UserPage> {
                       Container(
                         width: 300.h,
                         decoration: BoxDecoration(
-                          color: Colors.yellowAccent,
-                          border: Border.all(color: Colors.transparent),
+                          color: ColorUtils.card_bg,
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Column(
@@ -112,8 +109,7 @@ class _UserPageState extends State<UserPage> {
                       Container(
                         width: 300.h,
                         decoration: BoxDecoration(
-                          color: Colors.yellowAccent,
-                          border: Border.all(color: Colors.transparent),
+                          color: ColorUtils.card_bg,
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Column(
