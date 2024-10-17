@@ -14,7 +14,9 @@ abstract final class ColorUtils {
 
   static const Color card_bg = Color(0xffFFDF8A); //测试卡片的背景颜色
 
-  static const Color info_card_bg = Color(0xffFCE6AA); //个人信息框的颜色,也是tag的颜色，也是记录任务的背景色
+  static const Color info_card_bg = Color(0xffFCE6AA); //个人信息框的颜色,也是tag的颜色，也是记录任务的背景色,也是未完成任务的颜色
+
+  static const Color finished_task = Color(0xffffe281); //任务卡片的背景颜色
 
   static const Color func_card_bg = Color(0xffFFF8E5); //功能页卡片背景颜色
 
@@ -24,7 +26,9 @@ abstract final class ColorUtils {
 
   static const Color text_light_brown = Color(0xffA65E3); //浅棕色字体//不显示？
 
-  static const Color shadow = Color(0xffD7C39C); //黑色字体的颜色
+  static const Color shadow = Color(0xffD7C39C); //阴影的颜色
+
+  static const Color deep_shadow = Color(0xff9E6F29); //起始页背景色
 
   static const Color news_card_bg = Color(0xffFFFAE0); //起始页情绪资料卡片的背景色
 
@@ -45,4 +49,6 @@ abstract final class ColorUtils {
   static const Color tab_bg = Color(0xffFFE27F); //tab背景色
 
   static const Color tab_shadow = Color(0xffE5B455); //tab阴影色
+
+  static const Color subtitle = Color(0xff979797); //背景蓝色
 }
