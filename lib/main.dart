@@ -7,7 +7,6 @@ import 'package:emotion/home_page.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
-
   runApp(const MyApp());
 
   //这样就可以实现沉浸式了
@@ -20,8 +19,6 @@ void main() {
   }
 }
 
-
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -32,6 +29,11 @@ class MyApp extends StatelessWidget {
       //screen util要进行初始化，获取设计图尺寸
       designSize: Size(393, 852),
       child: MaterialApp(
+        theme: ThemeData(
+            appBarTheme: const AppBarTheme(
+              surfaceTintColor: Colors.transparent,//解决了滚动触发时会变色的原因
+            ),
+        ),
         title: 'Flutter Demo',
         home: HomePage(),
       ),

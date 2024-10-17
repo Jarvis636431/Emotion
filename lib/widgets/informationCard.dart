@@ -1,6 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'package:emotion/utils/ColorUtils.dart';
 
 class InformationCard extends StatelessWidget {
   const InformationCard(
@@ -17,7 +18,20 @@ class InformationCard extends StatelessWidget {
   Widget build(BuildContext context) {
     //card不方便设置大小，所以用container替代
     return Container(
-      width: 0.95.sw,
+      padding: EdgeInsets.all(10.h),
+      decoration: BoxDecoration(
+        color: ColorUtils.news_card_bg,
+        borderRadius: BorderRadius.circular(10),
+        boxShadow: const [
+          BoxShadow(
+            color: ColorUtils.shadow,
+            blurRadius: 8.5,
+            offset: Offset(4, 4), // changes position of shadow
+          ),
+        ],
+      ),
+      width: 360.h,
+      height: 140.w,
       child: Row(
         children: [
           Image.asset(image),

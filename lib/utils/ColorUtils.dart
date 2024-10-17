@@ -20,4 +20,6 @@ abstract final class ColorUtils {
   static const Color text_brown = Color(0xff683619);//棕色字体的颜色
 
   static const Color shadow = Color(0xffD7C39C);//黑色字体的颜色
+
+  static const Color news_card_bg = Color(0xffFFFAE0);//起始页情绪资料卡片的背景色
 }
