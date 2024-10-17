@@ -8,17 +8,21 @@ abstract final class ColorUtils {
 
   static const Color bg_yellow = Color(0xffFFF5B6); //渐变背景一端的黄色
 
-  static const Color text_yellow = Color(0xffF2B10A); //黄色文字的颜色
+  static const Color light_bg = Color(0xffFFFEFA); //淡色背景
+
+  static const Color text_yellow = Color(0xffF2B10A); //黄色文字的颜色,也是一些icon的颜色
 
   static const Color card_bg = Color(0xffFFDF8A); //测试卡片的背景颜色
 
-  static const Color info_card_bg = Color(0xffFCE6AA); //个人信息框的颜色,也是tag的颜色
+  static const Color info_card_bg = Color(0xffFCE6AA); //个人信息框的颜色,也是tag的颜色，也是记录任务的背景色
 
   static const Color func_card_bg = Color(0xffFFF8E5); //功能页卡片背景颜色
 
   static const Color daily_sentence_bg = Color(0xffFFE18F); //每日一句卡片背景颜色
 
   static const Color text_brown = Color(0xff683619); //棕色字体的颜色
+
+  static const Color text_light_brown = Color(0xffA65E3); //浅棕色字体//不显示？
 
   static const Color shadow = Color(0xffD7C39C); //黑色字体的颜色
 
@@ -37,4 +41,8 @@ abstract final class ColorUtils {
   static const Color grad_light_pink = Color(0xffFEBABB); //渐变卡片的浅粉色
 
   static const Color grad_lighter_pink = Color(0xffFED5BF); //渐变卡片的浅粉色
+
+  static const Color tab_bg = Color(0xffFFE27F); //tab背景色
+
+  static const Color tab_shadow = Color(0xffE5B455); //tab阴影色
 }

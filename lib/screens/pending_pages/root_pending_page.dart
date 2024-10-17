@@ -1,3 +1,4 @@
+import 'package:emotion/utils/ColorUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -17,31 +18,31 @@ class _PendingPageState extends State<PendingPage> {
       length: 3,
       child: Container(
         decoration: const BoxDecoration(
-          color: Color(0xFFFEFA),
+          color: ColorUtils.light_bg
           //这里设置的颜色会覆盖tabarview里组件的背景色
         ),
         child: Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
             backgroundColor: Colors.transparent,
-              title: Text('事件记录'),
+              title: Text('事件记录',style: TextStyle(fontFamily: 'LanSong',fontSize: 24.sp,color: ColorUtils.text_brown),),
               centerTitle: true,
               bottom: TabBar(
                 dividerHeight: 0,
                 //indicator只是指示器，默认是下划线，但其实修改样式修改的是那个框框
                 indicator: BoxDecoration(
-                  color: Colors.yellow,
+                  color: ColorUtils.tab_bg,
                   borderRadius: BorderRadius.circular(10.r),
                   ///设置指示器的颜色
                   // color: Color(0x00FFE27F),
-                  // boxShadow: [
-                  //   BoxShadow(
-                  //     color: Colors.black,
-                  //     offset: Offset(0, -1),
-                  //     blurRadius: 0,
-                  //     spreadRadius: 0,
-                  //   )
-                  // ],
+                  boxShadow: const [
+                    BoxShadow(
+                      color: ColorUtils.tab_shadow,
+                      offset: Offset(0, 4),
+                      blurRadius: 4,
+                      spreadRadius: 0,
+                    )
+                  ],
                   ///设置阴影
                 ),
                 tabs: [
@@ -49,7 +50,7 @@ class _PendingPageState extends State<PendingPage> {
                     child: Row(
                       children: [
                         Icon(Icons.access_time),
-                        Text('事件记录'),
+                        Text('事件记录',style: TextStyle(fontFamily: 'LanSong',fontSize: 16.sp,color: ColorUtils.text_brown)),
                       ],
                     ),
                   ),
@@ -57,7 +58,7 @@ class _PendingPageState extends State<PendingPage> {
                     child: Row(
                       children: [
                         Icon(Icons.check),
-                        Text('每日总结'),
+                        Text('每日总结',style: TextStyle(fontFamily: 'LanSong',fontSize: 16.sp,color: ColorUtils.text_brown)),
                       ],
                     ),
                   ),
@@ -65,14 +66,13 @@ class _PendingPageState extends State<PendingPage> {
                     child: Row(
                       children: [
                         Icon(Icons.done_all),
-                        Text('提醒事项'),
+                        Text('提醒事项',style: TextStyle(fontFamily: 'LanSong',fontSize: 16.sp,color: ColorUtils.text_brown)),
                       ],
                     )
                   ),
                 ],
               )),
           body: TabBarView(children: [
-            //加入子页面后会报错
               EventLogPage(),
               DailySummaryPage(),
               ReminderPage(),
