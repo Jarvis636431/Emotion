@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:emotion/utils/ColorUtils.dart';
 
+///TODO；可以实现一下可重复的组件，设置标题和跳转链接即可
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
 
@@ -17,18 +18,43 @@ class _SettingsPageState extends State<SettingsPage> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back_ios, color: ColorUtils.text_brown),///icon 颜色
           onPressed: () {
             Navigator.pop(context);
           },
         ),
-        actions: [Text('设置')],),
+        actions: [Padding(
+          padding:EdgeInsets.only(right: 10.h),
+          child: Text('设置',style: TextStyle(fontSize: 20,color: ColorUtils.text_brown),),
+        )],),
           body:Padding(
             padding:  EdgeInsets.symmetric(horizontal: 20.h, vertical: 10.w),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children:[
-                Text('基本信息'),
+                Text('基本信息',style: TextStyle(fontSize: 20.sp,fontFamily: 'LanSong',color: ColorUtils.text_brown),),
+                SizedBox(height: 10.w),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  width: 351.h,
+                  height: 59.w,
+                  decoration: BoxDecoration(
+                    color: ColorUtils.info_card_bg,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 8.h),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text('头像',style: TextStyle(fontSize: 16.sp, color:ColorUtils.text_brown),),
+                        ///需要右边的箭头么
+                        Icon(Icons.arrow_forward_ios, color: ColorUtils.text_brown, size: 20.h,)
+                      ],
+                    ),
+                  ),
+                  ),
+                SizedBox(height: 10.w),
                 Container(
                   width: 351.h,
                   height: 59.w,
@@ -36,57 +62,88 @@ class _SettingsPageState extends State<SettingsPage> {
                     color: ColorUtils.info_card_bg,
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: Text('头像'),
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 8.h),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text('头像',style: TextStyle(fontSize: 16.sp, color:ColorUtils.text_brown),),
+                        ///需要右边的箭头么
+                        Icon(Icons.arrow_forward_ios, color: ColorUtils.text_brown, size: 20.h,)
+                      ],
+                    ),
                   ),
+                ),
                 SizedBox(height: 10.w),
                 Container(
-                  width: 600.h,
-                  height: 100.w,
+                  width: 351.h,
+                  height: 59.w,
                   decoration: BoxDecoration(
                     color: ColorUtils.info_card_bg,
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: Text('昵称'),
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 8.h),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text('昵称',style: TextStyle(fontSize: 16.sp, color:ColorUtils.text_brown),),
+                        Icon(Icons.arrow_forward_ios, color: ColorUtils.text_brown, size: 20.h,)
+                      ],
+                    ),
+                  ),
                 ),
                 SizedBox(height: 10.w),
+                Text('个人信息',style: TextStyle(fontSize: 20.sp,fontFamily: 'LanSong',color: ColorUtils.text_brown),),
+                SizedBox(height: 10.w),
                 Container(
-                  width: 600.h,
-                  height: 100.w,
+                  width: 351.h,
+                  height: 59.w,
                   decoration: BoxDecoration(
                     color: ColorUtils.info_card_bg,
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: Text('个性签名'),
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 8.h),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text('头像',style: TextStyle(fontSize: 16.sp, color:ColorUtils.text_brown),),
+                        ///需要右边的箭头么
+                        Icon(Icons.arrow_forward_ios, color: ColorUtils.text_brown, size: 20.h,)
+                      ],
+                    ),
+                  ),
                 ),
                 SizedBox(height: 10.w),
-                Text('个人信息'),
                 Container(
-                  width: 600.h,
-                  height: 100.w,
+                  width: 351.h,
+                  height: 59.w,
                   decoration: BoxDecoration(
                     color: ColorUtils.info_card_bg,
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: Text('性别'),
-                ),
-                SizedBox(height: 10.w),
-                Container(
-                  width: 600.h,
-                  height: 100.w,
-                  decoration: BoxDecoration(
-                    color: ColorUtils.info_card_bg,
-                    borderRadius: BorderRadius.circular(20),
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 8.h),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text('MBTI',style: TextStyle(fontSize: 16.sp, color:ColorUtils.text_brown),),
+                        ///需要右边的箭头么
+                        Icon(Icons.arrow_forward_ios, color: ColorUtils.text_brown, size: 20.h,)
+                      ],
+                    ),
                   ),
-                  child: Text('mbti'),
                 ),
-                Expanded(child: SizedBox()),
+                const Expanded(child: SizedBox()),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('用户协议'),
-                    Text('隐私政策'),
+                    Text('用户协议',style: TextStyle(fontSize: 14.sp,color: ColorUtils.text_brown)),
+                    Text('隐私政策',style: TextStyle(fontSize: 14.sp,color: ColorUtils.text_brown))
                   ],
                 ),
+                SizedBox(height: 20.w),
               ]
             ),
           ),
