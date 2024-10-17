@@ -18,4 +18,6 @@ abstract final class ColorUtils {
   static const Color daily_sentence_bg = Color(0xffFFE18F);//每日一句卡片背景颜色
 
   static const Color text_brown = Color(0xff683619);//棕色字体的颜色
+
+  static const Color shadow = Color(0xffD7C39C);//黑色字体的颜色
 }

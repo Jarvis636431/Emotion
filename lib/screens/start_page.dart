@@ -16,11 +16,11 @@ class StartPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-       gradient: LinearGradient(
-         colors: [ColorUtils.bg_white, ColorUtils.bg_yellow],
-         begin: Alignment.topCenter,
-         end: Alignment.bottomCenter,
-       ),
+        gradient: LinearGradient(
+          colors: [ColorUtils.bg_white, ColorUtils.bg_yellow],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+        ),
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -38,28 +38,55 @@ class StartPage extends StatelessWidget {
                   children: [
                     Text(
                       '今天心情如何？',
-                      style: TextStyle(fontSize: 36.sp,fontFamily: 'LanSong',color: ColorUtils.text_brown),
+                      style: TextStyle(
+                          fontSize: 36.sp,
+                          fontFamily: 'LanSong',
+                          color: ColorUtils.text_brown),
                     ),
                     Text(
                       '今日心情怎么样，来记录一下吧！',
-                      style: TextStyle(fontSize: 10.sp, color: ColorUtils.text_yellow),
+                      style: TextStyle(
+                          fontSize: 12.sp, color: ColorUtils.text_yellow),
                     ),
-                    TextButton(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const TodayMoodPage()));
-                        },
+                    SizedBox(
+                      height: 15.w,
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const TodayMoodPage()));
+                      },
+                      child: Container(
+                      //尺寸！
+                        alignment: Alignment.center,//可以直接这样设置居中子元素
+                        width: 120.h,
+                        height: 50.w,
+                        decoration: BoxDecoration(
+                          color: ColorUtils.bg_white,
+                          borderRadius: BorderRadius.circular(20.r),
+                          boxShadow: const [
+                            BoxShadow(
+                                color: ColorUtils.shadow,
+                                offset: Offset(0, 4),
+                                blurRadius: 4)
+                          ],
+                        ),
                         child: Text(
-                          '开始记录',
-                          style: TextStyle(fontSize: 18.sp),
-                        )),
+                          '进入记录',
+                          style: TextStyle(
+                              fontSize: 20.sp,
+                              fontFamily: 'LanSong',
+                              color: ColorUtils.text_brown),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
                 Image.asset(
-                  'assets/images/mbti_character/enf.png',
-                  width: 120.h,
+                  'assets/images/mbti_character/ent.png',
+                  width: 130.h,
                 ),
               ]),
               Padding(
@@ -67,59 +94,76 @@ class StartPage extends StatelessWidget {
                 child: Column(
                   children: [
                     Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: Column(
-                          children: [
-                            const Row(
+                      decoration: BoxDecoration(
+                        color: ColorUtils.bg_white,
+                        borderRadius: BorderRadius.circular(20),
+                        boxShadow: const [
+                          BoxShadow(
+                              color: ColorUtils.shadow,
+                              offset: Offset(0, 4),
+                              blurRadius: 4)
+                        ],
+                      ),
+                      height: 130.h,
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.all(10.r),
+                            child: const Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text('心情历史',style: TextStyle(fontFamily: 'LanSong',fontSize: 20,color: ColorUtils.text_brown),),
+                                Text(
+                                  '心情历史',
+                                  style: TextStyle(
+                                      fontFamily: 'LanSong',
+                                      fontSize: 20,
+                                      color: ColorUtils.text_brown),
+                                ),
                                 InkWell(
                                   child: Text('更多'),
                                 )
                               ],
                             ),
-                            Container(
-                              height: 100.h,
-                              child:
-                                  //ListView父组件必须是有限制宽高的
-                                  ListView(
-                                      scrollDirection: Axis.horizontal,
-                                      children: [
-                                    Image.asset(
-                                      'assets/images/mbti_emoji/enf/enf1.png',
-                                      width: 80.h,
-                                    ),
-                                    Image.asset(
-                                      'assets/images/mbti_emoji/enf/enf1.png',
-                                      width: 80.h,
-                                    ),
-                                    Image.asset(
-                                      'assets/images/mbti_emoji/enf/enf1.png',
-                                      width: 80.h,
-                                    ),
-                                    Image.asset(
-                                      'assets/images/mbti_emoji/enf/enf1.png',
-                                      width: 80.h,
-                                    ),
-                                    Image.asset(
-                                      'assets/images/mbti_emoji/enf/enf1.png',
-                                      width: 80.h,
-                                    ),
-                                    Image.asset(
-                                      'assets/images/mbti_emoji/enf/enf1.png',
-                                      width: 80.h,
-                                    ),
-                                    Image.asset(
-                                      'assets/images/mbti_emoji/enf/enf1.png',
-                                      width: 80.h,
-                                    ),
-                                  ]),
-                            ),
-                          ],
-                        )),
+                          ),
+                          //ListView父组件必须是有限制宽高的
+                          Container(
+                            height: 80.h,
+                            child: ListView(
+                                scrollDirection: Axis.horizontal,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/mbti_emoji/enf/enf1.png',
+                                    width: 80.h,
+                                  ),
+                                  Image.asset(
+                                    'assets/images/mbti_emoji/enf/enf1.png',
+                                    width: 80.h,
+                                  ),
+                                  Image.asset(
+                                    'assets/images/mbti_emoji/enf/enf1.png',
+                                    width: 80.h,
+                                  ),
+                                  Image.asset(
+                                    'assets/images/mbti_emoji/enf/enf1.png',
+                                    width: 80.h,
+                                  ),
+                                  Image.asset(
+                                    'assets/images/mbti_emoji/enf/enf1.png',
+                                    width: 80.h,
+                                  ),
+                                  Image.asset(
+                                    'assets/images/mbti_emoji/enf/enf1.png',
+                                    width: 80.h,
+                                  ),
+                                  Image.asset(
+                                    'assets/images/mbti_emoji/enf/enf1.png',
+                                    width: 80.h,
+                                  ),
+                                ]),
+                          ),
+                        ],
+                      ),
+                    ),
                     SizedBox(
                       height: 20.h,
                     ),
