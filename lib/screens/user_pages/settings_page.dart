@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:emotion/utils/ColorUtils.dart';
 
+import 'package:emotion/screens/user_pages/reset_mbti_page.dart';
 ///TODO；可以实现一下可重复的组件，设置标题和跳转链接即可
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -25,7 +26,7 @@ class _SettingsPageState extends State<SettingsPage> {
         ),
         actions: [Padding(
           padding:EdgeInsets.only(right: 10.h),
-          child: Text('设置',style: TextStyle(fontSize: 20,color: ColorUtils.text_brown),),
+          child: const Text('设置',style: TextStyle(fontSize: 20,color: ColorUtils.text_brown),),
         )],),
           body:Padding(
             padding:  EdgeInsets.symmetric(horizontal: 20.h, vertical: 10.w),
@@ -67,8 +68,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text('头像',style: TextStyle(fontSize: 16.sp, color:ColorUtils.text_brown),),
-                        ///需要右边的箭头么
+                        Text('昵称',style: TextStyle(fontSize: 16.sp, color:ColorUtils.text_brown),),
                         Icon(Icons.arrow_forward_ios, color: ColorUtils.text_brown, size: 20.h,)
                       ],
                     ),
@@ -87,7 +87,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text('昵称',style: TextStyle(fontSize: 16.sp, color:ColorUtils.text_brown),),
+                        Text('个性签名',style: TextStyle(fontSize: 16.sp, color:ColorUtils.text_brown),),
                         Icon(Icons.arrow_forward_ios, color: ColorUtils.text_brown, size: 20.h,)
                       ],
                     ),
@@ -101,14 +101,14 @@ class _SettingsPageState extends State<SettingsPage> {
                   height: 59.w,
                   decoration: BoxDecoration(
                     color: ColorUtils.info_card_bg,
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(20.r),
                   ),
                   child: Padding(
                     padding: EdgeInsets.symmetric(horizontal: 8.h),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text('头像',style: TextStyle(fontSize: 16.sp, color:ColorUtils.text_brown),),
+                        Text('性别',style: TextStyle(fontSize: 16.sp, color:ColorUtils.text_brown),),
                         ///需要右边的箭头么
                         Icon(Icons.arrow_forward_ios, color: ColorUtils.text_brown, size: 20.h,)
                       ],
@@ -116,22 +116,27 @@ class _SettingsPageState extends State<SettingsPage> {
                   ),
                 ),
                 SizedBox(height: 10.w),
-                Container(
-                  width: 351.h,
-                  height: 59.w,
-                  decoration: BoxDecoration(
-                    color: ColorUtils.info_card_bg,
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 8.h),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text('MBTI',style: TextStyle(fontSize: 16.sp, color:ColorUtils.text_brown),),
-                        ///需要右边的箭头么
-                        Icon(Icons.arrow_forward_ios, color: ColorUtils.text_brown, size: 20.h,)
-                      ],
+                InkWell(
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const ReSetMbtiPage()));
+                  },
+                  child: Container(
+                    width: 351.h,
+                    height: 59.w,
+                    decoration: BoxDecoration(
+                      color: ColorUtils.info_card_bg,
+                      borderRadius: BorderRadius.circular(20.r),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 8.h),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text('MBTI',style: TextStyle(fontSize: 16.sp, color:ColorUtils.text_brown),),
+                          ///需要右边的箭头么
+                          Icon(Icons.arrow_forward_ios, color: ColorUtils.text_brown, size: 20.h,)
+                        ],
+                      ),
                     ),
                   ),
                 ),

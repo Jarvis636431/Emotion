@@ -9,12 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]心情分析页面架构基本完成">
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/count_and_advise_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/count_and_advise_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/ColorUtils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/ColorUtils.dart" afterDir="false" />
-    </list>
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]分析了一下代码" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -405,7 +400,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729047727960</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="[fea]心情分析页面架构基本完成">
+      <option name="closed" value="true" />
+      <created>1729248010390</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1729248010390</updated>
+    </task>
+    <task id="LOCAL-00040" summary="[fea]分析了一下代码">
+      <option name="closed" value="true" />
+      <created>1729248180224</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1729248180224</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -421,7 +432,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[fea]完成了轮盘选择页面" />
     <MESSAGE value="[fea]初步实现待办界面的tabbar和tabbarview" />
     <MESSAGE value="[fea]完善了新建提醒页面" />
     <MESSAGE value="[fea]修改了命名逻辑，用父级defaulttabcontroller统一控制tab" />
@@ -446,6 +456,7 @@
     <MESSAGE value="[fea]情绪记录的几个页面完成，修复了一些bug" />
     <MESSAGE value="[fea]构建了事件记录页面的结构" />
     <MESSAGE value="[fea]心情分析页面架构基本完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fea]心情分析页面架构基本完成" />
+    <MESSAGE value="[fea]分析了一下代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fea]分析了一下代码" />
   </component>
 </project>
