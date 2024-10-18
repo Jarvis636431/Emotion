@@ -51,4 +51,8 @@ abstract final class ColorUtils {
   static const Color tab_shadow = Color(0xffE5B455); //tab阴影色
 
   static const Color subtitle = Color(0xff979797); //背景蓝色
+
+  static const Color tag_bg = Color(0xffFCDD71); //情绪分析页面的卡片背景
+
+  static const Color light_tag_bg = Color(0xffFEE996); //情绪分析页面的卡片背景
 }

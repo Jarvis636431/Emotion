@@ -9,8 +9,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]构建了事件记录页面的结构">
-      <change beforePath="$PROJECT_DIR$/lib/screens/user_pages/user_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/user_pages/user_page.dart" afterDir="false" />
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]心情分析页面架构基本完成">
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/count_and_advise_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/count_and_advise_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/ColorUtils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/ColorUtils.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -418,7 +421,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[fix]修改main.dart" />
     <MESSAGE value="[fea]完成了轮盘选择页面" />
     <MESSAGE value="[fea]初步实现待办界面的tabbar和tabbarview" />
     <MESSAGE value="[fea]完善了新建提醒页面" />
@@ -443,6 +445,7 @@
     <MESSAGE value="[fea]上一条实为设置了十六进制的颜色" />
     <MESSAGE value="[fea]情绪记录的几个页面完成，修复了一些bug" />
     <MESSAGE value="[fea]构建了事件记录页面的结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fea]构建了事件记录页面的结构" />
+    <MESSAGE value="[fea]心情分析页面架构基本完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fea]心情分析页面架构基本完成" />
   </component>
 </project>
