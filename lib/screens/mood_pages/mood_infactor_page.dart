@@ -54,15 +54,24 @@ class MoodInfactorPage extends StatelessWidget {
               ),
             ),
             Expanded(child: SizedBox()),
-            TextButton(
-              onPressed: () {
+            InkWell(
+              onTap: () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) =>  MoodCheckPage()));
+                        builder: (context) => MoodCheckPage()));
               },
-              child: const Text('是这样的'),
-            )
+              child: Container(
+                  width: 200.h,
+                  height: 60.w,
+                  decoration: BoxDecoration(
+                    color: ColorUtils.bg_white,
+                    borderRadius: BorderRadius.circular(20.r),
+                  ),
+                  alignment: Alignment.center,
+                  child:Text('是这样的',style: TextStyle(fontFamily: 'LanSong',fontSize: 24.sp,color: ColorUtils.text_brown),)),//修改字体
+            ),
+            SizedBox(height: 80.w),
           ],
         ),
       ),

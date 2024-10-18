@@ -35,15 +35,24 @@ class NowMoodPage extends StatelessWidget {
               child: Image.asset('assets/images/mbti_emoji/enf/enf1.png'),
             ),
             Expanded(child: SizedBox(height: 20.w)),
-            TextButton(
-              onPressed: () {
+            InkWell(
+              onTap: () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
                         builder: (context) => const MoodInfactorPage()));
               },
-              child: const Text('是这样的'),
-            )
+              child: Container(
+                  width: 200.h,
+                  height: 60.w,
+                  decoration: BoxDecoration(
+                    color: ColorUtils.bg_white,
+                    borderRadius: BorderRadius.circular(20.r),
+                  ),
+                  alignment: Alignment.center,
+                  child:Text('是这样的',style: TextStyle(fontFamily: 'LanSong',fontSize: 24.sp,color: ColorUtils.text_brown),)),//修改字体
+            ),
+            SizedBox(height: 80.w),
           ],
         ),
       ),
