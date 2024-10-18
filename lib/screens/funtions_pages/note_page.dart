@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:emotion/utils/ColorUtils.dart';
 
+import 'write_note_page.dart';
+
 class NotePage extends StatefulWidget {
   const NotePage({super.key});
 
@@ -52,25 +54,34 @@ class _NotePageState extends State<NotePage> {
               if (index == 0) {
                 return Padding(
                   padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 0),
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/images/notebackground.png'),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(Icons.add,
-                            size: 50.w, color: ColorUtils.bg_white),
-                        SizedBox(height: 10.w),
-                        Text(
-                          '写笔记',
-                          style: TextStyle(
-                              fontSize: 15.sp,),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return const WriteNotePage();
+                      }));
+                    },
+                    child: Container(
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/images/notebackground.png'),
+                          fit: BoxFit.cover,
                         ),
-                      ],
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.add,
+                              size: 50.w, color: ColorUtils.bg_white),
+                          SizedBox(height: 10.w),
+                          Text(
+                            '写笔记',
+                            style: TextStyle(
+                              fontSize: 15.sp,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 );
