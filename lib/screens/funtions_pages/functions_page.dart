@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:emotion/screens/funtions_pages/fill_color_page.dart';
+import 'package:emotion/screens/funtions_pages/choose_picture_page.dart';
 import 'package:emotion/screens/funtions_pages/think_page.dart';
+import 'package:emotion/screens/funtions_pages/note_page.dart';
 
 import 'package:emotion/utils/ColorUtils.dart';
 
@@ -46,7 +47,7 @@ class _FunctionsPageState extends State<FunctionsPage> {
                 //这样的自定义元素太多就不方便封装
             InkWell(
               onTap: () {
-                Navigator.push(context,MaterialPageRoute(builder: (context) => const FillColorPage()));
+                Navigator.push(context,MaterialPageRoute(builder: (context) =>  PictureChoosePage()));
               },
               child: Container(
                 width: 400.h,
@@ -260,105 +261,107 @@ class _FunctionsPageState extends State<FunctionsPage> {
             SizedBox(
               height: 20.w,
             ),
-            Container(
-              width: 400.h,
-              height: 127.w,
-              decoration: BoxDecoration(
-                color: ColorUtils.func_card_bg,
-                borderRadius: BorderRadius.circular(20.r),
-                boxShadow: const [
-                  BoxShadow(
-                    color: ColorUtils.shadow,
-                    offset: Offset(0, 4),
-                    blurRadius: 4,
-                  ),
-                ],
-              ),
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20.h, vertical: 15.w),
-                child: Row(
-                  ///TODO:设计图尺寸没法实现，需要重新设计
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          '插画填色游戏',
-                          style: TextStyle(
-                              fontFamily: 'LanSong',
-                              fontSize: 21.sp,
-                              color: ColorUtils.text_brown),
-                        ),
-
-                        ///设置divider
-                        Divider(
-                          color: Colors.green,
-                          height: 10.w,
-                          thickness: 100.h,
-                        ),
-                        Text(
-                          '“一笔一画勾勒间，寻觅心灵的慰藉”',
-                          style: TextStyle(fontSize: 13.sp),
-                        ),
-                        SizedBox(
-                          height: 10.w,
-                        ),
-                        Row(
-                          children: [
-                            Container(
-                              decoration: BoxDecoration(
-                                color: ColorUtils.info_card_bg,
-                                borderRadius: BorderRadius.circular(6.r),
-                              ),
-                              child: Padding(
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: 5.h, vertical: 3.w),
-                                child: Text('#为您推荐'),
-                              ),
-                            ),
-                            SizedBox(
-                              width: 5.h,
-                            ),
-                            Container(
-                              decoration: BoxDecoration(
-                                color: ColorUtils.info_card_bg,
-                                borderRadius: BorderRadius.circular(6.r),
-                              ),
-                              child: Padding(
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: 5.h, vertical: 3.w),
-                                child: Text('美术疗愈'),
-                              ),
-                            ),
-                          ],
-                        )
-                      ],
+            InkWell(
+              onTap: () {
+                Navigator.push(context,MaterialPageRoute(builder: (context) => NotePage()));
+              },
+              child: Container(
+                width: 400.h,
+                height: 127.w,
+                decoration: BoxDecoration(
+                  color: ColorUtils.func_card_bg,
+                  borderRadius: BorderRadius.circular(20.r),
+                  boxShadow: const [
+                    BoxShadow(
+                      color: ColorUtils.shadow,
+                      offset: Offset(0, 4),
+                      blurRadius: 4,
                     ),
-                    SizedBox(
-                      width: 10.h,
-                    ),
-                    Container(
-                      width: 79.h,
-                      height: 79.w,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20.r),
-                        gradient: const LinearGradient(
-                          colors: [
-                            ColorUtils.grad_light_pink,
-                            ColorUtils.grad_lighter_pink
-                          ],
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                        ),
-                        image: const DecorationImage(
-                          image: AssetImage(
-                              'assets/images/function/takenotes.png'),
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                    )
                   ],
+                ),
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 20.h, vertical: 15.w),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            '写日记',
+                            style: TextStyle(
+                                fontFamily: 'LanSong',
+                                fontSize: 21.sp,
+                                color: ColorUtils.text_brown),
+                          ),
+                          Divider(
+                            color: Colors.green,
+                            height: 10.w,
+                            thickness: 100.h,
+                          ),
+                          Text(
+                            '“音乐为径，愈见真我，自在安然”',///？？？神秘文字
+                            style: TextStyle(fontSize: 13.sp),
+                          ),
+                          SizedBox(
+                            height: 10.w,
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: ColorUtils.info_card_bg,
+                                  borderRadius: BorderRadius.circular(6.r),
+                                ),
+                                child: Padding(
+                                  padding: EdgeInsets.symmetric(
+                                      horizontal: 5.h, vertical: 3.w),
+                                  child: Text('#为您推荐'),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 5.h,
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: ColorUtils.info_card_bg,
+                                  borderRadius: BorderRadius.circular(6.r),
+                                ),
+                                child: Padding(
+                                  padding: EdgeInsets.symmetric(
+                                      horizontal: 5.h, vertical: 3.w),
+                                  child: Text('文字疗愈'),
+                                ),
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                      SizedBox(
+                        width: 10.h,
+                      ),
+                      Container(
+                        width: 79.h,
+                        height: 79.w,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20.r),
+                          gradient: const LinearGradient(
+                            colors: [
+                              ColorUtils.grad_light_pink,
+                              ColorUtils.grad_lighter_pink
+                            ],
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                          ),
+                          image: const DecorationImage(
+                            image: AssetImage(
+                                'assets/images/function/takenotes.png'),
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),
