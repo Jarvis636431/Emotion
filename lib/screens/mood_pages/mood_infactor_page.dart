@@ -1,5 +1,6 @@
+import 'package:emotion/screens/mood_pages/check_mood_page.dart';
 import 'package:flutter/material.dart';
-
+import 'package:emotion/utils/ColorUtils.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MoodInfactorPage extends StatelessWidget {
@@ -21,12 +22,12 @@ class MoodInfactorPage extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           leading: IconButton(
-            icon: const Icon(Icons.arrow_back),
+            icon: const Icon(Icons.arrow_back_ios,color: ColorUtils.text_brown,),
             onPressed: () {
               Navigator.pop(context);
             },
           ),
-          title: const Text('是什么影响了你的情绪？'),
+          title: Text('是什么影响了你的情绪？',style: TextStyle(fontSize: 32.sp,fontFamily: 'LanSong',color: ColorUtils.text_brown),),
         ),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -58,7 +59,7 @@ class MoodInfactorPage extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const MoodInfactorPage()));
+                        builder: (context) =>  MoodCheckPage()));
               },
               child: const Text('是这样的'),
             )
