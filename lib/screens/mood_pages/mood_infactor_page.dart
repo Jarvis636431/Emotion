@@ -9,14 +9,13 @@ class MoodInfactorPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      ///解决背景变暗的问题
       decoration: BoxDecoration(
-        image: const DecorationImage(
-          image: AssetImage('assets/images'
-              '/background/otherbackgrounds/infactorBackground.png'),
+        image: DecorationImage(
+          image: AssetImage('assets/images/background/otherbackgrounds/infactor_bg.png'),
           fit: BoxFit.fill,
         ),
       ),
+      ///TODO:flutter神秘的图片加载问题，等一会就好了，刚粘贴进去的图片不能立刻加载，而且也不能删除之前不用的图片，否则热重载会报错
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(

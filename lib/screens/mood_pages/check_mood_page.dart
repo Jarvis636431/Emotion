@@ -20,7 +20,7 @@ class _MoodCheckPageState extends State<MoodCheckPage>{
         title: const Text('打卡成功！'),
         actions: [
           IconButton(
-            icon: const Icon(Icons.star),
+            icon: const Icon(Icons.star,color: Colors.yellow,),
             onPressed: (){
 
             },
