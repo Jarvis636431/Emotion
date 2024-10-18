@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:emotion/widgets/user_info_card.dart';
 import 'package:emotion/utils/ColorUtils.dart';
+
 
 import 'package:emotion/screens/user_pages/reset_mbti_page.dart';
 ///TODO；可以实现一下可重复的组件，设置标题和跳转链接即可
@@ -116,30 +117,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   ),
                 ),
                 SizedBox(height: 10.w),
-                InkWell(
-                  onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const ReSetMbtiPage()));
-                  },
-                  child: Container(
-                    width: 351.h,
-                    height: 59.w,
-                    decoration: BoxDecoration(
-                      color: ColorUtils.info_card_bg,
-                      borderRadius: BorderRadius.circular(20.r),
-                    ),
-                    child: Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 8.h),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text('MBTI',style: TextStyle(fontSize: 16.sp, color:ColorUtils.text_brown),),
-                          ///需要右边的箭头么
-                          Icon(Icons.arrow_forward_ios, color: ColorUtils.text_brown, size: 20.h,)
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
+                UserInfoCard(title: 'MBTI', destination: ReSetMbtiPage()),
                 const Expanded(child: SizedBox()),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
