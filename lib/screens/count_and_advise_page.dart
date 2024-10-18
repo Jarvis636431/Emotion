@@ -21,6 +21,7 @@ class _CountAndAdvisePageState extends State<CountAndAdvisePage> {
             end: Alignment.bottomCenter,
           ),
         ),
+        //这样设置的背景颜色其实不是根据页面内容的长度渐变的，而是只是从屏幕底部渐变到屏幕顶部，所以滑动的时候也不变
         child: Scaffold(
             backgroundColor: Colors.transparent,
             appBar: AppBar(
