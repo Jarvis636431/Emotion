@@ -55,4 +55,10 @@ abstract final class ColorUtils {
   static const Color tag_bg = Color(0xffFCDD71); //情绪分析页面的卡片背景
 
   static const Color light_tag_bg = Color(0xffFEE996); //情绪分析页面的卡片背景
+
+  static const Color daily_card_1 = Color(0xffFEF7C1); //每日一句第一层
+
+  static const Color daily_card_2 = Color(0xfff9df9a); //每日一句第二层
+
+  static const Color daily_card_3 = Color(0xffF4D072); //每日一句第二层
 }

@@ -5,6 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:emotion/utils/ColorUtils.dart';
 
 import 'package:emotion/screens/user_pages/settings_page.dart';
+import 'package:emotion/screens/user_pages/daily_sentence_page.dart';
 
 class UserPage extends StatefulWidget {
   const UserPage({super.key});
@@ -99,27 +100,35 @@ class _UserPageState extends State<UserPage> {
                 SizedBox(
                   height: 15.w,
                 ),
-                Container(
-                  width: 400.h,
-                  height: 184.w,
-                  decoration: BoxDecoration(
-                    color: ColorUtils.daily_sentence_bg,
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: ColorUtils.shadow,
-                        offset: Offset(0, 4),
-                        blurRadius: 4,
-                      ),
-                    ],
-                  ),
-                  child: Center(
-                    child: Text(
-                      '每日一言',
-                      style: TextStyle(
-                          fontSize: 20.sp,
-                          color: ColorUtils.text_brown),
-                    )
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => DailySentencePage()));
+                  },
+                  child: Container(
+                    width: 400.h,
+                    height: 184.w,
+                    decoration: BoxDecoration(
+                      color: ColorUtils.daily_sentence_bg,
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: const [
+                        BoxShadow(
+                          color: ColorUtils.shadow,
+                          offset: Offset(0, 4),
+                          blurRadius: 4,
+                        ),
+                      ],
+                    ),
+                    child: Center(
+                      child: Text(
+                        '每日一言',
+                        style: TextStyle(
+                            fontSize: 20.sp,
+                            color: ColorUtils.text_brown),
+                      )
+                    ),
                   ),
                 ),
                 SizedBox(
