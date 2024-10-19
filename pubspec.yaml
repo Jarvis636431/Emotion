@@ -79,6 +79,7 @@ flutter:
     - assets/images/mbti_emoji/isp/
     - assets/images/mbti_emoji/isj/
     - assets/images/function/
+    - assets/images/function/note_icons/
     - assets/images/mood_infactor/
     - assets/audio/
     - assets/fonts/

@@ -69,8 +69,8 @@ class _WriteNotePageState extends State<WriteNotePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Container(
-                        width: 60.h,
-                        height: 30.w,
+                        width: 50.h,
+                        height: 25.w,
                         decoration: BoxDecoration(
                           color: ColorUtils.tag_bg,
                           borderRadius: BorderRadius.circular(20.r),
@@ -83,8 +83,8 @@ class _WriteNotePageState extends State<WriteNotePage> {
                                 color: ColorUtils.text_brown)),
                       ),
                       Container(
-                        width: 60.h,
-                        height: 30.w,
+                        width: 50.h,
+                        height: 25.w,
                         decoration: BoxDecoration(
                           color: ColorUtils.tag_bg,
                           borderRadius: BorderRadius.circular(20.r),
@@ -97,8 +97,8 @@ class _WriteNotePageState extends State<WriteNotePage> {
                                 color: ColorUtils.text_brown)),
                       ),
                       Container(
-                        width: 60.h,
-                        height: 30.w,
+                        width: 50.h,
+                        height: 25.w,
                         decoration: BoxDecoration(
                           color: ColorUtils.tag_bg,
                           borderRadius: BorderRadius.circular(20.r),
@@ -111,8 +111,8 @@ class _WriteNotePageState extends State<WriteNotePage> {
                                 color: ColorUtils.text_brown)),
                       ),
                       Container(
-                        width: 60.h,
-                        height: 30.w,
+                        width: 50.h,
+                        height: 25.w,
                         decoration: BoxDecoration(
                           color: ColorUtils.tag_bg,
                           borderRadius: BorderRadius.circular(20.r),
@@ -125,8 +125,8 @@ class _WriteNotePageState extends State<WriteNotePage> {
                                 color: ColorUtils.text_brown)),
                       ),
                       Container(
-                        width: 60.h,
-                        height: 30.w,
+                        width: 50.h,
+                        height: 25.w,
                         decoration: BoxDecoration(
                           color: ColorUtils.tag_bg,
                           borderRadius: BorderRadius.circular(20.r),
@@ -144,89 +144,35 @@ class _WriteNotePageState extends State<WriteNotePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Container(
-                        width: 60.h,
-                        height: 30.w,
-                        decoration: BoxDecoration(
-                          color: ColorUtils.tag_bg,
-                          borderRadius: BorderRadius.circular(20.r),
-                        ),
-                        alignment: Alignment.center,
-                        child: Text('#开心',
-                            style: TextStyle(
-                                fontFamily: 'LanSong',
-                                fontSize: 20.sp,
-                                color: ColorUtils.text_brown)),
-                      ),
-                      Container(
-                        width: 60.h,
-                        height: 30.w,
-                        decoration: BoxDecoration(
-                          color: ColorUtils.tag_bg,
-                          borderRadius: BorderRadius.circular(20.r),
-                        ),
-                        alignment: Alignment.center,
-                        child: Text('#开心',
-                            style: TextStyle(
-                                fontFamily: 'LanSong',
-                                fontSize: 20.sp,
-                                color: ColorUtils.text_brown)),
-                      ),
-                      Container(
-                        width: 60.h,
-                        height: 30.w,
-                        decoration: BoxDecoration(
-                          color: ColorUtils.tag_bg,
-                          borderRadius: BorderRadius.circular(20.r),
-                        ),
-                        alignment: Alignment.center,
-                        child: Text('#开心',
-                            style: TextStyle(
-                                fontFamily: 'LanSong',
-                                fontSize: 20.sp,
-                                color: ColorUtils.text_brown)),
-                      ),
-                      Container(
-                        width: 60.h,
-                        height: 30.w,
-                        decoration: BoxDecoration(
-                          color: ColorUtils.tag_bg,
-                          borderRadius: BorderRadius.circular(20.r),
-                        ),
-                        alignment: Alignment.center,
-                        child: Text('#开心',
-                            style: TextStyle(
-                                fontFamily: 'LanSong',
-                                fontSize: 20.sp,
-                                color: ColorUtils.text_brown)),
-                      ),
-                      Container(
-                        width: 60.h,
-                        height: 30.w,
-                        decoration: BoxDecoration(
-                          color: ColorUtils.tag_bg,
-                          borderRadius: BorderRadius.circular(20.r),
-                        ),
-                        alignment: Alignment.center,
-                        child: Text('#开心',
-                            style: TextStyle(
-                                fontFamily: 'LanSong',
-                                fontSize: 20.sp,
-                                color: ColorUtils.text_brown)),
-                      ),
+                     Image.asset('assets/images/function/note_icons/note_icon_angry.png',width: 50.h,),
+                      Image.asset('assets/images/function/note_icons/note_icon_sad.png',width: 50.h,),
+                      Image.asset('assets/images/function/note_icons/note_icon_normal.png',width: 50.h,),
+                      Image.asset('assets/images/function/note_icons/note_icon_clever.png',width: 50.h,),
+                      Image.asset('assets/images/function/note_icons/note_icon_happy.png',width: 50.h,),
                     ],
                   ),
                   SizedBox(height: 15.w),
                   Text('（可点击拖拽安放贴纸）', style: TextStyle(fontSize: 12.sp)),
-                  SizedBox(height: 15.w),
+                  SizedBox(height: 35.w),
                   ///TODO:导入素材
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      //实现精确对齐
                       Column(
-                        children: [],
+                        children: [
+                          Image.asset('assets/images/function/note_icons/rewrite.png',width: 35.h,),
+                          SizedBox(height: 5.w),
+                          Text('重写',style: TextStyle(fontSize: 12.sp),),
+                        ],
                       ),
+                      SizedBox(width: 20.w),
                       Column(
-                        children: [],
+                        children: [
+                          Image.asset('assets/images/function/note_icons/import_image.png',width: 40.h,),
+                          SizedBox(height: 5.w),
+                          Text('导入图片',style: TextStyle(fontSize: 12.sp),),
+                        ],
                       )
                     ],
                   )

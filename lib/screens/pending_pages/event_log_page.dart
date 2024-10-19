@@ -78,15 +78,22 @@ class _EventLogPageState extends State<EventLogPage> {
               ],
             ),
             SizedBox(
-              height: 10.w,
+              height: 20.w,
             ),
             Row(
               children: [
                 Column(
                   children: [
                     Container(
+                      width: 55.h,
+                      height: 66.w,
+                      decoration: BoxDecoration(
+                        color: ColorUtils.bg_yellow,
+                        borderRadius: BorderRadius.circular(20.r),
+                        border: Border.all(color: ColorUtils.text_yellow),
+                      ),
                       child: Column(children: [
-                        // Image.asset()
+                        Icon(Icons.access_time),
                         Text('吃饭')
                       ]),
                     ),
@@ -106,7 +113,7 @@ class _EventLogPageState extends State<EventLogPage> {
             //关键在于container的自适应高度，滚动的话内嵌listbview即可
             Container(
               ///TODO:实现内阴影
-              height: 400.w,
+              height: 350.w,
               decoration: BoxDecoration(
                 color: ColorUtils.info_card_bg,
                 borderRadius: BorderRadius.only(topLeft: Radius.circular(20.r), topRight: Radius.circular(20.r)),
@@ -115,7 +122,10 @@ class _EventLogPageState extends State<EventLogPage> {
                 itemCount: 10,
                 itemBuilder: (context, index) {
                   return ListTile(
+                    leading: Icon(Icons.access_time),
                     title: Text('item $index'),
+                    subtitle: Text('subtitle $index'),
+                    trailing: Icon(Icons.add),
                   );
                 },
               ),
