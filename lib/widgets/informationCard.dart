@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -18,7 +19,7 @@ class InformationCard extends StatelessWidget {
   Widget build(BuildContext context) {
     //card不方便设置大小，所以用container替代
     return Container(
-      padding: EdgeInsets.all(10.h),
+      padding: EdgeInsets.all(12.h),
       decoration: BoxDecoration(
         color: ColorUtils.news_card_bg,
         borderRadius: BorderRadius.circular(10),
@@ -30,31 +31,59 @@ class InformationCard extends StatelessWidget {
           ),
         ],
       ),
-      width: 360.h,
+      width: 300.h,
       height: 140.w,
       child: Row(
         children: [
           Image.asset(image),
+          SizedBox(
+            width: 20.w,
+          ),
           Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
                 title,
                 style: TextStyle(fontSize: 20.sp),
+                textAlign: TextAlign.start,
               ),
               Text(
                 subtitle,
                 style: TextStyle(fontSize: 14.sp),
               ),
+              Row(
+                children: [
+                  SizedBox(
+                    width: 100.w,
+                  ),
+                  Container(
+                    width: 50.h,
+                    height: 25.w,
+                    decoration: BoxDecoration(
+                      color: ColorUtils.tag_bg,
+                      borderRadius: BorderRadius.circular(10.r),
+                      boxShadow: const [
+                        BoxShadow(
+                          color: ColorUtils.shadow,
+                          blurRadius: 4,
+                          offset: Offset(0, 4), // changes position of shadow
+                        ),
+                      ],
+                    ),
+                    alignment: Alignment.center,
+                    child: Text(
+                      '查看',
+                      style: TextStyle(
+                        fontSize: 16.sp,
+                        color: ColorUtils.text_brown,
+                      ),
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
-          ///查看按钮的布局
-          // Column(
-          //   mainAxisAlignment: MainAxisAlignment.end,
-          //   children: [TextButton(
-          //     child: Text('查看'),
-          //     onPressed: () {},
-          //   )],)
         ],
       ),
     );

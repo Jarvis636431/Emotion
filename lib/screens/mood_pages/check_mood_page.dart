@@ -1,3 +1,4 @@
+import 'package:emotion/home_page.dart';
 import 'package:emotion/utils/ColorUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -16,7 +17,8 @@ class _MoodCheckPageState extends State<MoodCheckPage> {
             icon:
                 const Icon(Icons.arrow_back_ios, color: ColorUtils.text_brown),
             onPressed: () {
-              Navigator.pop(context);
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => HomePage()));
             },
           ),
           title: Text('打卡成功！',
