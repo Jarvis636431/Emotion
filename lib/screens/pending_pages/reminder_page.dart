@@ -48,7 +48,6 @@ class _ReminderPageState extends State<ReminderPage> {
               decoration: BoxDecoration(
                 color: ColorUtils.info_card_bg,
                 borderRadius: BorderRadius.circular(20.r),
-
                 ///设计图神秘圆角
               ),
               child: Padding(

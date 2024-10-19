@@ -116,22 +116,58 @@ class _NewReminderState extends State<NewReminder> {
               height: 10.w,
             ),
             Text('提醒日期',style: TextStyle(fontSize: 20.sp,fontFamily: 'LanSong',color: ColorUtils.text_brown),),
-            Row(),
-            Text('响铃重复日期',style: TextStyle(fontSize: 20.sp,fontFamily: 'LanSong'),),
-            Row(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text('法定节假日不提醒',style: TextStyle(fontSize: 20.sp),),
-                Switch(
-                  value: _isObscure,
-                  onChanged: (value) {
-                    setState(() {
-                      _isObscure = value;
-                    });
-                  },
-                )
-              ],
+            SizedBox(
+              height: 10.w,
+            ),
+            Container(
+              width: 365.w,
+              height: 180.w,
+              color: ColorUtils.bg_yellow,
+            ),
+            SizedBox(
+              height: 40.w,
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10.h,vertical: 5.w),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('响铃重复日期',style: TextStyle(fontSize: 20.sp,fontFamily: 'LanSong'),),
+                  SizedBox(
+                    height: 10.w,
+                  ),
+                  Container(
+                    width:365.h,
+                    height: 140.w,
+                    color: ColorUtils.bg_yellow,
+                  ),
+                  SizedBox(
+                    height: 10.w,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text('法定节假日不提醒',style: TextStyle(fontSize: 20.sp),),
+                      Switch(
+                        activeColor: ColorUtils.text_yellow,//设置的是指示器在激活时的颜色
+                        activeTrackColor: ColorUtils.bg_yellow,//设置的是轨道在激活时的颜色
+                        inactiveThumbColor: ColorUtils.text_brown,//设置的是指示器在未激活时的颜色
+                        inactiveTrackColor: ColorUtils.bg_yellow,//设置的是轨道在未激活时的轨道颜色
+                        //trackcolor和trackoutlinecolor该怎么设置？
+                        value: _isObscure,
+                        onChanged: (value) {
+                          setState(() {
+                            _isObscure = value;
+                          });
+                        },
+                      )
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20.w,
             ),
             Text('激励语',style: TextStyle(fontFamily: 'LanSong',fontSize: 20.sp,color: ColorUtils.text_brown),),
             Container(
