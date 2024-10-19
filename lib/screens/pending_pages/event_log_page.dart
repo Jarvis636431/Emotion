@@ -4,6 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:emotion/utils/ColorUtils.dart';
 
 class EventLogPage extends StatefulWidget {
+  const EventLogPage({super.key});
+
   @override
   _EventLogPageState createState() => _EventLogPageState();
 }
@@ -81,6 +83,7 @@ class _EventLogPageState extends State<EventLogPage> {
               height: 20.w,
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Column(
                   children: [
@@ -88,22 +91,224 @@ class _EventLogPageState extends State<EventLogPage> {
                       width: 55.h,
                       height: 66.w,
                       decoration: BoxDecoration(
-                        color: ColorUtils.bg_yellow,
+                        color: ColorUtils.info_card_bg,
                         borderRadius: BorderRadius.circular(20.r),
-                        border: Border.all(color: ColorUtils.text_yellow),
+                        border: Border.all(color: ColorUtils.border_yellow),
                       ),
-                      child: Column(children: [
-                        Icon(Icons.access_time),
-                        Text('吃饭')
+                      child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 35.h,
+                              height: 35.h, // 确保Container是一个正方形
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: ColorUtils.circle,
+                              ),
+                              //需要设置一下center才可以避免image跟随container的大小变化
+                              child: Center(
+                                child: Image.asset(
+                                  'assets/images/click.png',
+                                  width: 20.h, // 设置Image的宽度
+                                  height: 20.h, // 设置Image的高度
+                                ),
+                              ),
+                            ),
+                        Text('吃饭',style: TextStyle(color: ColorUtils.text_brown,fontSize: 16.sp))
                       ]),
                     ),
-                    Icon(Icons.add_circle)
+                    SizedBox(
+                      height: 10.w,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: ColorUtils.bg_yellow,
+                        border: Border.all(color: ColorUtils.text_yellow),
+                      ),
+                        child: Icon(Icons.add, color: ColorUtils.text_brown,))
                   ],
-                )
+                ),
+                Column(
+                  children: [
+                    Container(
+                      width: 55.h,
+                      height: 66.w,
+                      decoration: BoxDecoration(
+                        color: ColorUtils.info_card_bg,
+                        borderRadius: BorderRadius.circular(20.r),
+                        border: Border.all(color: ColorUtils.border_yellow),
+                      ),
+                      child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 35.h,
+                              height: 35.h, // 确保Container是一个正方形
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: ColorUtils.circle,
+                              ),
+                              //需要设置一下center才可以避免image跟随container的大小变化
+                              child: Center(
+                                child: Image.asset(
+                                  'assets/images/click.png',
+                                  width: 20.h, // 设置Image的宽度
+                                  height: 20.h, // 设置Image的高度
+                                ),
+                              ),
+                            ),
+                            Text('吃饭',style: TextStyle(color: ColorUtils.text_brown,fontSize: 16.sp))
+                          ]),
+                    ),
+                    SizedBox(
+                      height: 10.w,
+                    ),
+                    Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: ColorUtils.bg_yellow,
+                          border: Border.all(color: ColorUtils.text_yellow),
+                        ),
+                        child: Icon(Icons.add, color: ColorUtils.text_brown,))
+                  ],
+                ),
+                Column(
+                  children: [
+                    Container(
+                      width: 55.h,
+                      height: 66.w,
+                      decoration: BoxDecoration(
+                        color: ColorUtils.info_card_bg,
+                        borderRadius: BorderRadius.circular(20.r),
+                        border: Border.all(color: ColorUtils.border_yellow),
+                      ),
+                      child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 35.h,
+                              height: 35.h, // 确保Container是一个正方形
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: ColorUtils.circle,
+                              ),
+                              //需要设置一下center才可以避免image跟随container的大小变化
+                              child: Center(
+                                child: Image.asset(
+                                  'assets/images/click.png',
+                                  width: 20.h, // 设置Image的宽度
+                                  height: 20.h, // 设置Image的高度
+                                ),
+                              ),
+                            ),
+                            Text('吃饭',style: TextStyle(color: ColorUtils.text_brown,fontSize: 16.sp))
+                          ]),
+                    ),
+                    SizedBox(
+                      height: 10.w,
+                    ),
+                    Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: ColorUtils.bg_yellow,
+                          border: Border.all(color: ColorUtils.text_yellow),
+                        ),
+                        child: Icon(Icons.add, color: ColorUtils.text_brown,))
+                  ],
+                ),
+                Column(
+                  children: [
+                    Container(
+                      width: 55.h,
+                      height: 66.w,
+                      decoration: BoxDecoration(
+                        color: ColorUtils.info_card_bg,
+                        borderRadius: BorderRadius.circular(20.r),
+                        border: Border.all(color: ColorUtils.border_yellow),
+                      ),
+                      child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 35.h,
+                              height: 35.h, // 确保Container是一个正方形
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: ColorUtils.circle,
+                              ),
+                              //需要设置一下center才可以避免image跟随container的大小变化
+                              child: Center(
+                                child: Image.asset(
+                                  'assets/images/click.png',
+                                  width: 20.h, // 设置Image的宽度
+                                  height: 20.h, // 设置Image的高度
+                                ),
+                              ),
+                            ),
+                            Text('吃饭',style: TextStyle(color: ColorUtils.text_brown,fontSize: 16.sp))
+                          ]),
+                    ),
+                    SizedBox(
+                      height: 10.w,
+                    ),
+                    Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: ColorUtils.bg_yellow,
+                          border: Border.all(color: ColorUtils.text_yellow),
+                        ),
+                        child: Icon(Icons.add, color: ColorUtils.text_brown,))
+                  ],
+                ),
+                Column(
+                  children: [
+                    Container(
+                      width: 55.h,
+                      height: 66.w,
+                      decoration: BoxDecoration(
+                        color: ColorUtils.info_card_bg,
+                        borderRadius: BorderRadius.circular(20.r),
+                        border: Border.all(color: ColorUtils.border_yellow),
+                      ),
+                      child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 35.h,
+                              height: 35.h, // 确保Container是一个正方形
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: ColorUtils.circle,
+                              ),
+                              //需要设置一下center才可以避免image跟随container的大小变化
+                              child: Center(
+                                child: Image.asset(
+                                  'assets/images/click.png',
+                                  width: 20.h, // 设置Image的宽度
+                                  height: 20.h, // 设置Image的高度
+                                ),
+                              ),
+                            ),
+                            Text('吃饭',style: TextStyle(color: ColorUtils.text_brown,fontSize: 16.sp))
+                          ]),
+                    ),
+                    SizedBox(
+                      height: 10.w,
+                    ),
+                    Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: ColorUtils.bg_yellow,
+                          border: Border.all(color: ColorUtils.text_yellow),
+                        ),
+                        child: Icon(Icons.add, color: ColorUtils.text_brown,))
+                  ],
+                ),
               ],
             ),
             SizedBox(
-              height: 10.w,
+              height: 20.w,
             ),
             Text('进行中的目标',style: TextStyle(fontFamily: 'LanSong',color: ColorUtils.text_brown,fontSize: 20.sp),),
             SizedBox(
@@ -113,21 +318,45 @@ class _EventLogPageState extends State<EventLogPage> {
             //关键在于container的自适应高度，滚动的话内嵌listbview即可
             Container(
               ///TODO:实现内阴影
-              height: 350.w,
+              height: 420.w,
               decoration: BoxDecoration(
                 color: ColorUtils.info_card_bg,
                 borderRadius: BorderRadius.only(topLeft: Radius.circular(20.r), topRight: Radius.circular(20.r)),
               ),
-              child: ListView.builder(
-                itemCount: 10,
-                itemBuilder: (context, index) {
-                  return ListTile(
-                    leading: Icon(Icons.access_time),
-                    title: Text('item $index'),
-                    subtitle: Text('subtitle $index'),
-                    trailing: Icon(Icons.add),
-                  );
-                },
+              child: Padding(
+                padding: EdgeInsets.symmetric(vertical: 20.w),
+                child: ListView.builder(
+                  itemCount: 10,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      margin: EdgeInsets.symmetric(horizontal: 20.h, vertical: 10.w),
+                      decoration: BoxDecoration(
+                        color: ColorUtils.bg_white,
+                        borderRadius: BorderRadius.circular(20.r),
+                      ),
+                      child: ListTile(
+                        leading: Container(
+                          width: 50.h,
+                          height: 50.w,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: ColorUtils.bg_yellow,
+                          ),
+                          child: Center(
+                            child: Image.asset(
+                              'assets/images/click.png',
+                              width: 20.h,
+                              height: 20.h,
+                            )
+                          ),
+                        ),
+                        title: Text('工作',style: TextStyle(fontSize: 20.sp,color: ColorUtils.text_brown),),
+                        subtitle: Text('内容$index',style: TextStyle(fontSize: 14.sp,color: ColorUtils.text_yellow),),
+                        trailing: Icon(Icons.circle_outlined, color: ColorUtils.text_brown, size: 30.sp,),
+                      ),
+                    );
+                  },
+                ),
               ),
             )
           ],

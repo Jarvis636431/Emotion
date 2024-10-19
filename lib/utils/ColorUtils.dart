@@ -14,7 +14,7 @@ abstract final class ColorUtils {
 
   static const Color card_bg = Color(0xffFFDF8A); //测试卡片的背景颜色
 
-  static const Color info_card_bg = Color(0xffFCE6AA); //个人信息框的颜色,也是tag的颜色，也是记录任务的背景色,也是未完成任务的颜色
+  static const Color info_card_bg = Color(0xffFCE6AA); //个人信息框的颜色,也是tag的颜色，也是记录任务的背景色,也是未完成任务的颜色,也是选择事件的背景色
 
   static const Color finished_task = Color(0xffffe281); //任务卡片的背景颜色
 
@@ -61,4 +61,8 @@ abstract final class ColorUtils {
   static const Color daily_card_2 = Color(0xfff9df9a); //每日一句第二层
 
   static const Color daily_card_3 = Color(0xffF4D072); //每日一句第二层
+
+  static const Color circle = Color(0xffFEFBE3); //每日一句第二层
+
+  static const Color border_yellow = Color(0xffffd157); //背景蓝色
 }

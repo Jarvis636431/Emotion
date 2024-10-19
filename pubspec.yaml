@@ -66,6 +66,7 @@ flutter:
   assets:
     - assets/
     - assets/images/
+    - assets/images/click.png
     - assets/images/background/
     - assets/images/background/otherbackgrounds/
     - assets/images/mbti_character/

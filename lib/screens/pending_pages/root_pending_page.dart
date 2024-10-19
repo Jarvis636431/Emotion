@@ -48,24 +48,27 @@ class _PendingPageState extends State<PendingPage> {
                 tabs: [
                   Tab(
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Icon(Icons.access_time),
+                        Image.asset('assets/images/event_log.png',width: 25.w),
                         Text('事件记录',style: TextStyle(fontFamily: 'LanSong',fontSize: 16.sp,color: ColorUtils.text_brown)),
                       ],
                     ),
                   ),
                   Tab(
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Icon(Icons.check),
+                        Image.asset('assets/images/daily_summary.png',width: 25.w),
                         Text('每日总结',style: TextStyle(fontFamily: 'LanSong',fontSize: 16.sp,color: ColorUtils.text_brown)),
                       ],
                     ),
                   ),
                   Tab(
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Icon(Icons.done_all),
+                        Image.asset('assets/images/reminder.png',width: 25.w),
                         Text('提醒事项',style: TextStyle(fontFamily: 'LanSong',fontSize: 16.sp,color: ColorUtils.text_brown)),
                       ],
                     )
