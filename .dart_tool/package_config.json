@@ -116,6 +116,12 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "flutter_floating_bottom_bar",
+      "rootUri": "file:///C:/Users/86151/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_floating_bottom_bar-1.2.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///C:/Users/86151/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-3.0.2",
       "packageUri": "lib/",
@@ -138,6 +144,12 @@
       "rootUri": "file:///C:/Users/86151/fvm/versions/2.8.0/packages/flutter_web_plugins",
       "packageUri": "lib/",
       "languageVersion": "3.2"
+    },
+    {
+      "name": "hidable",
+      "rootUri": "file:///C:/Users/86151/AppData/Local/Pub/Cache/hosted/pub.dev/hidable-1.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "http",
@@ -350,7 +362,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-10-19T09:26:26.926057Z",
+  "generated": "2024-10-19T13:28:01.057863Z",
   "generator": "pub",
   "generatorVersion": "3.3.2"
 }

@@ -32,6 +32,8 @@ dependencies:
     sdk: flutter
 
   flutter_screenutil: ^5.9.0
+  flutter_floating_bottom_bar: ^1.2.1+1
+  hidable: ^1.0.6
   audioplayers: ^6.0.0
 
   # The following adds the Cupertino Icons font to your application.
@@ -83,7 +85,7 @@ flutter:
     - assets/images/function/note_icons/
     - assets/images/mood_infactor/
     - assets/audio/
-    - assets/fonts/
+    - assets/images/bottomNavigationBarIcon/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

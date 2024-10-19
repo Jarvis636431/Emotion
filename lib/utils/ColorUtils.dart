@@ -65,4 +65,6 @@ abstract final class ColorUtils {
   static const Color circle = Color(0xffFEFBE3); //每日一句第二层
 
   static const Color border_yellow = Color(0xffffd157); //背景蓝色
+
+  static const Color bar_bg = Color(0xffFFE281); //导航栏背景色
 }
