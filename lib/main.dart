@@ -33,6 +33,7 @@ class MyApp extends StatelessWidget {
             appBarTheme: const AppBarTheme(
               surfaceTintColor: Colors.transparent,//解决了滚动触发时会变色的原因
             ),
+          splashColor: Colors.transparent,//解决了点击时会有水波纹的效果
         ),
         title: 'Flutter Demo',
         home: HomePage(),

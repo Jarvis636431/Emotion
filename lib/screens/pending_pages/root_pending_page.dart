@@ -28,6 +28,7 @@ class _PendingPageState extends State<PendingPage> {
               title: Text('事件记录',style: TextStyle(fontFamily: 'LanSong',fontSize: 24.sp,color: ColorUtils.text_brown),),
               centerTitle: true,
               bottom: TabBar(
+                splashFactory: NoSplash.splashFactory,//tabbar的点击水波纹需要单独去掉，在theme里设置不管用
                 dividerHeight: 0,
                 //indicator只是指示器，默认是下划线，但其实修改样式修改的是那个框框
                 indicator: BoxDecoration(
