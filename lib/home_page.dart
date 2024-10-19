@@ -71,7 +71,6 @@ class HomePageState extends State<HomePage> {
             );
           },
           child: BottomNavigationBar(
-            ///TODO:准备对应的图片
             elevation: 0,
             backgroundColor: Colors.transparent,
             items: [

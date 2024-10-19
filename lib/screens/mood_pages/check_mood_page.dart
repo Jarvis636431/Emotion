@@ -1,7 +1,7 @@
-import 'package:emotion/home_page.dart';
 import 'package:emotion/utils/ColorUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:emotion/main.dart';
 
 class MoodCheckPage extends StatefulWidget {
   @override
@@ -17,8 +17,9 @@ class _MoodCheckPageState extends State<MoodCheckPage> {
             icon:
                 const Icon(Icons.arrow_back_ios, color: ColorUtils.text_brown),
             onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => HomePage()));
+              // Navigator.popUntil(context, (route) {
+              //   return route.settings.name == '/home'; // 根据路由名返回到 Home
+              // });
             },
           ),
           title: Text('打卡成功！',
@@ -51,7 +52,10 @@ class _MoodCheckPageState extends State<MoodCheckPage> {
                     width: 400.h,
                     child: Row(children: [
                       Text('四月\n22日\n星期四'),
-                      Image.asset('assets/images/mbti_emoji/enf/enf1.png',width: 60.h,),
+                      Image.asset(
+                        'assets/images/mbti_emoji/enf/enf1.png',
+                        width: 60.h,
+                      ),
                       Text('心情\n一般')
                     ]),
                   ),
@@ -59,9 +63,10 @@ class _MoodCheckPageState extends State<MoodCheckPage> {
                 ],
               ),
             ),
-            Image.asset('assets/images/card.png')//卡片有透明边框
+            Image.asset('assets/images/card.png') //卡片有透明边框
           ],
         ));
   }
 }
+
 ///TODOL打卡成功之后改怎么办你？

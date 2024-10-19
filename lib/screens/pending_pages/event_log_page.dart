@@ -317,7 +317,6 @@ class _EventLogPageState extends State<EventLogPage> {
             // /加入滚动事件 single scroll/column等的嵌套层级
             //关键在于container的自适应高度，滚动的话内嵌listbview即可
             Container(
-              ///TODO:实现内阴影
               height: 420.w,
               decoration: BoxDecoration(
                 color: ColorUtils.info_card_bg,

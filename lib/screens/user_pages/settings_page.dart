@@ -6,7 +6,6 @@ import 'package:emotion/utils/ColorUtils.dart';
 
 
 import 'package:emotion/screens/user_pages/reset_mbti_page.dart';
-///TODO；可以实现一下可重复的组件，设置标题和跳转链接即可
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
 

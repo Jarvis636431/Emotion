@@ -29,6 +29,7 @@ class StartPage extends StatelessWidget {
           backgroundColor: Colors.transparent,
           title: Text(
             '4月22日 星期一 天气🌤',
+            ///TODO：实现动态获取日期天气
             style: TextStyle(
               fontSize: 16.sp,
             ),
@@ -149,7 +150,7 @@ class StartPage extends StatelessWidget {
                         ),
                         //ListView父组件必须是有限制宽高的
                         Row(children: [
-                          ///TODO：修改图片大小，减少白边
+                          ///TODO:获取裁剪好的人物形象，标签，底部导航栏Icon资源
                           Container(
                             child: Image.asset(
                               'assets/images/mbti_emoji/enf/enf1.png',
@@ -206,10 +207,10 @@ class StartPage extends StatelessWidget {
                         height: 10.w,
                       ),
                       Container(
-                        ///TODO：修改滚动与高度问题
                         height: 400.w,
                         //listview必须这样包裹才可以实现滚动，否则会不懂，高度的确认？
                         child: ListView(
+                          ///TODO:解决阴影溢出问题
                           shrinkWrap: true,
                           children: [
                             const InformationCard(

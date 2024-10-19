@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:emotion/home_page.dart';
+import 'package:emotion/screens/start_page.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
@@ -27,8 +28,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       //screen util要进行初始化，获取设计图尺寸
-      designSize: Size(393, 852),
+      designSize: const Size(393, 852),
       child: MaterialApp(
+        routes: {
+          '/home': (context) => const HomePage(),
+          '/start': (context) => const StartPage(),
+        },
         theme: ThemeData(
             appBarTheme: const AppBarTheme(
               surfaceTintColor: Colors.transparent,//解决了滚动触发时会变色的原因

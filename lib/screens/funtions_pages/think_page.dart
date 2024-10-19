@@ -195,9 +195,7 @@ class _ThinkPageState extends State<ThinkPage> {
                 fontFamily: 'LanSong',
                 color: ColorUtils.text_brown,
               )),
-
-          ///TODO：实现动态变化
-          ///buttonbar的用法
+          //buttonbar的用法
           SizedBox(height: 20.w),
           Row(
             //要调整位置，实际是要调整row里面元素的位置，而不是row本身的位置，因为row是无限的

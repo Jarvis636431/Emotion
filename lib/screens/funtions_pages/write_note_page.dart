@@ -154,7 +154,6 @@ class _WriteNotePageState extends State<WriteNotePage> {
                   SizedBox(height: 15.w),
                   Text('（可点击拖拽安放贴纸）', style: TextStyle(fontSize: 12.sp)),
                   SizedBox(height: 35.w),
-                  ///TODO:导入素材
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [

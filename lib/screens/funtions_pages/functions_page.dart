@@ -66,7 +66,7 @@ class _FunctionsPageState extends State<FunctionsPage> {
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 20.h, vertical: 15.w),
                   child: Row(
-                    ///TODO:设计图尺寸没法实现，需要重新设计
+                    ///设计图尺寸没法实现，需要重新设计
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Column(

@@ -98,7 +98,6 @@ class _CountAndAdvisePageState extends State<CountAndAdvisePage> {
                       SizedBox(height: 10.w),
                       Text('当ENT愤怒的时候',style: TextStyle(fontSize: 16.sp)),
                       SizedBox(height: 10.w),
-                      ///TODO：调整内容，修改点击变化
                       Container(
                         decoration: BoxDecoration(
                           color: ColorUtils.tag_bg,

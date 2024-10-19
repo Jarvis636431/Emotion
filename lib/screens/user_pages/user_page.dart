@@ -46,7 +46,6 @@ class _UserPageState extends State<UserPage> {
                         'assets/images/settings.png',
                         width: 30.h,
                       ),
-                      ///TODO:需要这行文字么，加上之后布局有些奇怪
                       Text(
                         '设置',
                         style: TextStyle(
@@ -142,7 +141,6 @@ class _UserPageState extends State<UserPage> {
                 SizedBox(
                   height: 15.w,
                 ),
-                ///TODO：解决子组件的高度跟随父组件的原因并解决，现在存在阴影溢出
                 SizedBox(
                   height: 200.h,
                   child: ListView(

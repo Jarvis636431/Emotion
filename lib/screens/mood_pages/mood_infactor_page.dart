@@ -15,7 +15,6 @@ class MoodInfactorPage extends StatelessWidget {
           fit: BoxFit.fill,
         ),
       ),
-      ///TODO:flutter神秘的图片加载问题，等一会就好了，刚粘贴进去的图片不能立刻加载，而且也不能删除之前不用的图片，否则热重载会报错
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
