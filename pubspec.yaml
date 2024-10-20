@@ -68,6 +68,7 @@ flutter:
   assets:
     - assets/
     - assets/images/
+    - assets/images/intros/
     - assets/images/click.png
     - assets/images/background/
     - assets/images/background/otherbackgrounds/

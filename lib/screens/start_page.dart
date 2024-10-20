@@ -7,6 +7,7 @@ import 'package:emotion/utils/ColorUtils.dart';
 
 import 'package:emotion/screens/mood_pages/today_mood_page.dart';
 import 'package:emotion/screens/count_and_advise_page.dart';
+import 'package:emotion/screens/entry_pages/splash_page_1.dart';
 
 class StartPage extends StatelessWidget {
   const StartPage({super.key});
@@ -27,11 +28,19 @@ class StartPage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
-          title: Text(
-            '4月22日 星期一 天气🌤',
-            ///TODO：实现动态获取日期天气
-            style: TextStyle(
-              fontSize: 16.sp,
+          title: InkWell(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const SplashPage1()));
+            },
+            child: Text(
+              '4月22日 星期一 天气🌤',
+              ///TODO：实现动态获取日期天气
+              style: TextStyle(
+                fontSize: 16.sp,
+              ),
             ),
           ),
           centerTitle: true,

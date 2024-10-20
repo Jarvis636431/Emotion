@@ -9,9 +9,8 @@ class TodayMoodPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-        ///导出的背景有神秘阴影？？？
-        image: const DecorationImage(
+      decoration: const BoxDecoration(
+        image: DecorationImage(
           image: AssetImage('assets/images/background/bg_sad.png'),
           fit: BoxFit.fill,
         ),
@@ -30,8 +29,9 @@ class TodayMoodPage extends StatelessWidget {
         ),
         body: Column(
           children: [
+            SizedBox(height: 50.w),//修改了这里的间距
             Center(
-              child: Image.asset('assets/images/mbti_emoji/enf/enf1.png'),
+              child: Image.asset('assets/images/mbti_emoji/enf/enf1.png',width: 250.w,),
             ),
             Expanded(child: SizedBox(height: 20.w)),
             InkWell(
@@ -47,6 +47,14 @@ class TodayMoodPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: ColorUtils.bg_white,
                   borderRadius: BorderRadius.circular(20.r),
+                  boxShadow: const [
+                    BoxShadow(
+                      color: ColorUtils.text_brown,
+                      offset: Offset(0,4), //阴影xy轴偏移量
+                      blurRadius: 4.0, //阴影模糊程度
+                      spreadRadius: 0.0, //阴影扩散程度
+                    ),
+                  ],
                 ),
                   alignment: Alignment.center,
                   child:Text('是这样的',style: TextStyle(fontFamily: 'LanSong',fontSize: 24.sp,color: ColorUtils.text_brown),)),//修改字体

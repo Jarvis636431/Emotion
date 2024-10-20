@@ -39,6 +39,7 @@ class _DailySentencePageState extends State<DailySentencePage> {
                 ),
               ),
               SizedBox(height: 25.w),
+              ///TODO：实现翻页动画效果
               Stack(
                 //实现堆叠卡片效果，注意上下层次，stack的children中第一个在最上面
                 children: [
