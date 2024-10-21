@@ -11,6 +11,31 @@ class ReSetMbtiPage extends StatefulWidget {
 }
 
 class _ReSetMbtiPageState extends State<ReSetMbtiPage> {
+  int _currentImageIndex = 0;
+  final List<String> _images = [
+    'assets/images/mbti_character/enf.png',
+    'assets/images/mbti_character/ent.png',
+    'assets/images/mbti_character/esj.png',
+    'assets/images/mbti_character/esp.png',
+    'assets/images/mbti_character/inf.png',
+    'assets/images/mbti_character/int.png',
+    'assets/images/mbti_character/isj.png',
+    'assets/images/mbti_character/isp.png',
+
+  ];
+
+  void _showPreviousImage() {
+    setState(() {
+      _currentImageIndex = (_currentImageIndex - 1 + _images.length) % _images.length;
+    });
+  }
+
+  void _showNextImage() {
+    setState(() {
+      _currentImageIndex = (_currentImageIndex + 1) % _images.length;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -24,10 +49,8 @@ class _ReSetMbtiPageState extends State<ReSetMbtiPage> {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
-          ///设计图里的返回键？
           leading: IconButton(
-            icon:
-                const Icon(Icons.arrow_back_ios, color: ColorUtils.text_brown),
+            icon: const Icon(Icons.arrow_back_ios, color: ColorUtils.text_brown),
             onPressed: () {
               Navigator.pop(context);
             },
@@ -46,31 +69,32 @@ class _ReSetMbtiPageState extends State<ReSetMbtiPage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Center(
-                child: Image.asset(
-                  'assets/images/mbti_character/enf.png',
+                child: Container(
+                  // color: ColorUtils.info_card_bg,
+                  child: Image.asset(
+                    _images[_currentImageIndex],
+                    height: 500.h,
+                    width: 500.h,
+                  ),
                 ),
               ),
               SizedBox(
                 height: 40.w,
               ),
               Container(
-                //设置corssAxisAlignment为center后未居中的原因就是嵌套了container，未设计长宽的情况下container会自适应子组件的大小，而row是默认拉满的
                 width: 300.h,
                 height: 80.w,
                 decoration: BoxDecoration(
                   color: ColorUtils.info_card_bg,
                   borderRadius: BorderRadius.circular(35.r),
-                  // border: Border.all(color: ColorUtils.text_brown, width: 2),边框设置
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Icon(
-                      Icons.chevron_left,
-                      color: ColorUtils.text_brown,
-                      size: 40.h,
+                    IconButton(
+                      icon: Icon(Icons.chevron_left, color: ColorUtils.text_brown, size: 40.h),
+                      onPressed: _showPreviousImage,
                     ),
-                    ///具体人格在哪里显示呢？
                     Text(
                       '左右滑动切换',
                       style: TextStyle(
@@ -78,23 +102,25 @@ class _ReSetMbtiPageState extends State<ReSetMbtiPage> {
                           color: ColorUtils.text_brown,
                           fontFamily: 'LanSong'),
                     ),
-                    Icon(
-                      Icons.chevron_right,
-                      color: ColorUtils.text_brown,
-                      size: 40.h,
+                    IconButton(
+                      icon: Icon(Icons.chevron_right, color: ColorUtils.text_brown, size: 40.h),
+                      onPressed: _showNextImage,
                     ),
                   ],
                 ),
               ),
               Expanded(child: SizedBox()),
-
-              ///这样的取消确认方式合理么？
               Row(
                 children: [
-                  Text(
-                    '取消',
-                    style: TextStyle(
-                        fontSize: 20.sp, color: ColorUtils.text_brown),
+                  InkWell(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: Text(
+                      '取消',
+                      style: TextStyle(
+                          fontSize: 20.sp, color: ColorUtils.text_brown),
+                    ),
                   ),
                   Expanded(child: SizedBox()),
                   InkWell(

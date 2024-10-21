@@ -104,7 +104,7 @@ class _NameAgeSelectionPage extends State<NameAgeSelectionPage> {
                             ),
                             Visibility(
                                 visible: _selectedAge == Age.teen,
-                                child: Icon(Icons.check, color: ColorUtils.text_brown))
+                                child: const Icon(Icons.check, color: ColorUtils.text_brown))
                           ],
                         ),
                       ),

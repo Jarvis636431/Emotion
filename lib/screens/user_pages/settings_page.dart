@@ -6,6 +6,7 @@ import 'package:emotion/utils/ColorUtils.dart';
 
 
 import 'package:emotion/screens/user_pages/reset_mbti_page.dart';
+import 'package:emotion/screens/user_pages/avatar_page.dart';
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
 
@@ -35,26 +36,7 @@ class _SettingsPageState extends State<SettingsPage> {
               children:[
                 Text('基本信息',style: TextStyle(fontSize: 20.sp,fontFamily: 'LanSong',color: ColorUtils.text_brown),),
                 SizedBox(height: 10.w),
-                Container(
-                  alignment: Alignment.centerLeft,
-                  width: 351.h,
-                  height: 59.w,
-                  decoration: BoxDecoration(
-                    color: ColorUtils.info_card_bg,
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 8.h),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text('头像',style: TextStyle(fontSize: 16.sp, color:ColorUtils.text_brown),),
-                        ///需要右边的箭头么
-                        Icon(Icons.arrow_forward_ios, color: ColorUtils.text_brown, size: 20.h,)
-                      ],
-                    ),
-                  ),
-                  ),
+                const UserInfoCard(title: '头像', destination: AvatarPage()),
                 SizedBox(height: 10.w),
                 Container(
                   width: 351.h,
@@ -116,7 +98,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   ),
                 ),
                 SizedBox(height: 10.w),
-                UserInfoCard(title: 'MBTI', destination: ReSetMbtiPage()),
+                const UserInfoCard(title: 'MBTI', destination: ReSetMbtiPage()),
                 const Expanded(child: SizedBox()),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
