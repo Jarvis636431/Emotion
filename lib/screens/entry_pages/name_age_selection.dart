@@ -1,7 +1,7 @@
 import 'package:emotion/utils/ColorUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:emotion/screens/entry_pages/AvatarMBTISelection.dart';
+import 'package:emotion/screens/entry_pages/mbti_selection.dart';
 
 class NameAgeSelectionPage extends StatefulWidget {
   const NameAgeSelectionPage({super.key});
@@ -132,7 +132,7 @@ class _NameAgeSelectionPage extends State<NameAgeSelectionPage> {
                             context,
                             MaterialPageRoute(
                                 builder: (context) =>
-                                const NameAgeSelectionPage()));
+                                const MBTISelectionPage()));
                       },
                       child: Container(
                           width: 240.h,
