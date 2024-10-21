@@ -106,16 +106,23 @@ class _GenderSelectionPage extends State<GenderSelectionPage> {
                                   const NameAgeSelectionPage()));
                     },
                     child: Container(
-                      width: 240.h,
+                        width: 240.h,
                         height: 60.w,
                         decoration: BoxDecoration(
-                          color: ColorUtils.bg_white,
-                          borderRadius: BorderRadius.circular(20.r)
-                        ),
+                            color: ColorUtils.bg_white,
+                            borderRadius: BorderRadius.circular(20.r)),
                         alignment: Alignment.center,
-                        child: Text('下一步',style: TextStyle(fontSize: 32.sp,fontFamily: 'LanSong',color:ColorUtils.text_brown),)),
+                        child: Text(
+                          '下一步',
+                          style: TextStyle(
+                              fontSize: 32.sp,
+                              fontFamily: 'LanSong',
+                              color: ColorUtils.text_brown),
+                        )),
                   ),
-                  SizedBox(height: 40.h,)
+                  SizedBox(
+                    height: 40.h,
+                  )
                 ],
               ),
             ),
