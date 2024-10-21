@@ -9,17 +9,21 @@ class GenderSelectionPage extends StatefulWidget {
   @override
   _GenderSelectionPage createState() => _GenderSelectionPage();
 }
+enum Gender { none, female, male }
+
 
 class _GenderSelectionPage extends State<GenderSelectionPage> {
+  Gender _selectedGender = Gender.none;
+
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
           gradient: RadialGradient(
-        colors: [ColorUtils.bg_yellow, ColorUtils.bg_white],
-        center: Alignment.center,
-        radius: 1.5,
-      )),
+            colors: [ColorUtils.bg_yellow, ColorUtils.bg_white],
+            center: Alignment.center,
+            radius: 1.5,
+          )),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
@@ -37,7 +41,7 @@ class _GenderSelectionPage extends State<GenderSelectionPage> {
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 20.h),
           child:
-              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Text(
               'Hi,你的性别是？',
               style: TextStyle(
@@ -50,19 +54,27 @@ class _GenderSelectionPage extends State<GenderSelectionPage> {
               style: TextStyle(color: ColorUtils.text_yellow, fontSize: 26.sp),
             ),
             SizedBox(height: 30.w),
-            //巧用center组件，直接放在屏幕中间
             Center(
               child: Column(
                 children: [
                   InkWell(
                     onTap: () {
-                      setState(() {});
+                      setState(() {
+                        _selectedGender = _selectedGender == Gender.female
+                            ? Gender.none
+                            : Gender.female;
+                      });
                     },
                     child: Container(
                         decoration: BoxDecoration(
-                            border:
-                                Border.all(color: ColorUtils.shadow, width: 5)),
-                        child: Image.asset('assets/images/female.png')),
+                          shape: BoxShape.circle,
+                          border: _selectedGender == Gender.female
+                              ? Border.all(color: ColorUtils.shadow, width: 8.r)
+                              : Border.all(color: Colors.transparent, width: 8.r),
+                        ),
+                        child: ClipOval(
+                            child: Image.asset('assets/images/female.png',
+                                width: 180.h, height: 180.w, fit: BoxFit.cover))),
                   ),
                   SizedBox(height: 10.w),
                   const Row(
@@ -77,14 +89,24 @@ class _GenderSelectionPage extends State<GenderSelectionPage> {
                   ),
                   SizedBox(height: 20.w),
                   InkWell(
+                    splashFactory: NoSplash.splashFactory,
                     onTap: () {
-                      setState(() {});
+                      setState(() {
+                        _selectedGender = _selectedGender == Gender.male
+                            ? Gender.none
+                            : Gender.male;
+                      });
                     },
                     child: Container(
                         decoration: BoxDecoration(
-                            border:
-                                Border.all(color: ColorUtils.shadow, width: 5)),
-                        child: Image.asset('assets/images/male.png')),
+                          shape: BoxShape.circle,
+                          border: _selectedGender == Gender.male
+                              ? Border.all(color: ColorUtils.shadow, width: 8.r)
+                              : Border.all(color: Colors.transparent, width: 8.r),
+                        ),
+                        child: ClipOval(
+                            child: Image.asset('assets/images/male.png',
+                                width: 180.h, height: 180.w, fit: BoxFit.cover))),
                   ),
                   SizedBox(height: 10.w),
                   const Row(
@@ -97,13 +119,15 @@ class _GenderSelectionPage extends State<GenderSelectionPage> {
                       Text('男生')
                     ],
                   ),
+                  SizedBox(height: 20.w),
                   InkWell(
+                    splashFactory: NoSplash.splashFactory,
                     onTap: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) =>
-                                  const NameAgeSelectionPage()));
+                              const NameAgeSelectionPage()));
                     },
                     child: Container(
                         width: 240.h,
@@ -120,9 +144,6 @@ class _GenderSelectionPage extends State<GenderSelectionPage> {
                               color: ColorUtils.text_brown),
                         )),
                   ),
-                  SizedBox(
-                    height: 40.h,
-                  )
                 ],
               ),
             ),
