@@ -10,7 +10,11 @@ class NameAgeSelectionPage extends StatefulWidget {
   _NameAgeSelectionPage createState() => _NameAgeSelectionPage();
 }
 
+enum Age { none, teen, young, adult }
+
 class _NameAgeSelectionPage extends State<NameAgeSelectionPage> {
+  Age _selectedAge = Age.none;
+
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
@@ -64,65 +68,93 @@ class _NameAgeSelectionPage extends State<NameAgeSelectionPage> {
                       ),
                     ),
                     SizedBox(height: 60.w),
-                    Container(
-                      width: 220.h,
-                      height: 70.w,
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                          gradient: RadialGradient(
-                            colors: [ColorUtils.radial_yellow, ColorUtils.radial_light_yellow],
-                            center: Alignment.center,
-                            radius: 1.5,
-                          ),
-                          borderRadius: BorderRadius.circular(20.r)),
-                      child: Text(
-                        '13-18岁',
-                        style: TextStyle(
-                            fontFamily: 'LanSong',
-                            fontSize: 32.sp,
-                            color: ColorUtils.text_brown),
+                    InkWell(
+                      onTap: () {
+                        setState(() {
+                          _selectedAge = _selectedAge == Age.teen ? Age.none : Age.teen;
+                        });
+                      },
+                      child: Container(
+                        width: 220.h,
+                        height: 70.w,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                            gradient: RadialGradient(
+                              colors:
+                              _selectedAge == Age.teen
+                                  ? [ColorUtils.radial_stronger_yellow, ColorUtils.radial_strong_yellow]
+                                  : [ColorUtils.radial_yellow, ColorUtils.radial_light_yellow],
+                              center: Alignment.center,
+                              radius: 1.5,
+                            ),
+                            borderRadius: BorderRadius.circular(20.r)),
+                        child: Text(
+                          '13-18岁',
+                          style: TextStyle(
+                              fontFamily: 'LanSong',
+                              fontSize: 32.sp,
+                              color: ColorUtils.text_brown),
+                        ),
                       ),
                     ),
                     SizedBox(height: 20.w),
-                    Container(
-                      width: 220.h,
-                      height: 70.w,
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                          gradient: RadialGradient(colors: [
-                            ColorUtils.radial_stronger_yellow,
-                            ColorUtils.radial_strong_yellow
-                          ],
-                          center: Alignment.center,
-                          radius: 1.5,
-                          ),
-                          borderRadius: BorderRadius.circular(20.r)),
-                      child: Text(
-                        '19-25岁',
-                        style: TextStyle(
-                            fontFamily: 'LanSong',
-                            fontSize: 32.sp,
-                            color: ColorUtils.text_brown),
+                    InkWell(
+                      onTap: () {
+                        setState(() {
+                          _selectedAge = _selectedAge == Age.young   ? Age.none : Age.young;
+                        });
+                      },
+                      child: Container(
+                        width: 220.h,
+                        height: 70.w,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                            gradient: RadialGradient(
+                              colors:
+                              _selectedAge == Age.young
+                                  ? [ColorUtils.radial_stronger_yellow, ColorUtils.radial_strong_yellow]
+                                  : [ColorUtils.radial_yellow, ColorUtils.radial_light_yellow],
+                              center: Alignment.center,
+                              radius: 1.5,
+                            ),
+                            borderRadius: BorderRadius.circular(20.r)),
+                        child: Text(
+                          '19-25岁',
+                          style: TextStyle(
+                              fontFamily: 'LanSong',
+                              fontSize: 32.sp,
+                              color: ColorUtils.text_brown),
+                        ),
                       ),
                     ),
                     SizedBox(height: 20.w),
-                    Container(
-                      width: 220.h,
-                      height: 70.w,
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                          gradient: RadialGradient(
-                            colors: [ColorUtils.radial_yellow, ColorUtils.radial_light_yellow],
-                            center: Alignment.center,
-                            radius: 1.5,
-                          ),
-                          borderRadius: BorderRadius.circular(20.r)),
-                      child: Text(
-                        '26-38岁',
-                        style: TextStyle(
-                            fontFamily: 'LanSong',
-                            fontSize: 32.sp,
-                            color: ColorUtils.text_brown),
+                    InkWell(
+                      onTap: () {
+                        setState(() {
+                          _selectedAge = _selectedAge == Age.adult ? Age.none : Age.adult;
+                        });
+                      },
+                      child: Container(
+                        width: 220.h,
+                        height: 70.w,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                            gradient: RadialGradient(
+                              colors:
+                              _selectedAge == Age.adult
+                                  ? [ColorUtils.radial_stronger_yellow, ColorUtils.radial_strong_yellow]
+                                  : [ColorUtils.radial_yellow, ColorUtils.radial_light_yellow],
+                              center: Alignment.center,
+                              radius: 1.5,
+                            ),
+                            borderRadius: BorderRadius.circular(20.r)),
+                        child: Text(
+                          '13-18岁',
+                          style: TextStyle(
+                              fontFamily: 'LanSong',
+                              fontSize: 32.sp,
+                              color: ColorUtils.text_brown),
+                        ),
                       ),
                     ),
                     SizedBox(height: 70.w),
