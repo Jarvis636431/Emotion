@@ -32,71 +32,20 @@ class _SettingsPageState extends State<SettingsPage> {
           body:Padding(
             padding:  EdgeInsets.symmetric(horizontal: 20.h, vertical: 10.w),
             child: Column(
+              ///TODO:这种情况就应该用listview
               crossAxisAlignment: CrossAxisAlignment.start,
               children:[
                 Text('基本信息',style: TextStyle(fontSize: 20.sp,fontFamily: 'LanSong',color: ColorUtils.text_brown),),
                 SizedBox(height: 10.w),
                 const UserInfoCard(title: '头像', destination: AvatarPage()),
                 SizedBox(height: 10.w),
-                Container(
-                  width: 351.h,
-                  height: 59.w,
-                  decoration: BoxDecoration(
-                    color: ColorUtils.info_card_bg,
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 8.h),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text('昵称',style: TextStyle(fontSize: 16.sp, color:ColorUtils.text_brown),),
-                        Icon(Icons.arrow_forward_ios, color: ColorUtils.text_brown, size: 20.h,)
-                      ],
-                    ),
-                  ),
-                ),
+                const UserInfoCard(title: '昵称', destination: Text('昵称')),
                 SizedBox(height: 10.w),
-                Container(
-                  width: 351.h,
-                  height: 59.w,
-                  decoration: BoxDecoration(
-                    color: ColorUtils.info_card_bg,
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 8.h),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text('个性签名',style: TextStyle(fontSize: 16.sp, color:ColorUtils.text_brown),),
-                        Icon(Icons.arrow_forward_ios, color: ColorUtils.text_brown, size: 20.h,)
-                      ],
-                    ),
-                  ),
-                ),
+                const UserInfoCard(title: '个性签名', destination: Text('性别选择')),
                 SizedBox(height: 10.w),
                 Text('个人信息',style: TextStyle(fontSize: 20.sp,fontFamily: 'LanSong',color: ColorUtils.text_brown),),
                 SizedBox(height: 10.w),
-                Container(
-                  width: 351.h,
-                  height: 59.w,
-                  decoration: BoxDecoration(
-                    color: ColorUtils.info_card_bg,
-                    borderRadius: BorderRadius.circular(20.r),
-                  ),
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 8.h),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text('性别',style: TextStyle(fontSize: 16.sp, color:ColorUtils.text_brown),),
-                        ///需要右边的箭头么
-                        Icon(Icons.arrow_forward_ios, color: ColorUtils.text_brown, size: 20.h,)
-                      ],
-                    ),
-                  ),
-                ),
+                const UserInfoCard(title: '性别', destination: Text('性别选择')),
                 SizedBox(height: 10.w),
                 const UserInfoCard(title: 'MBTI', destination: ReSetMbtiPage()),
                 const Expanded(child: SizedBox()),

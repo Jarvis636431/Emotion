@@ -17,10 +17,9 @@ class _MoodCheckPageState extends State<MoodCheckPage> {
             icon:
                 const Icon(Icons.arrow_back_ios, color: ColorUtils.text_brown),
             onPressed: () {
-              // Navigator.popUntil(context, (route) {
-              //   return route.settings.name == '/home'; // 根据路由名返回到 Home
-              // });
+              Navigator.of(context)..pop()..pop()..pop()..pop();
             },
+            ///实现了简单的连续返回
           ),
           title: Text('打卡成功！',
               style: TextStyle(

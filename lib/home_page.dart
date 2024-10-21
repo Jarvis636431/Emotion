@@ -71,32 +71,31 @@ class HomePageState extends State<HomePage> {
             );
           },
           child: BottomNavigationBar(
+            type: BottomNavigationBarType.shifting,
             elevation: 0,
             backgroundColor: Colors.transparent,
             items: [
               BottomNavigationBarItem(
-                  icon: Image.asset('assets/images/bottomNavigationBarIcon/census.png'),
-                  label: '首页',
+                  icon: Image.asset('assets/images/bottomNavigationBarIcon/home.png',width: 50.h,),
+                  label: '',
                   backgroundColor: Colors.transparent),
               BottomNavigationBarItem(
-                  icon: Image.asset('assets/images/bottomNavigationBarIcon/function.png'),
-                  label: '搜索',
+                  icon: Image.asset('assets/images/bottomNavigationBarIcon/list.png',width: 50.h,),
+                  label: '',
                   backgroundColor: Colors.transparent),
               BottomNavigationBarItem(
-                  icon: Image.asset('assets/images/bottomNavigationBarIcon/pending.png'),
-                  label: '消息'),
+                  icon: Image.asset('assets/images/bottomNavigationBarIcon/clock.png',width: 50.h,),
+                  label: ''),
               BottomNavigationBarItem(
-                  icon: Image.asset('assets/images/bottomNavigationBarIcon/user.png'),
-                  label: '我的',
+                  icon: Image.asset('assets/images/bottomNavigationBarIcon/play.png',width: 50.h,),
+                  label: '',
                   backgroundColor: Colors.transparent),
               BottomNavigationBarItem(
-                  icon: Image.asset('assets/images/bottomNavigationBarIcon/user.png'),
-                  label: '个人',
+                  icon: Image.asset('assets/images/bottomNavigationBarIcon/user.png',width: 50.h,),
+                  label: '',
                   backgroundColor: Colors.transparent),
             ],
             currentIndex: currentIndex,
-            selectedItemColor: Colors.blue,
-            unselectedItemColor: Colors.grey,
             onTap: (index) {
               setState(() {
                 currentIndex = index;
