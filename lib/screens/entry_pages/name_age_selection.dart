@@ -47,56 +47,107 @@ class _NameAgeSelectionPage extends State<NameAgeSelectionPage> {
               Text('输入昵称并选择年龄段吧',
                   style: TextStyle(
                       color: ColorUtils.text_yellow, fontSize: 26.sp)),
-              SizedBox(height: 20.w,),
+              SizedBox(
+                height: 40.w,
+              ),
               Center(
                 child: Column(
                   children: [
                     Container(
-                      width:220.h,
+                      width: 220.h,
                       height: 60.w,
                       decoration: BoxDecoration(
-                        color: ColorUtils.bg_white,
-                        borderRadius: BorderRadius.circular(20.r)
-                      ),
+                          color: ColorUtils.bg_white,
+                          borderRadius: BorderRadius.circular(20.r)),
                       child: const TextField(
-                        decoration: InputDecoration(border:InputBorder.none),
+                        decoration: InputDecoration(border: InputBorder.none),
                       ),
                     ),
-                    SizedBox(height: 20.w),
+                    SizedBox(height: 60.w),
                     Container(
-                      decoration: BoxDecoration(
-                        gradient: RadialGradient(
-                          colors: [
-
-                          ]
-                        ),
-                        borderRadius: BorderRadius.circular(20.r)
-                      ),
-                      child: Text('13-18岁',style: TextStyle(fontFamily: 'LanSong',fontSize: 32.sp,color: ColorUtils.text_brown),),
-                    ),
-                    SizedBox(height: 20.w),
-                    Container(
+                      width: 220.h,
+                      height: 70.w,
+                      alignment: Alignment.center,
                       decoration: BoxDecoration(
                           gradient: RadialGradient(
-                              colors: [
-
-                              ]
+                            colors: [ColorUtils.radial_yellow, ColorUtils.radial_light_yellow],
+                            center: Alignment.center,
+                            radius: 1.5,
                           ),
-                          borderRadius: BorderRadius.circular(20.r)
+                          borderRadius: BorderRadius.circular(20.r)),
+                      child: Text(
+                        '13-18岁',
+                        style: TextStyle(
+                            fontFamily: 'LanSong',
+                            fontSize: 32.sp,
+                            color: ColorUtils.text_brown),
                       ),
-                      child: Text('13-18岁',style: TextStyle(fontFamily: 'LanSong',fontSize: 32.sp,color: ColorUtils.text_brown),),
                     ),
                     SizedBox(height: 20.w),
                     Container(
+                      width: 220.h,
+                      height: 70.w,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                          gradient: RadialGradient(colors: [
+                            ColorUtils.radial_stronger_yellow,
+                            ColorUtils.radial_strong_yellow
+                          ],
+                          center: Alignment.center,
+                          radius: 1.5,
+                          ),
+                          borderRadius: BorderRadius.circular(20.r)),
+                      child: Text(
+                        '19-25岁',
+                        style: TextStyle(
+                            fontFamily: 'LanSong',
+                            fontSize: 32.sp,
+                            color: ColorUtils.text_brown),
+                      ),
+                    ),
+                    SizedBox(height: 20.w),
+                    Container(
+                      width: 220.h,
+                      height: 70.w,
+                      alignment: Alignment.center,
                       decoration: BoxDecoration(
                           gradient: RadialGradient(
-                              colors: [
-
-                              ]
+                            colors: [ColorUtils.radial_yellow, ColorUtils.radial_light_yellow],
+                            center: Alignment.center,
+                            radius: 1.5,
                           ),
-                          borderRadius: BorderRadius.circular(20.r)
+                          borderRadius: BorderRadius.circular(20.r)),
+                      child: Text(
+                        '26-38岁',
+                        style: TextStyle(
+                            fontFamily: 'LanSong',
+                            fontSize: 32.sp,
+                            color: ColorUtils.text_brown),
                       ),
-                      child: Text('13-18岁',style: TextStyle(fontFamily: 'LanSong',fontSize: 32.sp,color: ColorUtils.text_brown),),
+                    ),
+                    SizedBox(height: 70.w),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                const NameAgeSelectionPage()));
+                      },
+                      child: Container(
+                          width: 240.h,
+                          height: 60.w,
+                          decoration: BoxDecoration(
+                              color: ColorUtils.bg_white,
+                              borderRadius: BorderRadius.circular(20.r)),
+                          alignment: Alignment.center,
+                          child: Text(
+                            '下一步',
+                            style: TextStyle(
+                                fontSize: 32.sp,
+                                fontFamily: 'LanSong',
+                                color: ColorUtils.text_brown),
+                          )),
                     ),
                   ],
                 ),

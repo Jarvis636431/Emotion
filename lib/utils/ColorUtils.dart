@@ -72,4 +72,8 @@ abstract final class ColorUtils {
   static const Color radial_yellow = Color(0xffFFDC7C); //放射渐变黄色
 
   static const Color radial_light_yellow = Color(0xffFFECB8); //放射渐变浅色
+
+  static const Color radial_strong_yellow = Color(0xffFFE190); //放射渐变浅蓝色
+
+  static const Color radial_stronger_yellow = Color(0xffFFCF4D); //放射渐变浅蓝色
 }
