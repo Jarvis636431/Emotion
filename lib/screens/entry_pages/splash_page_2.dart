@@ -30,7 +30,7 @@ class SplashPage2 extends StatelessWidget {
                 child: const Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text('祝好，\n在数不尽的明天', style: TextStyle(color: ColorUtils.text_brown,
+                    Text('祝好，\n在数不尽的明天。', style: TextStyle(color: ColorUtils.text_brown,
                         decoration: TextDecoration.none,fontFamily: 'BoHeHaiYan'),),
                   ],
                 ),

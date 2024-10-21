@@ -1,5 +1,7 @@
 import 'package:emotion/utils/ColorUtils.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:emotion/screens/entry_pages/mbti_selection.dart';
 
@@ -88,12 +90,22 @@ class _NameAgeSelectionPage extends State<NameAgeSelectionPage> {
                               radius: 1.5,
                             ),
                             borderRadius: BorderRadius.circular(20.r)),
-                        child: Text(
-                          '13-18岁',
-                          style: TextStyle(
-                              fontFamily: 'LanSong',
-                              fontSize: 32.sp,
-                              color: ColorUtils.text_brown),
+                        child: Row(
+                          children: [
+                            SizedBox(width: 60.w),
+                            Expanded(
+                              child: Text(
+                                '13-18岁',
+                                style: TextStyle(
+                                    fontFamily: 'LanSong',
+                                    fontSize: 32.sp,
+                                    color: ColorUtils.text_brown),
+                              ),
+                            ),
+                            Visibility(
+                                visible: _selectedAge == Age.teen,
+                                child: Icon(Icons.check, color: ColorUtils.text_brown))
+                          ],
                         ),
                       ),
                     ),
@@ -118,12 +130,22 @@ class _NameAgeSelectionPage extends State<NameAgeSelectionPage> {
                               radius: 1.5,
                             ),
                             borderRadius: BorderRadius.circular(20.r)),
-                        child: Text(
-                          '19-25岁',
-                          style: TextStyle(
-                              fontFamily: 'LanSong',
-                              fontSize: 32.sp,
-                              color: ColorUtils.text_brown),
+                        child: Row(
+                          children: [
+                            SizedBox(width: 60.w),
+                            Expanded(
+                              child: Text(
+                                '19-25岁',
+                                style: TextStyle(
+                                    fontFamily: 'LanSong',
+                                    fontSize: 32.sp,
+                                    color: ColorUtils.text_brown),
+                              ),
+                            ),
+                            Visibility(
+                                visible: _selectedAge == Age.young,
+                                child: Icon(Icons.check, color: ColorUtils.text_brown))
+                          ],
                         ),
                       ),
                     ),
@@ -148,12 +170,22 @@ class _NameAgeSelectionPage extends State<NameAgeSelectionPage> {
                               radius: 1.5,
                             ),
                             borderRadius: BorderRadius.circular(20.r)),
-                        child: Text(
-                          '13-18岁',
-                          style: TextStyle(
-                              fontFamily: 'LanSong',
-                              fontSize: 32.sp,
-                              color: ColorUtils.text_brown),
+                        child: Row(
+                          children: [
+                            SizedBox(width: 60.w),
+                            Expanded(
+                              child: Text(
+                                '26-38岁',
+                                style: TextStyle(
+                                    fontFamily: 'LanSong',
+                                    fontSize: 32.sp,
+                                    color: ColorUtils.text_brown),
+                              ),
+                            ),
+                            Visibility(
+                                visible: _selectedAge == Age.adult,
+                                child: Icon(Icons.check, color: ColorUtils.text_brown))
+                          ],
                         ),
                       ),
                     ),
