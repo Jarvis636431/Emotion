@@ -25,6 +25,8 @@ abstract final class ColorUtils {
 
   static const Color text_brown = Color(0xff683619); //棕色字体的颜色
 
+  static const Color splash_text = Color(0xffA2572E); //浅黄色字体
+
   static const Color text_light_brown = Color(0xffA65E3); //浅棕色字体//不显示？
 
   static const Color shadow = Color(0xffD7C39C); //阴影的颜色

@@ -104,9 +104,9 @@ flutter:
     - family: LanSong
       fonts:
         - asset: assets/fonts/MFLanSong_Noncommercial-Regular.otf
-    - family: LangSong
+    - family: BoHeHaiYan
       fonts:
-        - asset: assets/fonts/MFLangSong_Noncommercial-Regular.otf
+        - asset: assets/fonts/MFBoHeHaiYan_Noncommercial-Regular.otf
 
   #
   # For details regarding fonts from package dependencies,

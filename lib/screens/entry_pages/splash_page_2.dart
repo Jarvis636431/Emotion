@@ -25,8 +25,16 @@ class SplashPage2 extends StatelessWidget {
           child: Column(
             children: [
               Image.asset('assets/images/intros/intro_img_2.png',),
-              Text('123', style: TextStyle(color: ColorUtils.text_brown,
-                  decoration: TextDecoration.none),)
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 10.w),
+                child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text('祝好，\n在数不尽的明天', style: TextStyle(color: ColorUtils.text_brown,
+                        decoration: TextDecoration.none,fontFamily: 'BoHeHaiYan'),),
+                  ],
+                ),
+              )
             ],
           )
       ),
