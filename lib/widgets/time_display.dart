@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TimeDateDisplay extends StatefulWidget {
+  const TimeDateDisplay({super.key});
+
   @override
   _TimeDateDisplayState createState() => _TimeDateDisplayState();
 }
@@ -51,7 +53,7 @@ class _TimeDateDisplayState extends State<TimeDateDisplay> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 225.w,
       child: Row(
         children: [

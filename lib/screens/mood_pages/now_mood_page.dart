@@ -74,7 +74,7 @@ class NowMoodPage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(20.r),
                             boxShadow: const [
                               BoxShadow(
-                                color: ColorUtils.text_brown,
+                                color: ColorUtils.shadow,
                                 offset: Offset(0, 4), //阴影xy轴偏移量
                                 blurRadius: 4.0, //阴影模糊程度
                                 spreadRadius: 0.0, //阴影扩散程度

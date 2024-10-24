@@ -2,13 +2,18 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:emotion/commons/providers.dart';
 
 import 'package:emotion/home_page.dart';
 import 'package:emotion/screens/start_page.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+      //使用provider包裹整个app,这样就可以在任何地方使用provider了,用来管理时间
+      ChangeNotifierProvider(
+      create: (context) => TimeDateProvider(), child: const MyApp()));
 
   //这样就可以实现沉浸式了
   if (Platform.isAndroid) {
@@ -35,10 +40,10 @@ class MyApp extends StatelessWidget {
           '/start': (context) => const StartPage(),
         },
         theme: ThemeData(
-            appBarTheme: const AppBarTheme(
-              surfaceTintColor: Colors.transparent,//解决了滚动触发时会变色的原因
-            ),
-          splashColor: Colors.transparent,//解决了点击时会有水波纹的效果
+          appBarTheme: const AppBarTheme(
+            surfaceTintColor: Colors.transparent, //解决了滚动触发时会变色的原因
+          ),
+          splashColor: Colors.transparent, //解决了点击时会有水波纹的效果
         ),
         title: 'Flutter Demo',
         home: HomePage(),
