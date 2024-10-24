@@ -159,7 +159,6 @@ class StartPage extends StatelessWidget {
                         ),
                         //ListView父组件必须是有限制宽高的
                         Row(children: [
-                          ///TODO:获取裁剪好的人物形象，标签，底部导航栏Icon资源
                           Container(
                             child: Image.asset(
                               'assets/images/mbti_emoji/enf/enf1.png',
@@ -215,9 +214,9 @@ class StartPage extends StatelessWidget {
                       SizedBox(
                         height: 10.w,
                       ),
-                      Container(
+                      SizedBox(
                         height: 400.w,
-                        //listview必须这样包裹才可以实现滚动，否则会不懂，高度的确认？
+                        //listview必须这样包裹才可以实现滚动，否则会不动，高度的确认？
                         child: ListView(
                           ///TODO:解决阴影溢出问题
                           shrinkWrap: true,
