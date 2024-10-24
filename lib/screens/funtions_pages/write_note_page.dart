@@ -16,6 +16,8 @@ class _WriteNotePageState extends State<WriteNotePage> {
 
   @override
   Widget build(BuildContext context) {
+    List<String> tags = ['#开心', '#开心', '#开心', '#开心', '#开心'];
+
     final timeDateProvider = Provider.of<TimeDateProvider>(context);
 
     return Container(
@@ -77,20 +79,20 @@ class _WriteNotePageState extends State<WriteNotePage> {
                     color: ColorUtils.bg_yellow,
                     child: _droppedEmoji != null
                         ? Center(
-                      child: Image.asset(
-                        _droppedEmoji!,
-                        width: 50.h,
-                      ),
-                    )
+                            child: Image.asset(
+                              _droppedEmoji!,
+                              width: 50.h,
+                            ),
+                          )
                         : Center(
-                      child: Text(
-                        '拖动表情到这里',
-                        style: TextStyle(
-                          fontSize: 20.sp,
-                          color: ColorUtils.text_brown,
-                        ),
-                      ),
-                    ),
+                            child: Text(
+                              '拖动表情到这里',
+                              style: TextStyle(
+                                fontSize: 20.sp,
+                                color: ColorUtils.text_brown,
+                              ),
+                            ),
+                          ),
                   );
                 },
               ),
@@ -98,75 +100,33 @@ class _WriteNotePageState extends State<WriteNotePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Container(
-                    width: 50.h,
+                  SizedBox(
                     height: 25.w,
-                    decoration: BoxDecoration(
-                      color: ColorUtils.tag_bg,
-                      borderRadius: BorderRadius.circular(20.r),
+                    width: 350.w,
+                    child: ListView.builder(
+                      physics: const NeverScrollableScrollPhysics(),
+                      scrollDirection: Axis.horizontal,
+                      itemCount: tags.length,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 50.h,
+                          margin: EdgeInsets.symmetric(horizontal: 10.w),
+                          decoration: BoxDecoration(
+                            color: ColorUtils.tag_bg,
+                            borderRadius: BorderRadius.circular(20.r),
+                          ),
+                          alignment: Alignment.center,
+                          child: Text(
+                            tags[index],
+                            style: TextStyle(
+                              fontFamily: 'LanSong',
+                              fontSize: 20.sp,
+                              color: ColorUtils.text_brown,
+                            ),
+                          ),
+                        );
+                      },
                     ),
-                    alignment: Alignment.center,
-                    child: Text('#开心',
-                        style: TextStyle(
-                            fontFamily: 'LanSong',
-                            fontSize: 20.sp,
-                            color: ColorUtils.text_brown)),
-                  ),
-                  Container(
-                    width: 50.h,
-                    height: 25.w,
-                    decoration: BoxDecoration(
-                      color: ColorUtils.tag_bg,
-                      borderRadius: BorderRadius.circular(20.r),
-                    ),
-                    alignment: Alignment.center,
-                    child: Text('#开心',
-                        style: TextStyle(
-                            fontFamily: 'LanSong',
-                            fontSize: 20.sp,
-                            color: ColorUtils.text_brown)),
-                  ),
-                  Container(
-                    width: 50.h,
-                    height: 25.w,
-                    decoration: BoxDecoration(
-                      color: ColorUtils.tag_bg,
-                      borderRadius: BorderRadius.circular(20.r),
-                    ),
-                    alignment: Alignment.center,
-                    child: Text('#开心',
-                        style: TextStyle(
-                            fontFamily: 'LanSong',
-                            fontSize: 20.sp,
-                            color: ColorUtils.text_brown)),
-                  ),
-                  Container(
-                    width: 50.h,
-                    height: 25.w,
-                    decoration: BoxDecoration(
-                      color: ColorUtils.tag_bg,
-                      borderRadius: BorderRadius.circular(20.r),
-                    ),
-                    alignment: Alignment.center,
-                    child: Text('#开心',
-                        style: TextStyle(
-                            fontFamily: 'LanSong',
-                            fontSize: 20.sp,
-                            color: ColorUtils.text_brown)),
-                  ),
-                  Container(
-                    width: 50.h,
-                    height: 25.w,
-                    decoration: BoxDecoration(
-                      color: ColorUtils.tag_bg,
-                      borderRadius: BorderRadius.circular(20.r),
-                    ),
-                    alignment: Alignment.center,
-                    child: Text('#开心',
-                        style: TextStyle(
-                            fontFamily: 'LanSong',
-                            fontSize: 20.sp,
-                            color: ColorUtils.text_brown)),
                   ),
                 ],
               ),
@@ -174,11 +134,16 @@ class _WriteNotePageState extends State<WriteNotePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  _buildDraggableEmoji('assets/images/function/note_icons/note_icon_angry.png'),
-                  _buildDraggableEmoji('assets/images/function/note_icons/note_icon_sad.png'),
-                  _buildDraggableEmoji('assets/images/function/note_icons/note_icon_normal.png'),
-                  _buildDraggableEmoji('assets/images/function/note_icons/note_icon_clever.png'),
-                  _buildDraggableEmoji('assets/images/function/note_icons/note_icon_happy.png'),
+                  _buildDraggableEmoji(
+                      'assets/images/function/note_icons/note_icon_angry.png'),
+                  _buildDraggableEmoji(
+                      'assets/images/function/note_icons/note_icon_sad.png'),
+                  _buildDraggableEmoji(
+                      'assets/images/function/note_icons/note_icon_normal.png'),
+                  _buildDraggableEmoji(
+                      'assets/images/function/note_icons/note_icon_clever.png'),
+                  _buildDraggableEmoji(
+                      'assets/images/function/note_icons/note_icon_happy.png'),
                 ],
               ),
               SizedBox(height: 15.w),
