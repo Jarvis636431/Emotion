@@ -14,38 +14,29 @@ class UserInfoCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => destination),
-        );
-      },
-      child: Container(
+    return Container(
         width: 351.h,
         height: 59.w,
         decoration: BoxDecoration(
           color: ColorUtils.info_card_bg,
           borderRadius: BorderRadius.circular(20.r),
         ),
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 8.h),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                title,
-                style: TextStyle(fontSize: 16.sp, color: ColorUtils.text_brown),
-              ),
-              Icon(
-                Icons.arrow_forward_ios,
-                color: ColorUtils.text_brown,
-                size: 20.h,
-              ),
-            ],
+        child: ListTile(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => destination),
+            );
+          },
+          title: Text(
+            title,
+            style: TextStyle(fontSize: 16.sp, color: ColorUtils.text_brown),
           ),
-        ),
-      ),
-    );
+          trailing: Icon(
+            Icons.arrow_forward_ios,
+            color: ColorUtils.text_brown,
+            size: 20.r,
+          ),
+        ));
   }
 }
