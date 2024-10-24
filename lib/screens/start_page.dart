@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:emotion/widgets/informationCard.dart';
+import 'package:emotion/widgets/time_display.dart';
 
 import 'package:emotion/utils/ColorUtils.dart';
 
@@ -35,13 +36,7 @@ class StartPage extends StatelessWidget {
                   MaterialPageRoute(
                       builder: (context) => const SplashPage1()));
             },
-            child: Text(
-              '4月22日 星期一 天气🌤',
-              ///TODO：实现动态获取日期天气
-              style: TextStyle(
-                fontSize: 16.sp,
-              ),
-            ),
+            child: TimeDateDisplay(),
           ),
           centerTitle: true,
           toolbarHeight: 20.h,
