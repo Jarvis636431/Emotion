@@ -12,7 +12,9 @@ class MoodCheckPage extends StatefulWidget {
 class _MoodCheckPageState extends State<MoodCheckPage> {
   @override
   Widget build(BuildContext context) {
+
     final timeDateProvider = Provider.of<TimeDateProvider>(context);//获取时间
+
     return Container(
       decoration: const BoxDecoration(
        color: ColorUtils.light_bg,
@@ -61,7 +63,7 @@ class _MoodCheckPageState extends State<MoodCheckPage> {
                             children: [
                             Column(
                               children: [
-                                SizedBox(height: 20.w),
+                                SizedBox(height: 22.w),
                                 Text(timeDateProvider.currentDate,style: TextStyle(fontSize: 22.sp,color: ColorUtils.text_brown),),
                                 Text(timeDateProvider.currentTime,style: TextStyle(fontSize: 22.sp,color: ColorUtils.text_brown),),
                               ],

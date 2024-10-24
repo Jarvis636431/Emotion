@@ -3,13 +3,32 @@ import 'package:flutter/material.dart';
 import 'package:emotion/utils/ColorUtils.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class MoodInfactorPage extends StatelessWidget {
+class MoodInfactorPage extends StatefulWidget {
   const MoodInfactorPage({Key? key}) : super(key: key);
+
+  @override
+  _MoodInfactorPageState createState() => _MoodInfactorPageState();
+}
+
+class _MoodInfactorPageState extends State<MoodInfactorPage> {
+  int? _selectedIndex;
+
+  final List<String> imagePaths = [
+    'assets/images/mood_infactor/academic.png',
+    'assets/images/mood_infactor/family.png',
+    'assets/images/mood_infactor/food.png',
+    'assets/images/mood_infactor/health.png',
+    'assets/images/mood_infactor/others.png',
+    'assets/images/mood_infactor/social.png',
+    'assets/images/mood_infactor/travel.png',
+    'assets/images/mood_infactor/weather.png',
+    'assets/images/mood_infactor/work.png',
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         image: DecorationImage(
           image: AssetImage('assets/images/background/otherbackgrounds/infactor_bg.png'),
           fit: BoxFit.fill,
@@ -20,67 +39,72 @@ class MoodInfactorPage extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           leading: IconButton(
-            icon: const Icon(Icons.arrow_back_ios,color: ColorUtils.text_brown,),
+            icon: const Icon(Icons.arrow_back_ios, color: ColorUtils.text_brown),
             onPressed: () {
               Navigator.pop(context);
             },
           ),
-          title: Text('是什么影响了你的情绪？',style: TextStyle(fontSize: 32.sp,fontFamily: 'LanSong',color: ColorUtils.text_brown),),
+          title: Text('是什么影响了你的情绪？', style: TextStyle(fontSize: 32.sp, fontFamily: 'LanSong', color: ColorUtils.text_brown)),
         ),
         body: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.h,vertical: 10.w),
+          padding: EdgeInsets.symmetric(horizontal: 20.h, vertical: 10.w),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(height: 50.w),
-              Container(
+              SizedBox(
                 width: 400.h,
-                height: 400.w,//设置一个超出范围的高，使之能完全容纳，否则加上禁止滚动后会出现溢出问题
-                child: GridView.builder( ///布局问题
+                height: 400.w,
+                child: GridView.builder(
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 3,
                     crossAxisSpacing: 10.h,
                     mainAxisSpacing: 10.w,
                     childAspectRatio: 0.9,
                   ),
-                  physics: const NeverScrollableScrollPhysics(),//禁用滚动的方法
-                  itemCount: 9,
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemCount: imagePaths.length,
                   itemBuilder: (context, index) {
                     return Column(
                       children: [
-                        Container(
+                        InkWell(
+                          onTap: () {
+                            setState(() {
+                              _selectedIndex = index;
+                            });
+                          },
+                          child: Container(
                             width: 100.h,
                             height: 100.w,
                             decoration: BoxDecoration(
-                              color: ColorUtils.bg_white,
+                              color: _selectedIndex == index ? ColorUtils.bg_yellow : ColorUtils.bg_white,
                               borderRadius: BorderRadius.circular(20.r),
                             ),
                             alignment: Alignment.center,
-                            child: Text('图片',style: TextStyle(fontFamily: 'LanSong',fontSize: 24.sp,color: ColorUtils.text_brown),),//修改字体
+                            child: Image.asset(imagePaths[index]),
                           ),
-                        Text('文字',style: TextStyle(fontFamily: 'LanSong',fontSize: 14.sp,color: ColorUtils.text_brown),),//修改字体
+                        ),
+                        Text('文字', style: TextStyle(fontFamily: 'LanSong', fontSize: 14.sp, color: ColorUtils.text_brown)),
                       ],
                     );
                   },
                 ),
               ),
-              Expanded(child: SizedBox()),
+              const Expanded(child: SizedBox()),
               InkWell(
                 onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => MoodCheckPage()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => MoodCheckPage()));
                 },
                 child: Container(
-                    width: 200.h,
-                    height: 60.w,
-                    decoration: BoxDecoration(
-                      color: ColorUtils.bg_white,
-                      borderRadius: BorderRadius.circular(20.r),
-                    ),
-                    alignment: Alignment.center,
-                    child:Text('是这样的',style: TextStyle(fontFamily: 'LanSong',fontSize: 24.sp,color: ColorUtils.text_brown),)),//修改字体
+                  width: 200.h,
+                  height: 60.w,
+                  decoration: BoxDecoration(
+                    color: ColorUtils.bg_white,
+                    borderRadius: BorderRadius.circular(20.r),
+                  ),
+                  alignment: Alignment.center,
+                  child: Text('是这样的', style: TextStyle(fontFamily: 'LanSong', fontSize: 24.sp, color: ColorUtils.text_brown)),
+                ),
               ),
               SizedBox(height: 80.w),
             ],
