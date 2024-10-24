@@ -22,6 +22,7 @@ class _PendingPageState extends State<PendingPage> {
           //这里设置的颜色会覆盖tabarview里组件的背景色
         ),
         child: Scaffold(
+          resizeToAvoidBottomInset: true,
           backgroundColor: Colors.transparent,
           appBar: AppBar(
             backgroundColor: Colors.transparent,

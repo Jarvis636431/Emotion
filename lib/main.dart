@@ -13,7 +13,7 @@ void main() {
   runApp(
       //使用provider包裹整个app,这样就可以在任何地方使用provider了,用来管理时间
       ChangeNotifierProvider(
-      create: (context) => TimeDateProvider(), child: const MyApp()));
+          create: (context) => TimeDateProvider(), child: const MyApp()));
 
   //这样就可以实现沉浸式了
   if (Platform.isAndroid) {

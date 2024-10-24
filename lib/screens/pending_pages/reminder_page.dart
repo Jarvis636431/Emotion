@@ -21,7 +21,7 @@ class _ReminderPageState extends State<ReminderPage> {
           IconButton(
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => NewReminder()));
+                  MaterialPageRoute(builder: (context) => const NewReminder()));
             },
             icon: Icon(Icons.add, size: 100.w, color: ColorUtils.text_brown),
           ),
