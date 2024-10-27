@@ -48,7 +48,7 @@ class _EventLogPageState extends State<EventLogPage> {
                         ],
                       ),
                       //输入框需要父组件设置约束
-                      child: TextField(
+                      child: const TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
                           labelText: ' 事件',
@@ -218,7 +218,7 @@ class _EventLogPageState extends State<EventLogPage> {
                               color: ColorUtils.bg_yellow,
                               border: Border.all(color: ColorUtils.text_yellow),
                             ),
-                            child: Icon(Icons.add, color: ColorUtils.text_brown,))
+                            child: const Icon(Icons.add, color: ColorUtils.text_brown,))
                       ],
                     ),
                     Column(
