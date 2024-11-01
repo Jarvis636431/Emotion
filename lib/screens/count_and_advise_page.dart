@@ -25,6 +25,7 @@ class _CountAndAdvisePageState extends State<CountAndAdvisePage> {
         child: Scaffold(
             backgroundColor: Colors.transparent,
             appBar: AppBar(
+              automaticallyImplyLeading: false,
               backgroundColor: Colors.transparent,
               title: Text('心情统计',
                   style: TextStyle(

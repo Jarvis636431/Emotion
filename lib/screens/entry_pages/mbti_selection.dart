@@ -1,3 +1,4 @@
+import 'package:emotion/home_page.dart';
 import 'package:emotion/utils/ColorUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -11,6 +12,16 @@ class MBTISelectionPage extends StatefulWidget {
 
 class _MBTISelectionPage extends State<MBTISelectionPage> {
 
+  final List<String> _imagePaths = [
+    'assets/images/mbti_character/enf.png',
+    'assets/images/mbti_character/ent.png',
+    'assets/images/mbti_character/esj.png',
+    'assets/images/mbti_character/esp.png',
+    'assets/images/mbti_character/inf.png',
+    'assets/images/mbti_character/int.png',
+    'assets/images/mbti_character/isj.png',
+    'assets/images/mbti_character/isp.png',
+  ];
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -52,15 +63,44 @@ class _MBTISelectionPage extends State<MBTISelectionPage> {
               Center(
                 child: Column(
                   children: [
-                    InkWell(
-                      onTap: () {
-                        setState(() {});
-                      },
-                      child: Image.asset('assets/images/mbti_character/enf.png',
-                          width: 220.h, height: 220.w),
+                    SizedBox(
+                      height: 220.h,
+                      child: PageView.builder(
+                        itemCount: _imagePaths.length,
+                        itemBuilder: (context, index) {
+                          return Image.asset(
+                            _imagePaths[index],
+                            width: 220.h,
+                            height: 220.w,
+                          );
+                        },
+                      ),
                     ),
                     const SizedBox(
                       height: 20,
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                const HomePage()));
+                      },
+                      child: Container(
+                          width: 240.h,
+                          height: 60.w,
+                          decoration: BoxDecoration(
+                              color: ColorUtils.bg_white,
+                              borderRadius: BorderRadius.circular(20.r)),
+                          alignment: Alignment.center,
+                          child: Text(
+                            '进入APP',
+                            style: TextStyle(
+                                fontSize: 32.sp,
+                                fontFamily: 'LanSong',
+                                color: ColorUtils.text_brown),
+                          )),
                     ),
                   ],
                 ),

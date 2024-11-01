@@ -25,6 +25,7 @@ class _PendingPageState extends State<PendingPage> {
           resizeToAvoidBottomInset: true,
           backgroundColor: Colors.transparent,
           appBar: AppBar(
+            automaticallyImplyLeading: false,
             backgroundColor: Colors.transparent,
               title: Text('事件记录',style: TextStyle(fontFamily: 'LanSong',fontSize: 24.sp,color: ColorUtils.text_brown),),
               centerTitle: true,

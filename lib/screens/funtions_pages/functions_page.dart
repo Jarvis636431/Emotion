@@ -28,6 +28,7 @@ class _FunctionsPageState extends State<FunctionsPage> {
         //设置全局背景需要设置这个
         backgroundColor: Colors.transparent,
         appBar: AppBar(
+          automaticallyImplyLeading: false,
           title: Text(
             '放松一下',
             style: TextStyle(

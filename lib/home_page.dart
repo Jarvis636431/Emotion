@@ -32,7 +32,7 @@ class HomePageState extends State<HomePage> {
     const StartPage(),
     const CountAndAdvisePage(),
     PendingPage(),
-    FunctionsPage(),
+    const FunctionsPage(),
     const UserPage(),
   ];
 

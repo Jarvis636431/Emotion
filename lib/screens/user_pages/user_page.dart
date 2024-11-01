@@ -29,6 +29,7 @@ class _UserPageState extends State<UserPage> {
       child: Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
+            automaticallyImplyLeading: false,
             backgroundColor: Colors.transparent,
             actions: [
               InkWell(

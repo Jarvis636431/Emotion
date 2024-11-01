@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:emotion/commons/providers.dart';
 
+import 'package:emotion/splash_page.dart';
 import 'package:emotion/home_page.dart';
 import 'package:emotion/screens/start_page.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -45,8 +46,8 @@ class MyApp extends StatelessWidget {
           ),
           splashColor: Colors.transparent, //解决了点击时会有水波纹的效果
         ),
-        title: 'Flutter Demo',
-        home: HomePage(),
+        title: 'Mireille',//这里影响后台的
+        home: const SplashScreen(),
       ),
     );
   }

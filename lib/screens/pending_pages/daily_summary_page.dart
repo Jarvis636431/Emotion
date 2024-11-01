@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class DailySummaryPage extends StatefulWidget {
+  const DailySummaryPage({super.key});
+
   @override
   _DailySummaryPageState createState() => _DailySummaryPageState();
 }
@@ -105,3 +107,5 @@ class _DailySummaryPageState extends State<DailySummaryPage> {
     );
   }
 }
+
+// 使用listview.builder和数组

@@ -1,10 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:emotion/utils/ColorUtils.dart';
 import 'now_mood_page.dart';
-import 'package:emotion/widgets/clipCircle.dart';
 
 class TodayMoodPage extends StatelessWidget {
   const TodayMoodPage({Key? key}) : super(key: key);
