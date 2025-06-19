@@ -1,0 +1,1 @@
+ C:\\Users\\86151\\StudioProjects\\Emotion\\.dart_tool\\flutter_build\\6bd14ca34d738561f2586dd4401d983e\\native_assets.yaml: 

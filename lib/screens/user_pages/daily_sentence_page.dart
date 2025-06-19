@@ -35,7 +35,49 @@ class _DailySentencePageState extends State<DailySentencePage> {
                 height: 470.w,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20.r),
-                  color: ColorUtils.bg_yellow,
+                  color: const Color(0xFFFFF3C1),
+                  boxShadow: const [
+                    BoxShadow(
+                      color: Color(0x1A000000),
+                      offset: Offset(0, 8),
+                      blurRadius: 16,
+                    ),
+                  ],
+                ),
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(24.w, 24.h, 24.w, 24.h),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        '2024年3月21日',
+                        style: TextStyle(
+                          fontSize: 20.sp,
+                          color: ColorUtils.text_brown,
+                        ),
+                      ),
+                      SizedBox(height: 40.h),
+                      Text(
+                        '谁说我没有死过？\n出生以前，太阳已无数次起落，悠久的时光被悠久的虚无吞并，又以我生日的名义卷土重来。',
+                        style: TextStyle(
+                          fontSize: 20.sp,
+                          color: ColorUtils.text_brown,
+                          height: 1.6,
+                        ),
+                      ),
+                      const Spacer(),
+                      Align(
+                        alignment: Alignment.bottomRight,
+                        child: Text(
+                          '——《病隙碎笔》',
+                          style: TextStyle(
+                            fontSize: 20.sp,
+                            color: ColorUtils.text_brown,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
               SizedBox(height: 25.w),
@@ -62,6 +104,38 @@ class _DailySentencePageState extends State<DailySentencePage> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20.r),
                       color: ColorUtils.daily_card_1,
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 16.h),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                '2024年3月20日',
+                                style: TextStyle(
+                                  fontSize: 20.sp,
+                                  color: ColorUtils.text_brown,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              Text(
+                                '． ． ． ． ． ．',
+                                style: TextStyle(
+                                  fontSize: 24.sp,
+                                  color: ColorUtils.text_brown,
+                                  letterSpacing: 1,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ],
