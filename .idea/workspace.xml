@@ -9,15 +9,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fix]新增了几张图片改名">
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/.filecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/app.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/debug_android_application.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/debug_android_application.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/flutter_assets.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/kernel_snapshot.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/kernel_snapshot.stamp" afterDir="false" />
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fix]给图片增加了文字描述">
+      <change afterPath="$PROJECT_DIR$/assets/images/test.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/mood_pages/mood_infactor_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mood_pages/mood_infactor_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/pending_pages/daily_summary_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/pending_pages/daily_summary_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,14 +100,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714296467787</updated>
-    </task>
-    <task id="LOCAL-00003" summary="[fea]初步构建了年龄选择页和MBTI选择页的框架">
-      <option name="closed" value="true" />
-      <created>1715006778598</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1715006778598</updated>
     </task>
     <task id="LOCAL-00004" summary="[fea]新增主页和心情选择页面">
       <option name="closed" value="true" />
@@ -497,7 +485,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750338357830</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="[fix]给图片增加了文字描述">
+      <option name="closed" value="true" />
+      <created>1750338982859</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1750338982859</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -513,7 +509,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[fea]初步实现收藏的话页面" />
     <MESSAGE value="[new]新增了图片和字体资源" />
     <MESSAGE value="[new]重启" />
     <MESSAGE value="[fix]以底部导航栏为基础的整体架构基本完成" />
@@ -538,6 +533,7 @@
     <MESSAGE value="[fix]把页面结构暂存成了图片" />
     <MESSAGE value="[fix]增加了图片的样式" />
     <MESSAGE value="[fix]新增了几张图片改名" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix]新增了几张图片改名" />
+    <MESSAGE value="[fix]给图片增加了文字描述" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix]给图片增加了文字描述" />
   </component>
 </project>

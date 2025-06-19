@@ -17,13 +17,13 @@ class _DailySummaryPageState extends State<DailySummaryPage> {
         color: ColorUtils.light_bg,
       ),
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20.h,vertical: 20.w),
+        padding: EdgeInsets.symmetric(horizontal: 20.h, vertical: 20.w),
         child: Column(
           children: [
-            Container(
-              height: 200.w,
-              width: 300.h,
-              color: ColorUtils.bg_yellow,
+            SizedBox(
+              height: 150.w,
+              width: 400.h,
+              child: Image.asset('assets/images/test.png', fit: BoxFit.cover),
             ),
             SizedBox(height: 20.w),
             ListTile(
@@ -31,7 +31,8 @@ class _DailySummaryPageState extends State<DailySummaryPage> {
               title: Text('工作', style: TextStyle(fontSize: 20.sp)),
               subtitle: Text(
                 '记录时间：12:00',
-                style: TextStyle(fontSize: 14.sp, color: ColorUtils.text_yellow),
+                style:
+                    TextStyle(fontSize: 14.sp, color: ColorUtils.text_yellow),
               ),
               trailing: Container(
                 //封装好组件，点击切换状态
@@ -42,11 +43,12 @@ class _DailySummaryPageState extends State<DailySummaryPage> {
                   ///设计图神秘圆角
                 ),
                 child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10.h, vertical: 5.w),
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 10.h, vertical: 5.w),
                   child: Text(
                     '  X3  ',
-                    style:
-                    TextStyle(fontSize: 14.sp, color: ColorUtils.text_brown),
+                    style: TextStyle(
+                        fontSize: 14.sp, color: ColorUtils.text_brown),
                   ),
                 ),
               ),
@@ -56,7 +58,8 @@ class _DailySummaryPageState extends State<DailySummaryPage> {
               title: Text('工作', style: TextStyle(fontSize: 20.sp)),
               subtitle: Text(
                 '记录时间：12:00',
-                style: TextStyle(fontSize: 14.sp, color: ColorUtils.text_yellow),
+                style:
+                    TextStyle(fontSize: 14.sp, color: ColorUtils.text_yellow),
               ),
               trailing: Container(
                 //封装好组件，点击切换状态
@@ -67,11 +70,12 @@ class _DailySummaryPageState extends State<DailySummaryPage> {
                   ///设计图神秘圆角
                 ),
                 child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10.h, vertical: 5.w),
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 10.h, vertical: 5.w),
                   child: Text(
                     '  X3  ',
-                    style:
-                    TextStyle(fontSize: 14.sp, color: ColorUtils.text_brown),
+                    style: TextStyle(
+                        fontSize: 14.sp, color: ColorUtils.text_brown),
                   ),
                 ),
               ),
@@ -81,7 +85,8 @@ class _DailySummaryPageState extends State<DailySummaryPage> {
               title: Text('工作', style: TextStyle(fontSize: 20.sp)),
               subtitle: Text(
                 '记录时间：12:00',
-                style: TextStyle(fontSize: 14.sp, color: ColorUtils.text_yellow),
+                style:
+                    TextStyle(fontSize: 14.sp, color: ColorUtils.text_yellow),
               ),
               trailing: Container(
                 //封装好组件，点击切换状态
@@ -92,11 +97,12 @@ class _DailySummaryPageState extends State<DailySummaryPage> {
                   ///设计图神秘圆角
                 ),
                 child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10.h, vertical: 5.w),
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 10.h, vertical: 5.w),
                   child: Text(
                     '  X3  ',
-                    style:
-                    TextStyle(fontSize: 14.sp, color: ColorUtils.text_brown),
+                    style: TextStyle(
+                        fontSize: 14.sp, color: ColorUtils.text_brown),
                   ),
                 ),
               ),
