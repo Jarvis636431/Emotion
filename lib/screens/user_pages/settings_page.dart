@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:emotion/widgets/user_info_card.dart';
@@ -7,6 +8,8 @@ import 'package:emotion/utils/ColorUtils.dart';
 
 import 'package:emotion/screens/user_pages/reset_mbti_page.dart';
 import 'package:emotion/screens/user_pages/avatar_page.dart';
+import 'package:emotion/screens/entry_pages/splash_page_1.dart';
+
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
 
@@ -57,6 +60,28 @@ class _SettingsPageState extends State<SettingsPage> {
                   ],
                 ),
                 SizedBox(height: 20.w),
+                Center(
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: ColorUtils.bg_white,
+                      foregroundColor: ColorUtils.text_brown,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20.r),
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 40.w, vertical: 16.h),
+                    ),
+                    onPressed: () async {
+                      final prefs = await SharedPreferences.getInstance();
+                      await prefs.setBool('isLoggedIn', false);
+                      Navigator.pushAndRemoveUntil(
+                        context,
+                        MaterialPageRoute(builder: (context) => SplashPage1()),
+                        (route) => false,
+                      );
+                    },
+                    child: Text('退出登录', style: TextStyle(fontSize: 20.sp)),
+                  ),
+                ),
               ]
             ),
           ),

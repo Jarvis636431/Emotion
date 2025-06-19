@@ -1,4 +1,6 @@
+import 'package:emotion/screens/entry_pages/splash_page_1.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -6,6 +8,7 @@ import 'package:emotion/utils/ColorUtils.dart';
 
 import 'package:emotion/screens/user_pages/settings_page.dart';
 import 'package:emotion/screens/user_pages/daily_sentence_page.dart';
+import 'package:emotion/splash_page.dart';
 
 class UserPage extends StatefulWidget {
   const UserPage({super.key});
@@ -217,6 +220,7 @@ class _UserPageState extends State<UserPage> {
                     ],
                   ),
                 ),
+                SizedBox(height: 30.w)
               ],
             ),
           )),

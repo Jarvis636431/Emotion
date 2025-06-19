@@ -8,7 +8,6 @@ import 'package:emotion/utils/ColorUtils.dart';
 
 import 'package:emotion/screens/mood_pages/today_mood_page.dart';
 import 'package:emotion/screens/count_and_advise_page.dart';
-import 'package:emotion/screens/entry_pages/splash_page_1.dart';
 
 class StartPage extends StatelessWidget {
   const StartPage({super.key});
@@ -30,15 +29,7 @@ class StartPage extends StatelessWidget {
         appBar: AppBar(
           automaticallyImplyLeading: false,
           backgroundColor: Colors.transparent,
-          title: InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const SplashPage1()));
-            },
-            child: TimeDateDisplay(),
-          ),
+          title: TimeDateDisplay(),
           centerTitle: true,
           toolbarHeight: 20.h,
         ),

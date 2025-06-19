@@ -2,6 +2,7 @@ import 'package:emotion/home_page.dart';
 import 'package:emotion/utils/ColorUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class MBTISelectionPage extends StatefulWidget {
   const MBTISelectionPage({Key? key}) : super(key: key);
@@ -80,12 +81,15 @@ class _MBTISelectionPage extends State<MBTISelectionPage> {
                       height: 20,
                     ),
                     InkWell(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                const HomePage()));
+                      onTap: () async {
+                        // 设置已登录
+                        final prefs = await SharedPreferences.getInstance();
+                        await prefs.setBool('isLoggedIn', true);
+                        Navigator.pushAndRemoveUntil(
+                          context,
+                          MaterialPageRoute(builder: (context) => const HomePage()),
+                          (route) => false,
+                        );
                       },
                       child: Container(
                           width: 240.h,

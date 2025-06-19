@@ -9,10 +9,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]上一条实现了首次登录是否展示起始页">
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fix]居中输入框">
+      <change beforePath="$PROJECT_DIR$/lib/screens/entry_pages/mbti_selection.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/entry_pages/mbti_selection.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/start_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/start_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/user_pages/settings_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/user_pages/settings_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/user_pages/user_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/user_pages/user_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/splash_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/splash_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -436,7 +438,39 @@
       <option name="project" value="LOCAL" />
       <updated>1730472113525</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="[fea]重启一下">
+      <option name="closed" value="true" />
+      <created>1750314596876</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1750314596876</updated>
+    </task>
+    <task id="LOCAL-00044" summary="[fea]userpage填充内容">
+      <option name="closed" value="true" />
+      <created>1750323385483</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1750323385483</updated>
+    </task>
+    <task id="LOCAL-00045" summary="[fix]修复了输入框像素溢出的bug">
+      <option name="closed" value="true" />
+      <created>1750332305585</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1750332305585</updated>
+    </task>
+    <task id="LOCAL-00046" summary="[fix]居中输入框">
+      <option name="closed" value="true" />
+      <created>1750332720130</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1750332720130</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -452,10 +486,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[fea]新增了mbti类型下拉弹窗" />
-    <MESSAGE value="[fea]是上一条commit的记录，完成了计时器的功能，音乐播放器尚未完成" />
-    <MESSAGE value="[fea]实现了音乐播放器功能，等待音源" />
-    <MESSAGE value="[fea]实现打卡页面" />
     <MESSAGE value="[fea]实现功能选择页面" />
     <MESSAGE value="[fea]实现图片选择页面" />
     <MESSAGE value="[fea]实现填色界面进度条" />
@@ -477,6 +507,10 @@
     <MESSAGE value="[fea]修改了一下进入的逻辑" />
     <MESSAGE value="[fea]修改了一下进入的逻辑，设置里不自动显示返回按键" />
     <MESSAGE value="[fea]上一条实现了首次登录是否展示起始页" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fea]上一条实现了首次登录是否展示起始页" />
+    <MESSAGE value="[fea]重启一下" />
+    <MESSAGE value="[fea]userpage填充内容" />
+    <MESSAGE value="[fix]修复了输入框像素溢出的bug" />
+    <MESSAGE value="[fix]居中输入框" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix]居中输入框" />
   </component>
 </project>
