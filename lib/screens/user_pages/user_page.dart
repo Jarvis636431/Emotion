@@ -111,23 +111,45 @@ class _UserPageState extends State<UserPage> {
                     width: 400.h,
                     height: 184.w,
                     decoration: BoxDecoration(
-                      color: ColorUtils.daily_sentence_bg,
-                      borderRadius: BorderRadius.circular(20),
+                      color: const Color(0xFFFFF3C1),
+                      borderRadius: BorderRadius.circular(28),
                       boxShadow: const [
                         BoxShadow(
-                          color: ColorUtils.shadow,
-                          offset: Offset(0, 4),
-                          blurRadius: 4,
+                          color: Color(0x1A000000),
+                          offset: Offset(0, 8),
+                          blurRadius: 16,
                         ),
                       ],
                     ),
-                    child: Center(
-                      child: Text(
-                        '每日一言',
-                        style: TextStyle(
-                            fontSize: 20.sp,
-                            color: ColorUtils.text_brown),
-                      )
+                    child: Padding(
+                      padding: EdgeInsets.fromLTRB(24.w, 24.h, 24.w, 24.h),
+                      child: Stack(
+                        children: [
+                          Align(
+                            alignment: Alignment.topLeft,
+                            child: Text(
+                              '    但是太阳，他每时每刻都是夕阳也是旭曰。\n    当他熄灭着走下山去收尽苍凉残照之际，正是他在另一面燃烧着爬上山巅布散烈烈朝晖之时。',
+                              style: TextStyle(
+                                fontSize: 16.sp,
+                                color: ColorUtils.text_brown,
+                                height: 1.6,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                          Positioned(
+                            right: 0,
+                            bottom: 0,
+                            child: Text(
+                              '——《我与地坛》',
+                              style: TextStyle(
+                                fontSize: 15.sp,
+                                color: ColorUtils.text_brown,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
