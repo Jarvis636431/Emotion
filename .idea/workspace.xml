@@ -9,13 +9,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]分析了一下代码">
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fea]上一条实现了首次登录是否展示起始页">
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/entry_pages/mbti_selection.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/entry_pages/mbti_selection.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/mood_pages/today_mood_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mood_pages/today_mood_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -423,7 +420,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729248180224</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="[fea]修改了一下进入的逻辑，设置里不自动显示返回按键">
+      <option name="closed" value="true" />
+      <created>1730471983901</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1730471983901</updated>
+    </task>
+    <task id="LOCAL-00042" summary="[fea]上一条实现了首次登录是否展示起始页">
+      <option name="closed" value="true" />
+      <created>1730472113525</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1730472113525</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,9 +452,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[fea]初步实现待办界面的tabbar和tabbarview" />
-    <MESSAGE value="[fea]完善了新建提醒页面" />
-    <MESSAGE value="[fea]修改了命名逻辑，用父级defaulttabcontroller统一控制tab" />
     <MESSAGE value="[fea]新增了mbti类型下拉弹窗" />
     <MESSAGE value="[fea]是上一条commit的记录，完成了计时器的功能，音乐播放器尚未完成" />
     <MESSAGE value="[fea]实现了音乐播放器功能，等待音源" />
@@ -464,6 +474,9 @@
     <MESSAGE value="[fea]构建了事件记录页面的结构" />
     <MESSAGE value="[fea]心情分析页面架构基本完成" />
     <MESSAGE value="[fea]分析了一下代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fea]分析了一下代码" />
+    <MESSAGE value="[fea]修改了一下进入的逻辑" />
+    <MESSAGE value="[fea]修改了一下进入的逻辑，设置里不自动显示返回按键" />
+    <MESSAGE value="[fea]上一条实现了首次登录是否展示起始页" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fea]上一条实现了首次登录是否展示起始页" />
   </component>
 </project>

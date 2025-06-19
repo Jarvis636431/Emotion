@@ -16,7 +16,7 @@ void main() {
       ChangeNotifierProvider(
           create: (context) => TimeDateProvider(), child: const MyApp()));
 
-  //这样就可以实现沉浸式了
+  //这样就可以实现沉浸式了（底部导航和顶部状态栏）
   if (Platform.isAndroid) {
     SystemUiOverlayStyle systemUiOverlayStyle = const SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
@@ -29,7 +29,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -46,7 +45,7 @@ class MyApp extends StatelessWidget {
           ),
           splashColor: Colors.transparent, //解决了点击时会有水波纹的效果
         ),
-        title: 'Mireille',//这里影响后台的
+        title: 'Mireille',//这里影响MIUI后台的名字
         home: const SplashScreen(),
       ),
     );
