@@ -9,10 +9,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fix]把页面结构暂存成了图片">
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fix]增加了图片的样式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent开心.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/mood_pages/check_mood_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mood_pages/check_mood_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent一般.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent悲伤.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent烦躁.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent生气.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/start_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/start_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -484,7 +487,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750335435648</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="[fix]增加了图片的样式">
+      <option name="closed" value="true" />
+      <created>1750336655555</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1750336655555</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -500,7 +511,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[fea]实现填色界面进度条" />
     <MESSAGE value="[fea]初步实现笔记界面" />
     <MESSAGE value="[fea]初步实现收藏的话页面" />
     <MESSAGE value="[new]新增了图片和字体资源" />
@@ -525,6 +535,7 @@
     <MESSAGE value="[fix]居中输入框" />
     <MESSAGE value="[fix]暂存一下状态" />
     <MESSAGE value="[fix]把页面结构暂存成了图片" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix]把页面结构暂存成了图片" />
+    <MESSAGE value="[fix]增加了图片的样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix]增加了图片的样式" />
   </component>
 </project>

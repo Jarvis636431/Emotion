@@ -148,32 +148,32 @@ class StartPage extends StatelessWidget {
                         Row(children: [
                           Container(
                             child: Image.asset(
-                              'assets/images/mbti_emoji/enf/enf1.png',
+                              'assets/images/mbti_emoji/ent/ent1.png',
                               width: 48.h,
                             ),
                           ),
                           Image.asset(
-                            'assets/images/mbti_emoji/enf/enf1.png',
+                            'assets/images/mbti_emoji/ent/ent1.png',
                             width: 48.h,
                           ),
                           Image.asset(
-                            'assets/images/mbti_emoji/enf/enf1.png',
+                            'assets/images/mbti_emoji/ent/enf2.png',
                             width: 48.h,
                           ),
                           Image.asset(
-                            'assets/images/mbti_emoji/enf/enf1.png',
+                            'assets/images/mbti_emoji/ent/ent4.png',
                             width: 48.h,
                           ),
                           Image.asset(
-                            'assets/images/mbti_emoji/enf/enf1.png',
+                            'assets/images/mbti_emoji/ent/ent5.png',
                             width: 48.h,
                           ),
                           Image.asset(
-                            'assets/images/mbti_emoji/enf/enf1.png',
+                            'assets/images/mbti_emoji/ent/ent3.png',
                             width: 48.h,
                           ),
                           Image.asset(
-                            'assets/images/mbti_emoji/enf/enf1.png',
+                            'assets/images/mbti_emoji/ent/ent2.png',
                             width: 48.h,
                           ),
                         ]),
