@@ -9,15 +9,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fix]暂存一下状态">
-      <change afterPath="$PROJECT_DIR$/assets/images/nowmood.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/page.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/todaymood.png" afterDir="false" />
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fix]把页面结构暂存成了图片">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/count_and_advise_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/count_and_advise_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/mood_pages/now_mood_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mood_pages/now_mood_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/mood_pages/today_mood_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mood_pages/today_mood_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/user_pages/user_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/user_pages/user_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent开心.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/mood_pages/check_mood_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mood_pages/check_mood_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -481,7 +476,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750334453804</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="[fix]把页面结构暂存成了图片">
+      <option name="closed" value="true" />
+      <created>1750335435648</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1750335435648</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,7 +500,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[fea]实现图片选择页面" />
     <MESSAGE value="[fea]实现填色界面进度条" />
     <MESSAGE value="[fea]初步实现笔记界面" />
     <MESSAGE value="[fea]初步实现收藏的话页面" />
@@ -522,6 +524,7 @@
     <MESSAGE value="[fix]修复了输入框像素溢出的bug" />
     <MESSAGE value="[fix]居中输入框" />
     <MESSAGE value="[fix]暂存一下状态" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix]暂存一下状态" />
+    <MESSAGE value="[fix]把页面结构暂存成了图片" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix]把页面结构暂存成了图片" />
   </component>
 </project>
