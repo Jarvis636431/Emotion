@@ -1,14 +1,10 @@
-import 'package:emotion/screens/entry_pages/splash_page_1.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:emotion/utils/ColorUtils.dart';
 
 import 'package:emotion/screens/user_pages/settings_page.dart';
 import 'package:emotion/screens/user_pages/daily_sentence_page.dart';
-import 'package:emotion/splash_page.dart';
 
 class UserPage extends StatefulWidget {
   const UserPage({super.key});
@@ -53,12 +49,12 @@ class _UserPageState extends State<UserPage> {
                       Text(
                         '设置',
                         style: TextStyle(
-                            fontSize: 13.sp,
-                            color: ColorUtils.text_brown),
+                            fontSize: 13.sp, color: ColorUtils.text_brown),
                       ),
                     ],
                   ),
-                ),)
+                ),
+              )
             ],
           ),
           body: Padding(
@@ -190,7 +186,10 @@ class _UserPageState extends State<UserPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Image.asset('assets/images/testpic1.png'),
-                            Text('测一测你的MBTI人格吧',style: TextStyle(fontSize: 20.sp,color: ColorUtils.text_brown)),
+                            Text('测一测你的MBTI人格吧',
+                                style: TextStyle(
+                                    fontSize: 20.sp,
+                                    color: ColorUtils.text_brown)),
                           ],
                         ),
                       ),
@@ -213,7 +212,10 @@ class _UserPageState extends State<UserPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Image.asset('assets/images/testpic2.png'),
-                            Text('测试',style: TextStyle(fontSize: 20.sp,color: ColorUtils.text_brown)),
+                            Text('测试',
+                                style: TextStyle(
+                                    fontSize: 20.sp,
+                                    color: ColorUtils.text_brown)),
                           ],
                         ),
                       ),
