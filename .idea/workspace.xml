@@ -10,11 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fix]居中输入框">
-      <change beforePath="$PROJECT_DIR$/lib/screens/entry_pages/mbti_selection.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/entry_pages/mbti_selection.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/start_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/start_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/user_pages/settings_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/user_pages/settings_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/user_pages/user_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/user_pages/user_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/mood_pages/now_mood_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mood_pages/now_mood_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/splash_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/splash_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/rouletteSelector.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/rouletteSelector.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -2,8 +2,6 @@ import 'package:emotion/home_page.dart';
 import 'package:emotion/screens/entry_pages/splash_page_1.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

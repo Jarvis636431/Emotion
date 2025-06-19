@@ -7,7 +7,6 @@ import 'package:emotion/screens/pending_pages/root_pending_page.dart';
 import 'package:emotion/screens/funtions_pages/functions_page.dart';
 import 'package:emotion/screens/user_pages/user_page.dart';
 import 'package:flutter_floating_bottom_bar/flutter_floating_bottom_bar.dart';
-import 'package:emotion/utils/ColorUtils.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomePage extends StatefulWidget {
@@ -74,27 +73,43 @@ class HomePageState extends State<HomePage> {
           child: SizedBox(
             height: 60.w,
             child: SingleChildScrollView(
-              physics: const NeverScrollableScrollPhysics(),//嵌套滚动组件再禁止滚动解决像素溢出问题
+              physics:
+                  const NeverScrollableScrollPhysics(), //嵌套滚动组件再禁止滚动解决像素溢出问题
               child: BottomNavigationBar(
-                type: BottomNavigationBarType.fixed,//这样就可以关闭点击放大的效果了
+                type: BottomNavigationBarType.fixed, //这样就可以关闭点击放大的效果了
                 elevation: 0,
                 backgroundColor: Colors.transparent,
                 items: [
                   BottomNavigationBarItem(
-                    //每个item的背景色是选中item时整个导航栏的背景色
-                      icon: Image.asset('assets/images/bottomNavigationBarIcon/home.png',width: 45.h,),
+                      //每个item的背景色是选中item时整个导航栏的背景色
+                      icon: Image.asset(
+                        'assets/images/bottomNavigationBarIcon/home.png',
+                        width: 45.h,
+                      ),
                       label: ''),
                   BottomNavigationBarItem(
-                      icon: Image.asset('assets/images/bottomNavigationBarIcon/list.png',width: 45.h,),
+                      icon: Image.asset(
+                        'assets/images/bottomNavigationBarIcon/list.png',
+                        width: 45.h,
+                      ),
                       label: ''),
                   BottomNavigationBarItem(
-                      icon: Image.asset('assets/images/bottomNavigationBarIcon/clock.png',width: 45.h,),
+                      icon: Image.asset(
+                        'assets/images/bottomNavigationBarIcon/clock.png',
+                        width: 45.h,
+                      ),
                       label: ''),
                   BottomNavigationBarItem(
-                      icon: Image.asset('assets/images/bottomNavigationBarIcon/play.png',width: 45.h,),
+                      icon: Image.asset(
+                        'assets/images/bottomNavigationBarIcon/play.png',
+                        width: 45.h,
+                      ),
                       label: ''),
                   BottomNavigationBarItem(
-                      icon: Image.asset('assets/images/bottomNavigationBarIcon/user.png',width: 43.h,),
+                      icon: Image.asset(
+                        'assets/images/bottomNavigationBarIcon/user.png',
+                        width: 43.h,
+                      ),
                       label: ''),
                 ],
                 currentIndex: currentIndex,

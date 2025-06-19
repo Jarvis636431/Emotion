@@ -2,11 +2,27 @@ import 'package:emotion/utils/ColorUtils.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'dart:math' as math;
 
 import 'mood_infactor_page.dart';
 
-class NowMoodPage extends StatelessWidget {
+class NowMoodPage extends StatefulWidget {
   const NowMoodPage({Key? key}) : super(key: key);
+
+  @override
+  State<NowMoodPage> createState() => _NowMoodPageState();
+}
+
+class _NowMoodPageState extends State<NowMoodPage> {
+  int selectedIndex = 2;
+  final List<String> moodIcons = [
+    'assets/images/mbti_emoji/enf/enf3.png', // 悲伤
+    'assets/images/mbti_emoji/enf/enf4.png', // 生气
+    'assets/images/mbti_emoji/enf/enf1.png', // 平淡
+    'assets/images/mbti_emoji/enf/enf2.png', // 开心
+    'assets/images/mbti_emoji/enf/enf5.png', // 烦躁
+  ];
+  final List<String> moodNames = ['悲伤', '生气', '平淡', '开心', '烦躁'];
 
   @override
   Widget build(BuildContext context) {
@@ -40,64 +56,139 @@ class NowMoodPage extends StatelessWidget {
         ),
         body: Column(
           children: [
-            //这里放置了center，底下的按钮也会居中，因为他影响了column，使之适应了子元素的布局
-            Center(
-                child: Image.asset('assets/images/mbti_emoji/enf/enf1.png',
-                    width: 250.w)),
-            Expanded(child: SizedBox(height: 20.w)),
-            //布局问题！！！
-            Stack(
-              ///TODO:布局问题！！！
-              children: [
-                // Container(
-                //       width: 700.h,
-                //   height: 700.w,// Adjust as needed
-                //   decoration: BoxDecoration(
-                //     color: ColorUtils.bg_white, // Adjust as needed
-                //     shape: BoxShape.circle,
-                //   ),
-                //     ),
-                Column(
-                  children: [
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const MoodInfactorPage()));
-                      },
-                      child: Container(
-                          width: 200.h,
-                          height: 50.h,
-                          decoration: BoxDecoration(
-                            color: ColorUtils.bg_white,
-                            borderRadius: BorderRadius.circular(20.r),
-                            boxShadow: const [
-                              BoxShadow(
-                                color: ColorUtils.shadow,
-                                offset: Offset(0, 4), //阴影xy轴偏移量
-                                blurRadius: 4.0, //阴影模糊程度
-                                spreadRadius: 0.0, //阴影扩散程度
-                              ),
-                            ],
-                          ),
-                          alignment: Alignment.center,
-                          child: Text(
-                            '是这样的',
-                            style: TextStyle(
-                                fontFamily: 'LanSong',
-                                fontSize: 24.sp,
-                                color: ColorUtils.text_brown),
-                          )), //修改字体
+            Center(child: Image.asset(moodIcons[selectedIndex], width: 250.w)),
+            SizedBox(height: 12.w),
+            Text(
+              moodNames[selectedIndex],
+              style: TextStyle(
+                  fontSize: 24.sp,
+                  color: ColorUtils.text_brown,
+                  fontFamily: 'LanSong'),
+            ),
+            const Spacer(),
+            // 半圆轮盘选择器
+            SizedBox(
+              width: 1.sw,
+              height: 220.w,
+              child: Stack(
+                alignment: Alignment.bottomCenter,
+                children: [
+                  // 半圆背景
+                  Positioned(
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    child: CustomPaint(
+                      size: Size(1.sw, 180.w),
+                      painter: _HalfCirclePainter(),
                     ),
-                    SizedBox(height: 80.w),
-                  ],
-                ),
-              ],
-            )
+                  ),
+                  // 轮盘icon
+                  Positioned.fill(
+                    child: LayoutBuilder(
+                      builder: (context, constraints) {
+                        final r = constraints.maxWidth / 2.2;
+                        final centerX = constraints.maxWidth / 2;
+                        final centerY = constraints.maxHeight - 40.w;
+                        return Stack(
+                          children: List.generate(moodIcons.length, (i) {
+                            final angle = 3.14 * (i / (moodIcons.length - 1));
+                            final x = centerX +
+                                r * math.cos(angle) -
+                                (selectedIndex == i ? 40.w : 28.w);
+                            final y = centerY -
+                                r * math.sin(angle) -
+                                (selectedIndex == i ? 40.w : 28.w);
+                            return Positioned(
+                              left: x,
+                              top: y,
+                              child: GestureDetector(
+                                onTap: () {
+                                  setState(() {
+                                    selectedIndex = i;
+                                  });
+                                },
+                                child: AnimatedContainer(
+                                  duration: const Duration(milliseconds: 200),
+                                  curve: Curves.easeOut,
+                                  width: selectedIndex == i ? 80.w : 56.w,
+                                  height: selectedIndex == i ? 80.w : 56.w,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    boxShadow: selectedIndex == i
+                                        ? [
+                                            BoxShadow(
+                                              color: ColorUtils.text_brown
+                                                  .withOpacity(0.18),
+                                              blurRadius: 16,
+                                              spreadRadius: 2,
+                                            )
+                                          ]
+                                        : [],
+                                  ),
+                                  child: Image.asset(moodIcons[i]),
+                                ),
+                              ),
+                            );
+                          }),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 40.w),
+            // 继续按钮
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const MoodInfactorPage()));
+              },
+              child: Container(
+                  width: 200.h,
+                  height: 50.h,
+                  decoration: BoxDecoration(
+                    color: ColorUtils.bg_white,
+                    borderRadius: BorderRadius.circular(20.r),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: ColorUtils.shadow,
+                        offset: Offset(0, 4),
+                        blurRadius: 4.0,
+                        spreadRadius: 0.0,
+                      ),
+                    ],
+                  ),
+                  alignment: Alignment.center,
+                  child: Text(
+                    '是这样的',
+                    style: TextStyle(
+                        fontFamily: 'LanSong',
+                        fontSize: 24.sp,
+                        color: ColorUtils.text_brown),
+                  )),
+            ),
+            SizedBox(height: 30.w),
           ],
         ),
       ),
     );
   }
+}
+
+class _HalfCirclePainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final paint = Paint()
+      ..color = const Color(0xFFFFF3C1)
+      ..style = PaintingStyle.fill;
+    final rect = Rect.fromLTWH(0, 0, size.width, size.height * 2);
+    canvas.drawArc(rect, 3.14, 3.14, false, paint);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }
