@@ -25,12 +25,25 @@ class _MoodInfactorPageState extends State<MoodInfactorPage> {
     'assets/images/mood_infactor/work.png',
   ];
 
+  final List<String> imageLabels = [
+    '工作',
+    '家庭',
+    '社交',
+    '学业',
+    '饮食',
+    '天气',
+    '旅行',
+    '健康',
+    '其他',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/images/background/otherbackgrounds/infactor_bg.png'),
+          image: AssetImage(
+              'assets/images/background/otherbackgrounds/infactor_bg.png'),
           fit: BoxFit.fill,
         ),
       ),
@@ -39,12 +52,17 @@ class _MoodInfactorPageState extends State<MoodInfactorPage> {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           leading: IconButton(
-            icon: const Icon(Icons.arrow_back_ios, color: ColorUtils.text_brown),
+            icon:
+                const Icon(Icons.arrow_back_ios, color: ColorUtils.text_brown),
             onPressed: () {
               Navigator.pop(context);
             },
           ),
-          title: Text('是什么影响了你的情绪？', style: TextStyle(fontSize: 32.sp, fontFamily: 'LanSong', color: ColorUtils.text_brown)),
+          title: Text('是什么影响了你的情绪？',
+              style: TextStyle(
+                  fontSize: 32.sp,
+                  fontFamily: 'LanSong',
+                  color: ColorUtils.text_brown)),
         ),
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 20.h, vertical: 10.w),
@@ -77,14 +95,20 @@ class _MoodInfactorPageState extends State<MoodInfactorPage> {
                             width: 100.h,
                             height: 100.w,
                             decoration: BoxDecoration(
-                              color: _selectedIndex == index ? ColorUtils.bg_yellow : ColorUtils.bg_white,
+                              color: _selectedIndex == index
+                                  ? ColorUtils.bg_yellow
+                                  : ColorUtils.bg_white,
                               borderRadius: BorderRadius.circular(20.r),
                             ),
                             alignment: Alignment.center,
                             child: Image.asset(imagePaths[index]),
                           ),
                         ),
-                        Text('文字', style: TextStyle(fontFamily: 'LanSong', fontSize: 14.sp, color: ColorUtils.text_brown)),
+                        Text(imageLabels[index],
+                            style: TextStyle(
+                                fontFamily: 'LanSong',
+                                fontSize: 14.sp,
+                                color: ColorUtils.text_brown)),
                       ],
                     );
                   },
@@ -93,7 +117,8 @@ class _MoodInfactorPageState extends State<MoodInfactorPage> {
               const Expanded(child: SizedBox()),
               InkWell(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => MoodCheckPage()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MoodCheckPage()));
                 },
                 child: Container(
                   width: 200.h,
@@ -103,7 +128,11 @@ class _MoodInfactorPageState extends State<MoodInfactorPage> {
                     borderRadius: BorderRadius.circular(20.r),
                   ),
                   alignment: Alignment.center,
-                  child: Text('是这样的', style: TextStyle(fontFamily: 'LanSong', fontSize: 24.sp, color: ColorUtils.text_brown)),
+                  child: Text('是这样的',
+                      style: TextStyle(
+                          fontFamily: 'LanSong',
+                          fontSize: 24.sp,
+                          color: ColorUtils.text_brown)),
                 ),
               ),
               SizedBox(height: 80.w),

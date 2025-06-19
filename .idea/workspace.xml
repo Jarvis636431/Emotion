@@ -14,9 +14,10 @@
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/app.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/debug_android_application.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/debug_android_application.stamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/flutter_assets.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/kernel_snapshot.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/kernel_snapshot.stamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/start_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/start_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/mood_pages/mood_infactor_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mood_pages/mood_infactor_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,14 +104,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714296467787</updated>
-    </task>
-    <task id="LOCAL-00002" summary="[fea]新建进入页文件夹。新增屏幕适配插件，放在flutter_lints 下面">
-      <option name="closed" value="true" />
-      <created>1715004073783</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1715004073783</updated>
     </task>
     <task id="LOCAL-00003" summary="[fea]初步构建了年龄选择页和MBTI选择页的框架">
       <option name="closed" value="true" />
@@ -496,7 +489,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750337792358</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="[fix]新增了几张图片改名">
+      <option name="closed" value="true" />
+      <created>1750338357830</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1750338357830</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
