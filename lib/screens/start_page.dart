@@ -157,7 +157,7 @@ class StartPage extends StatelessWidget {
                             width: 48.h,
                           ),
                           Image.asset(
-                            'assets/images/mbti_emoji/ent/enf2.png',
+                            'assets/images/mbti_emoji/ent/ent2.png',
                             width: 48.h,
                           ),
                           Image.asset(

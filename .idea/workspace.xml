@@ -9,12 +9,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fix]增加了图片的样式">
+    <list default="true" id="196a401e-a541-465d-8262-a854349bdac2" name="Changes" comment="[fix]新增了几张图片改名">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/.filecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/debug_android_application.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/debug_android_application.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/6bd14ca34d738561f2586dd4401d983e/flutter_assets.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent一般.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent悲伤.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent烦躁.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent生气.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/mbti_emoji/ent/ent5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/start_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/start_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,14 +103,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714296467787</updated>
-    </task>
-    <task id="LOCAL-00001" summary="[check]">
-      <option name="closed" value="true" />
-      <created>1714391309221</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1714391309221</updated>
     </task>
     <task id="LOCAL-00002" summary="[fea]新建进入页文件夹。新增屏幕适配插件，放在flutter_lints 下面">
       <option name="closed" value="true" />
@@ -495,7 +488,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750336655555</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="[fix]新增了几张图片改名">
+      <option name="closed" value="true" />
+      <created>1750337792356</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1750337792358</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -511,7 +512,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[fea]初步实现笔记界面" />
     <MESSAGE value="[fea]初步实现收藏的话页面" />
     <MESSAGE value="[new]新增了图片和字体资源" />
     <MESSAGE value="[new]重启" />
@@ -536,6 +536,7 @@
     <MESSAGE value="[fix]暂存一下状态" />
     <MESSAGE value="[fix]把页面结构暂存成了图片" />
     <MESSAGE value="[fix]增加了图片的样式" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix]增加了图片的样式" />
+    <MESSAGE value="[fix]新增了几张图片改名" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix]新增了几张图片改名" />
   </component>
 </project>
