@@ -67,8 +67,17 @@ class _NameAgeSelectionPage extends State<NameAgeSelectionPage> {
                         decoration: BoxDecoration(
                             color: ColorUtils.bg_white,
                             borderRadius: BorderRadius.circular(20.r)),
-                        child: const TextField(
-                          decoration: InputDecoration(border: InputBorder.none),
+                        alignment: Alignment.center,
+                        child: TextField(
+                          textAlign: TextAlign.center,
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: '请输入你的昵称',
+                            hintStyle: TextStyle(
+                              color: ColorUtils.text_brown,
+                              fontSize:18.sp
+                            ),
+                          ),
                         ),
                       ),
                       SizedBox(height: 60.w),
